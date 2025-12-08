@@ -10,9 +10,11 @@ create_user_payload = {
   "firstName": "string",
   "middleName": "string"
 }
+
 create_user_response = httpx.post(CREATE_USER_URL, json=create_user_payload)
 create_user_response_data = create_user_response.json()
 print(f"Create user data: {create_user_response_data}")
+
 login_payload = {
     "email": create_user_payload["email"],
     "password": create_user_payload["password"]
