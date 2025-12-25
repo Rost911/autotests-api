@@ -1,37 +1,7 @@
 from clients.api_client import APIClient
-from typing import TypedDict
 from httpx import Response
 from clients.public_http_builder import get_public_http_client
-
-class CreateUserRequestDict(TypedDict):
-    """
-    Описание структуры POST запроса
-    на создание нового пользователя.
-    """
-
-    email: str
-    password: str
-    lastName: str
-    firstName: str
-    middleName: str
-
-class User(TypedDict):
-    """
-    Описание структуры пользователя.
-    """
-    id: str
-    email: str
-    password: str
-    lastName: str
-    firstName: str
-    middleName: str
-
-
-class CreateUserResponseDict(TypedDict):
-    """
-    Описание структуры ответа создания пользователя.
-    """
-    user: User
+from clients.users.users_schema import CreateUserRequestSchema, CreateUserResponseSchema
 
 class PublicUsersClient(APIClient):
     """
@@ -39,7 +9,7 @@ class PublicUsersClient(APIClient):
     которые не требуют авторизации (создание пользователя).
     """
 
-    def create_user_api(self, request: CreateUserRequestDict) -> Response:
+    def create_user_api(self, request: CreateUserRequestSchema) -> Response:
         """
         Выполняет POST-запрос для создания нового пользователя.
 
@@ -47,11 +17,11 @@ class PublicUsersClient(APIClient):
                         (email, password, ФИО).
         :return: Объект httpx.Response с ответом сервера.
         """
-        return self.post("/api/v1/users", json=request)
+        return self.post("/api/v1/users", json=request.model_dump(by_alias=True))
 
-    def create_user(self, request: CreateUserRequestDict) -> CreateUserResponseDict:
+    def create_user(self, request: CreateUserRequestSchema) -> CreateUserResponseSchema:
         response = self.create_user_api(request=request)
-        return response.json()
+        return CreateUserResponseSchema.model_validate_json(response.text)
 
 def get_public_users_client() -> PublicUsersClient:
     """
