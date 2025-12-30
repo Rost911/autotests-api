@@ -1,10 +1,10 @@
 import httpx
-from tools.fakers import get_random_email
+from tools.fakers import fake
 
 CREATE_USER_URL = "http://localhost:8000/api/v1/users"
 AUTHENTICATION_LOGIN_URL = "http://localhost:8000/api/v1/authentication/login"
 create_user_payload = {
-  "email": f"{get_random_email()}",
+  "email": f"{fake.email()}",
   "password": "string",
   "lastName": "string",
   "firstName": "string",
