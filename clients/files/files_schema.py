@@ -32,3 +32,4 @@ class GetFileResponseSchema(BaseModel):
     Описание структуры запроса получения файла.
     """
     file: FileSchema
+

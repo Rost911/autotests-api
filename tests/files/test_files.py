@@ -8,7 +8,8 @@ from clients.files.files_schema import CreateFileRequestSchema, CreateFileRespon
 from fixtures.files import FileFixture
 from tools.assertions.base import assert_status_code
 from tools.assertions.files import (assert_create_file_response, assert_create_file_with_empty_filename_response,
-                                    assert_create_file_with_empty_directory_response, assert_file_not_found_response)
+                                    assert_create_file_with_empty_directory_response, assert_file_not_found_response,
+                                    assert_get_file_with_incorrect_file_id_response)
 from tools.assertions.schema import validate_json_schema
 
 @pytest.mark.files
@@ -33,11 +34,6 @@ class TestFiles:
 
         validate_json_schema(response.json(), response_data.model_json_schema())
 
-
-@pytest.mark.files
-@pytest.mark.regression
-class TestFiles:
-    # Остальной код без изменений
 
     def test_create_file_with_empty_filename(self, files_client: FilesClient):
         request = CreateFileRequestSchema(
@@ -89,3 +85,22 @@ class TestFiles:
 
         # 6. Проверяем, что ответ соответствует схеме
         validate_json_schema(get_response.json(), get_response_data.model_json_schema())
+
+    def test_get_file_with_incorrect_file_id(self, files_client: FilesClient):
+        """
+        Негативный тест получения файла с некорректным file_id.
+
+        Проверяет, что при передаче невалидного идентификатора файла
+        API возвращает:
+        - HTTP статус 422 (Unprocessable Entity)
+        - корректное тело ответа с валидационной ошибкой
+        - JSON, соответствующий схеме ValidationErrorResponseSchema
+        """
+        get_request = files_client.get_file_api(file_id="incorrect-file-id")
+        get_response_data = ValidationErrorResponseSchema.model_validate_json(get_request.text)
+        assert_status_code(get_request.status_code, HTTPStatus.UNPROCESSABLE_ENTITY)
+        assert_get_file_with_incorrect_file_id_response(get_response_data)
+        validate_json_schema(get_request.json(), get_response_data.model_json_schema())
+
+
+
