@@ -4,11 +4,12 @@ import pytest
 
 from clients.courses.courses_client import CoursesClient
 from clients.courses.courses_schema import UpdateCourseRequestSchema, UpdateCourseResponseSchema, GetCoursesQuerySchema, \
-    GetCoursesResponseSchema
+    GetCoursesResponseSchema, CreateCourseRequestSchema, CreateCourseResponseSchema
 from fixtures.courses import CourseFixture
 from fixtures.users import UserFixture
+from fixtures.files import FileFixture
 from tools.assertions.base import assert_status_code
-from tools.assertions.courses import assert_update_course_response, assert_get_courses_response
+from tools.assertions.courses import assert_update_course_response, assert_get_courses_response, assert_create_course_response
 from tools.assertions.schema import validate_json_schema
 
 
@@ -52,3 +53,36 @@ class TestCourses:
 
         # Проверяем соответствие JSON-ответа схеме
         validate_json_schema(response.json(), response_data.model_json_schema())
+
+    def test_create_course(self,
+                           courses_client: CoursesClient,
+                           function_user: UserFixture,
+                           function_file: FileFixture  ):
+        """
+        Проверяет создание курса через API.
+
+        Тест выполняет следующие шаги:
+        1. Формирует запрос на создание курса с указанием:
+           - preview_file_id (ID файла превью)
+           - created_by_user_id (ID пользователя-создателя)
+        2. Отправляет POST-запрос на эндпоинт /api/v1/courses.
+        3. Проверяет, что API возвращает статус-код 200 (OK).
+        4. Проверяет, что данные курса в ответе соответствуют данным запроса.
+        5. Валидирует JSON-схему ответа CreateCourseResponseSchema.
+
+        :param courses_client: API-клиент для работы с курсами.
+        :param function_user: Фикстура с созданным пользователем.
+        :param function_file: Фикстура с созданным файлом для превью курса.
+        """
+        request = CreateCourseRequestSchema(
+        preview_file_id=function_file.response.file.id,
+        created_by_user_id=function_user.response.user.id
+    )
+        response = courses_client.create_course_api(request)
+        response_data = CreateCourseResponseSchema.model_validate_json(response.text)
+        assert_status_code(response.status_code, HTTPStatus.OK)
+        assert_create_course_response(request, response_data)
+        validate_json_schema(response.json(), response_data.model_json_schema())
+
+
+
