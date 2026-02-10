@@ -40,6 +40,15 @@ class GetExercisesResponseSchema(BaseModel):
     exercises: list[ExerciseSchema]
 
 
+class GetExerciseResponseSchema(BaseModel):
+    """
+    Схема ответа при получении упражнения.
+    """
+    model_config = ConfigDict(populate_by_name=True)
+
+    exercise: ExerciseSchema
+
+
 
 class CreateExerciseRequestSchema(BaseModel):
     """
