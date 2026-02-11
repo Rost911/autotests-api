@@ -1,6 +1,8 @@
 from http import HTTPStatus
 
 import pytest
+
+from clients.errors_schema import InternalErrorResponseSchema
 from clients.exercises.exercises_schema import (CreateExerciseRequestSchema,
                                                 CreateExerciseResponseSchema, GetExerciseResponseSchema,
                                                 UpdateExerciseRequestSchema, UpdateExerciseResponseSchema)
@@ -9,7 +11,8 @@ from clients.exercises.exercises_client import ExercisesClient
 from tools.assertions.base import assert_status_code
 from tools.assertions.exercises import (assert_create_exercise_response,
                                         assert_get_exercise_response,
-                                        assert_update_exercise_response)
+                                        assert_update_exercise_response,
+                                        assert_exercise_not_found_response)
 from tools.assertions.schema import validate_json_schema
 from fixtures.exercises import function_exercise, ExerciseFixture
 
@@ -74,3 +77,34 @@ class TestExercises:
         assert_update_exercise_response(request, response_data)
 
         validate_json_schema(response.json(), response_data.model_json_schema())
+
+
+    def test_delete_exercise(self, function_exercise: ExerciseFixture,
+                             exercises_client: ExercisesClient):
+        """
+        Проверяет удаление упражнения через DELETE /api/v1/exercises/{exercise_id}.
+
+        Шаги:
+        1. Удаляет ранее созданное упражнение.
+        2. Проверяет, что статус-код ответа равен 200 OK.
+        3. Выполняет GET-запрос для получения удалённого упражнения.
+        4. Проверяет, что статус-код равен 404 Not Found.
+        5. Проверяет, что тело ответа содержит ошибку "Exercise not found".
+        6. Валидирует JSON schema ответа с ошибкой.
+        """
+        delete_response = exercises_client.delete_exercise_api(function_exercise.response.exercise.id)
+        assert_status_code(delete_response.status_code, HTTPStatus.OK)
+
+        get_response = exercises_client.get_exercise_api(exercise_id=function_exercise.response.exercise.id)
+        get_response_data = InternalErrorResponseSchema.model_validate_json(get_response.text)
+
+        assert_status_code(get_response.status_code, HTTPStatus.NOT_FOUND)
+        assert_exercise_not_found_response(get_response_data)
+
+        validate_json_schema(get_response.json(), get_response_data.model_json_schema())
+
+
+
+
+
+
