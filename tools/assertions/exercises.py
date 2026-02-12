@@ -1,17 +1,17 @@
 from clients.errors_schema import InternalErrorResponseSchema
 from tools.assertions.errors import assert_internal_error_response
-from tools.assertions.base import assert_equal
+from tools.assertions.base import assert_equal, assert_length
 from clients.exercises.exercises_schema import (CreateExerciseRequestSchema,
                                                 ExerciseSchema,
                                                 GetExerciseResponseSchema,
                                                 CreateExerciseResponseSchema, UpdateExerciseRequestSchema,
-                                                UpdateExerciseResponseSchema)
+                                                UpdateExerciseResponseSchema, GetExercisesResponseSchema)
 
 
 def assert_create_exercise_response(
         request: CreateExerciseRequestSchema,
         response: CreateExerciseResponseSchema
-):
+) -> None:
     """
     Проверяет, что упражнение, созданное API, соответствует данным запроса.
 
@@ -27,7 +27,7 @@ def assert_create_exercise_response(
     assert_equal(response.exercise.description, request.description, "description")
     assert_equal(response.exercise.estimated_time, request.estimated_time, "estimated_time")
 
-def assert_exercise(actual: ExerciseSchema, expected: ExerciseSchema):
+def assert_exercise(actual: ExerciseSchema, expected: ExerciseSchema) -> None:
     """
     Проверка модели задания с использованием ExercisesSchema
 
@@ -43,7 +43,7 @@ def assert_exercise(actual: ExerciseSchema, expected: ExerciseSchema):
 
 
 def assert_get_exercise_response(get_exercise_response: GetExerciseResponseSchema,
-                                 create_exercise_response: CreateExerciseResponseSchema):
+                                 create_exercise_response: CreateExerciseResponseSchema) -> None:
     """
     Проверка  ответа получения данных задания
 
@@ -51,7 +51,7 @@ def assert_get_exercise_response(get_exercise_response: GetExerciseResponseSchem
     assert_exercise(get_exercise_response.exercise, create_exercise_response.exercise)
 
 def assert_update_exercise_response(request: UpdateExerciseRequestSchema,
-                                    response: UpdateExerciseResponseSchema):
+                                    response: UpdateExerciseResponseSchema) -> None:
     """
     Проверяет, что ответ на обновление упражнения соответствует данным из запроса.
 
@@ -67,7 +67,7 @@ def assert_update_exercise_response(request: UpdateExerciseRequestSchema,
     assert_equal(response.exercise.estimated_time, request.estimated_time, "estimated_time")
 
 
-def assert_exercise_not_found_response(actual: InternalErrorResponseSchema):
+def assert_exercise_not_found_response(actual: InternalErrorResponseSchema) -> None:
     """
     Функция для проверки ошибки, если упражнение не найдено на сервере.
 
@@ -76,3 +76,19 @@ def assert_exercise_not_found_response(actual: InternalErrorResponseSchema):
     """
     expected = InternalErrorResponseSchema(details="Exercise not found")
     assert_internal_error_response(actual, expected)
+
+def assert_get_exercises_response(
+    get_exercises_response: GetExercisesResponseSchema,
+    create_exercise_responses: list[CreateExerciseResponseSchema],
+) -> None:
+    """
+    Проверяет, что список заданий содержит ожидаемые упражнения.
+
+    :param actual: Ответ API со списком заданий.
+    :param expected: Список ожидаемых заданий.
+    """
+    assert_length(get_exercises_response.exercises, create_exercise_responses, "exercises")
+
+    for index, create_exercise_response in enumerate(create_exercise_responses):
+        assert_exercise(get_exercises_response.exercises[index], create_exercise_response.exercise)
+
