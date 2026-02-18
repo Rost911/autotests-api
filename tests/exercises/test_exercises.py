@@ -1,6 +1,7 @@
 from http import HTTPStatus
-
+import allure
 import pytest
+from allure_commons.types import Severity
 
 from clients.errors_schema import InternalErrorResponseSchema
 from clients.exercises.exercises_schema import (CreateExerciseRequestSchema,
@@ -10,6 +11,10 @@ from clients.exercises.exercises_schema import (CreateExerciseRequestSchema,
                                                 GetExercisesQuerySchema)
 from fixtures.courses import CourseFixture
 from clients.exercises.exercises_client import ExercisesClient
+from tools.allure.epics import AllureEpic
+from tools.allure.features import AllureFeature
+from tools.allure.stories import AllureStory
+from tools.allure.tags import AllureTag
 from tools.assertions.base import assert_status_code
 from tools.assertions.exercises import (assert_create_exercise_response,
                                         assert_get_exercise_response,
@@ -22,7 +27,14 @@ from fixtures.exercises import function_exercise, ExerciseFixture
 
 @pytest.mark.exercises
 @pytest.mark.regression
+@allure.tag(AllureTag.EXERCISES, AllureTag.REGRESSION)
+@allure.epic(AllureEpic.LMS)
+@allure.feature(AllureFeature.EXERCISES)
 class TestExercises:
+    @allure.tag(AllureTag.CREATE_ENTITY)
+    @allure.story(AllureStory.CREATE_ENTITY)
+    @allure.title("Create exercise")
+    @allure.severity(Severity.BLOCKER)
     def test_create_exercise(self, function_course: CourseFixture, exercises_client: ExercisesClient):
         """
         Проверяет создание упражнения через POST /api/v1/exercises.
@@ -40,7 +52,10 @@ class TestExercises:
         assert_create_exercise_response(request, response_data)
         validate_json_schema(response.json(), response_data.model_json_schema())
 
-
+    @allure.tag(AllureTag.GET_ENTITY)
+    @allure.story(AllureStory.GET_ENTITY)
+    @allure.title("Get exercise")
+    @allure.severity(Severity.BLOCKER)
     def test_get_exercise(self, function_exercise: ExerciseFixture,
                           exercises_client: ExercisesClient):
         """
@@ -59,7 +74,10 @@ class TestExercises:
                                      create_exercise_response=function_exercise.response)
         validate_json_schema(response.json(), response_data.model_json_schema())
 
-
+    @allure.tag(AllureTag.UPDATE_ENTITY)
+    @allure.story(AllureStory.UPDATE_ENTITY)
+    @allure.title("Update exercise")
+    @allure.severity(Severity.CRITICAL)
     def test_update_exercise(self, function_exercise: ExerciseFixture, exercises_client: ExercisesClient):
         """
         Проверяет обновление упражнения через PATCH /api/v1/exercises/{exercise_id}.
@@ -81,7 +99,10 @@ class TestExercises:
 
         validate_json_schema(response.json(), response_data.model_json_schema())
 
-
+    @allure.tag(AllureTag.DELETE_ENTITY)
+    @allure.story(AllureStory.DELETE_ENTITY)
+    @allure.title("Delete exercise")
+    @allure.severity(Severity.CRITICAL)
     def test_delete_exercise(self, function_exercise: ExerciseFixture,
                              exercises_client: ExercisesClient):
         """
@@ -106,7 +127,10 @@ class TestExercises:
 
         validate_json_schema(get_response.json(), get_response_data.model_json_schema())
 
-
+    @allure.tag(AllureTag.GET_ENTITIES)
+    @allure.story(AllureStory.GET_ENTITIES)
+    @allure.title("Get exercises")
+    @allure.severity(Severity.BLOCKER)
     def test_get_exercises(self,
                            function_exercise: ExerciseFixture,
                            function_course: CourseFixture,
