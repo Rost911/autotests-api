@@ -1,4 +1,5 @@
 from httpx import Response
+import allure
 
 from clients.api_client import APIClient
 from clients.exercises.exercises_schema import (
@@ -23,6 +24,7 @@ class ExercisesClient(APIClient):
     Все методы требуют авторизации.
     """
 
+    @allure.step("Get list of exercises")
     def get_exercises_api(self, query: GetExercisesQuerySchema) -> Response:
         """
         Выполняет GET-запрос для получения списка упражнений курса.
@@ -35,6 +37,7 @@ class ExercisesClient(APIClient):
             params=query.model_dump(by_alias=True, exclude_none=True),
         )
 
+    @allure.step("Get exercise by exercise_id: {exercise_id}")
     def get_exercise_api(self, exercise_id: str) -> Response:
         """
         Выполняет GET-запрос для получения упражнения по идентификатору.
@@ -44,6 +47,7 @@ class ExercisesClient(APIClient):
         """
         return self.get(f"/api/v1/exercises/{exercise_id}")
 
+    @allure.step("Create new exercise")
     def create_exercise_api(
         self,
         request: CreateExerciseRequestSchema,
@@ -59,6 +63,7 @@ class ExercisesClient(APIClient):
             json=request.model_dump(by_alias=True),
         )
 
+    @allure.step("Update particular exercise : {exercise_id}")
     def update_exercise_api(
         self,
         exercise_id: str,
@@ -76,6 +81,7 @@ class ExercisesClient(APIClient):
             json=request.model_dump(by_alias=True, exclude_none=True),
         )
 
+    @allure.step("Delete particular exercise : {exercise_id}")
     def delete_exercise_api(self, exercise_id: str) -> Response:
         """
         Выполняет DELETE-запрос для удаления упражнения.
