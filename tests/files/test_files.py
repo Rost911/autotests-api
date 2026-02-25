@@ -56,7 +56,7 @@ class TestFiles:
     @allure.title("Create file with empty filename")
     @allure.severity(Severity.NORMAL)
     def test_create_file_with_empty_filename(self, files_client: FilesClient):
-        request = CreateFileRequestSchema(upload_file=settings.test_data.image_png_file)
+        request = CreateFileRequestSchema(upload_file=settings.test_data.image_png_file, filename='')
         response = files_client.create_file_api(request)
         response_data = ValidationErrorResponseSchema.model_validate_json(response.text)
 
@@ -73,7 +73,7 @@ class TestFiles:
     @allure.title("Create file with empty directory")
     @allure.severity(Severity.NORMAL)
     def test_create_file_with_empty_directory(self, files_client: FilesClient):
-        request = CreateFileRequestSchema(upload_file=settings.test_data.image_png_file)
+        request = CreateFileRequestSchema(upload_file=settings.test_data.image_png_file, directory="")
         response = files_client.create_file_api(request)
         response_data = ValidationErrorResponseSchema.model_validate_json(response.text)
 
