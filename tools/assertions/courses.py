@@ -4,6 +4,9 @@ from clients.courses.courses_schema import CourseSchema, UpdateCourseRequestSche
 from tools.assertions.base import assert_equal, assert_length
 from tools.assertions.files import assert_file
 from tools.assertions.users import assert_user
+from tools.logger import get_logger
+
+logger = get_logger("COURSES_ASSERTIONS")
 
 @allure.step("Check update course response")
 def assert_update_course_response(
@@ -11,12 +14,13 @@ def assert_update_course_response(
         response: UpdateCourseResponseSchema
 ):
     """
-    Проверяет, что ответ на обновление курса соответствует данным из запроса.
+    Verifies that the course update response matches the data from the request.
 
-    :param request: Исходный запрос на обновление курса.
-    :param response: Ответ API с обновленными данными курса.
-    :raises AssertionError: Если хотя бы одно поле не совпадает.
+    :param request: Original course update request.
+    :param response: API response containing the updated course data.
+    :raises AssertionError: If at least one field does not match.
     """
+    logger.info("Check update course response")
     assert_equal(response.course.title, request.title, "title")
     assert_equal(response.course.max_score, request.max_score, "max_score")
     assert_equal(response.course.min_score, request.min_score, "min_score")
@@ -27,12 +31,13 @@ def assert_update_course_response(
 @allure.step("Check course")
 def assert_course(actual: CourseSchema, expected: CourseSchema):
     """
-    Проверяет, что фактические данные курса соответствуют ожидаемым.
+    Verifies that the actual course data matches the expected data.
 
-    :param actual: Фактические данные курса.
-    :param expected: Ожидаемые данные курса.
-    :raises AssertionError: Если хотя бы одно поле не совпадает.
+    :param actual: Actual course data.
+    :param expected: Expected course data.
+    :raises AssertionError: If at least one field does not match.
     """
+    logger.info("Check course")
     assert_equal(actual.id, expected.id, "id")
     assert_equal(actual.title, expected.title, "title")
     assert_equal(actual.max_score, expected.max_score, "max_score")
@@ -40,7 +45,7 @@ def assert_course(actual: CourseSchema, expected: CourseSchema):
     assert_equal(actual.description, expected.description, "description")
     assert_equal(actual.estimated_time, expected.estimated_time, "estimated_time")
 
-    # Проверяем вложенные сущности
+    # Check nested entities
     assert_file(actual.preview_file, expected.preview_file)
     assert_user(actual.created_by_user, expected.created_by_user)
 
@@ -51,12 +56,14 @@ def assert_get_courses_response(
         create_course_responses: list[CreateCourseResponseSchema]
 ):
     """
-    Проверяет, что ответ на получение списка курсов соответствует ответам на их создание.
+    Verifies that the response for retrieving the list of courses
+    matches the responses received during their creation.
 
-    :param get_courses_response: Ответ API при запросе списка курсов.
-    :param create_course_responses: Список API ответов при создании курсов.
-    :raises AssertionError: Если данные курсов не совпадают.
+    :param get_courses_response: API response when requesting the list of courses.
+    :param create_course_responses: List of API responses received when creating courses.
+    :raises AssertionError: If the course data does not match.
     """
+    logger.info("Check get courses response")
     assert_length(get_courses_response.courses, create_course_responses, "courses")
 
     for index, create_course_response in enumerate(create_course_responses):
@@ -69,18 +76,19 @@ def assert_create_course_response(
         response: CreateCourseResponseSchema
 ):
     """
-    Проверяет, что ответ API при создании курса соответствует данным,
-    переданным в запросе.
+    Verifies that the API response when creating a course
+    matches the data provided in the request.
 
-    Проверяются:
-    - основные поля курса (title, scores, description, estimated_time)
-    - корректность связи с файлом превью
-    - корректность связи с пользователем-создателем
+    The following are validated:
+    - main course fields (title, scores, description, estimated_time)
+    - correctness of the preview file relationship
+    - correctness of the creator user relationship
 
-    :param request: Запрос на создание курса.
-    :param response: Ответ API с созданным курсом.
-    :raises AssertionError: Если хотя бы одно поле не совпадает.
+    :param request: Course creation request.
+    :param response: API response containing the created course.
+    :raises AssertionError: If at least one field does not match.
     """
+    logger.info("Check create course response")
     assert_equal(response.course.title, request.title, "title")
     assert_equal(response.course.max_score, request.max_score, "max_score")
     assert_equal(response.course.min_score, request.min_score, "min_score")

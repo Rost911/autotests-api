@@ -8,6 +8,10 @@ from clients.exercises.exercises_schema import (CreateExerciseRequestSchema,
                                                 CreateExerciseResponseSchema, UpdateExerciseRequestSchema,
                                                 UpdateExerciseResponseSchema, GetExercisesResponseSchema)
 
+from tools.logger import get_logger
+
+logger = get_logger("EXERCISES_ASSERTIONS")
+
 
 @allure.step("Check create exercise response")
 def assert_create_exercise_response(
@@ -15,12 +19,14 @@ def assert_create_exercise_response(
         response: CreateExerciseResponseSchema
 ) -> None:
     """
-    Проверяет, что упражнение, созданное API, соответствует данным запроса.
+    Verifies that the exercise created by the API
+    matches the data provided in the request.
 
-    :param request: Запрос на создание упражнения.
-    :param response: Ответ API с созданным упражнением.
-    :raises AssertionError: Если хотя бы одно поле не совпадает.
+    :param request: Exercise creation request.
+    :param response: API response containing the created exercise.
+    :raises AssertionError: If at least one field does not match.
     """
+    logger.info("Check create exercise response")
     assert_equal(response.exercise.title, request.title, "title")
     assert_equal(response.exercise.course_id, request.course_id, "course_id")
     assert_equal(response.exercise.max_score, request.max_score, "max_score")
@@ -33,9 +39,9 @@ def assert_create_exercise_response(
 @allure.step("Check exercise schema")
 def assert_exercise(actual: ExerciseSchema, expected: ExerciseSchema) -> None:
     """
-    Проверка модели задания с использованием ExercisesSchema
-
+    Validation of the assignment model using ExercisesSchema.
     """
+    logger.info("Check exercise schema")
     assert_equal(actual.id, expected.id, "id")
     assert_equal(actual.title, expected.title, "title")
     assert_equal(actual.course_id, expected.course_id, "course_id")
@@ -50,21 +56,22 @@ def assert_exercise(actual: ExerciseSchema, expected: ExerciseSchema) -> None:
 def assert_get_exercise_response(get_exercise_response: GetExerciseResponseSchema,
                                  create_exercise_response: CreateExerciseResponseSchema) -> None:
     """
-    Проверка  ответа получения данных задания
-
+    Validation of the response for retrieving assignment data.
     """
+    logger.info("Check get exercise response")
     assert_exercise(get_exercise_response.exercise, create_exercise_response.exercise)
 
 @allure.step("Check update exercise response")
 def assert_update_exercise_response(request: UpdateExerciseRequestSchema,
                                     response: UpdateExerciseResponseSchema) -> None:
     """
-    Проверяет, что ответ на обновление упражнения соответствует данным из запроса.
+    Verifies that the exercise update response matches the data from the request.
 
-    :param request: Исходный запрос на обновление упражнения.
-    :param response: Ответ API с обновленными данными упражнения.
-    :raises AssertionError: Если хотя бы одно поле не совпадает.
+    :param request: Original exercise update request.
+    :param response: API response containing the updated exercise data.
+    :raises AssertionError: If at least one field does not match.
     """
+    logger.info("Check update exercise response")
     assert_equal(response.exercise.title, request.title, "title")
     assert_equal(response.exercise.max_score, request.max_score, "max_score")
     assert_equal(response.exercise.min_score, request.min_score, "min_score")
@@ -75,11 +82,12 @@ def assert_update_exercise_response(request: UpdateExerciseRequestSchema,
 @allure.step("Check exercise not found response")
 def assert_exercise_not_found_response(actual: InternalErrorResponseSchema) -> None:
     """
-    Функция для проверки ошибки, если упражнение не найдено на сервере.
+    Function to verify the error when an exercise is not found on the server.
 
-    :param actual: Фактический ответ.
-    :raises AssertionError: Если фактический ответ не соответствует ошибке "Exercise not found"
+    :param actual: Actual response.
+    :raises AssertionError: If the actual response does not match the "Exercise not found" error.
     """
+    logger.info("Check exercise not found response")
     expected = InternalErrorResponseSchema(details="Exercise not found")
     assert_internal_error_response(actual, expected)
 
@@ -89,11 +97,12 @@ def assert_get_exercises_response(
     create_exercise_responses: list[CreateExerciseResponseSchema],
 ) -> None:
     """
-    Проверяет, что список заданий содержит ожидаемые упражнения.
+    Verifies that the list of assignments contains the expected exercises.
 
-    :param actual: Ответ API со списком заданий.
-    :param expected: Список ожидаемых заданий.
+    :param actual: API response containing the list of assignments.
+    :param expected: List of expected assignments.
     """
+    logger.info("Check get exercises response list")
     assert_length(get_exercises_response.exercises, create_exercise_responses, "exercises")
 
     for index, create_exercise_response in enumerate(create_exercise_responses):
