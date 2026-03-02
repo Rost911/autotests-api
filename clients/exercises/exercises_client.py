@@ -14,38 +14,39 @@ from clients.private_http_builder import (
     AuthenticationUserSchema,
     get_private_http_client,
 )
+from tools.routes import APIRoutes
 
 
 class ExercisesClient(APIClient):
     """
-    Клиент для работы с API /api/v1/exercises.
+    Client for working with the /api/v1/exercises API.
 
-    Используется для получения, создания, обновления и удаления упражнений.
-    Все методы требуют авторизации.
+    Used for retrieving, creating, updating, and deleting exercises.
+    All methods require authorization.
     """
 
     @allure.step("Get list of exercises")
     def get_exercises_api(self, query: GetExercisesQuerySchema) -> Response:
         """
-        Выполняет GET-запрос для получения списка упражнений курса.
+        Performs a GET request to retrieve the list of course exercises.
 
-        :param query: Query-параметры запроса (courseId).
-        :return: Объект httpx.Response.
+        :param query: Query parameters of the request (courseId).
+        :return: An httpx.Response object.
         """
         return self.get(
-            "/api/v1/exercises",
+            APIRoutes.EXERCISES,
             params=query.model_dump(by_alias=True, exclude_none=True),
         )
 
     @allure.step("Get exercise by exercise_id: {exercise_id}")
     def get_exercise_api(self, exercise_id: str) -> Response:
         """
-        Выполняет GET-запрос для получения упражнения по идентификатору.
+        Performs a GET request to retrieve an exercise by its identifier.
 
-        :param exercise_id: UUID упражнения.
-        :return: Объект httpx.Response.
+        :param exercise_id: Exercise UUID.
+        :return: An httpx.Response object.
         """
-        return self.get(f"/api/v1/exercises/{exercise_id}")
+        return self.get(f"{APIRoutes.EXERCISES}/{exercise_id}")
 
     @allure.step("Create new exercise")
     def create_exercise_api(
@@ -53,13 +54,13 @@ class ExercisesClient(APIClient):
         request: CreateExerciseRequestSchema,
     ) -> Response:
         """
-        Выполняет POST-запрос для создания нового упражнения.
+        Performs a POST request to create a new exercise.
 
-        :param request: Данные для создания упражнения.
-        :return: Объект httpx.Response.
+        :param request: Data for creating the exercise.
+        :return: An httpx.Response object.
         """
         return self.post(
-            "/api/v1/exercises",
+            APIRoutes.EXERCISES,
             json=request.model_dump(by_alias=True),
         )
 
@@ -70,33 +71,33 @@ class ExercisesClient(APIClient):
         request: UpdateExerciseRequestSchema,
     ) -> Response:
         """
-        Выполняет PATCH-запрос для обновления упражнения.
+        Performs a PATCH request to update an exercise.
 
-        :param exercise_id: UUID упражнения.
-        :param request: Данные для обновления упражнения.
-        :return: Объект httpx.Response.
+        :param exercise_id: Exercise UUID.
+        :param request: Data for updating the exercise.
+        :return: An httpx.Response object.
         """
         return self.patch(
-            f"/api/v1/exercises/{exercise_id}",
+            f"{APIRoutes.EXERCISES}/{exercise_id}",
             json=request.model_dump(by_alias=True, exclude_none=True),
         )
 
     @allure.step("Delete particular exercise : {exercise_id}")
     def delete_exercise_api(self, exercise_id: str) -> Response:
         """
-        Выполняет DELETE-запрос для удаления упражнения.
+        Performs a DELETE request to delete an exercise.
 
-        :param exercise_id: UUID упражнения.
-        :return: Объект httpx.Response.
+        :param exercise_id: Exercise UUID.
+        :return: An httpx.Response object.
         """
-        return self.delete(f"/api/v1/exercises/{exercise_id}")
+        return self.delete(f"{APIRoutes.EXERCISES}/{exercise_id}")
 
     def get_exercise(self, exercise_id: str) -> CreateExerciseResponseSchema:
         """
-        Возвращает упражнение по идентификатору в виде Pydantic-модели.
+        Returns an exercise by its identifier as a Pydantic model.
 
-        :param exercise_id: UUID упражнения.
-        :return: Объект CreateExerciseResponseSchema.
+        :param exercise_id: Exercise UUID.
+        :return: A CreateExerciseResponseSchema object.
         """
         response = self.get_exercise_api(exercise_id)
         return CreateExerciseResponseSchema.model_validate_json(response.text)
@@ -106,10 +107,10 @@ class ExercisesClient(APIClient):
         query: GetExercisesQuerySchema,
     ) -> GetExercisesResponseSchema:
         """
-        Возвращает список упражнений курса.
+        Returns the list of course exercises.
 
-        :param query: Query-параметры запроса (courseId).
-        :return: Объект GetExercisesResponseSchema.
+        :param query: Query parameters of the request (courseId).
+        :return: A GetExercisesResponseSchema object.
         """
         response = self.get_exercises_api(query)
         return GetExercisesResponseSchema.model_validate_json(response.text)
@@ -119,10 +120,10 @@ class ExercisesClient(APIClient):
         request: CreateExerciseRequestSchema,
     ) -> CreateExerciseResponseSchema:
         """
-        Создаёт упражнение и возвращает результат в виде модели.
+        Creates an exercise and returns the result as a model.
 
-        :param request: Данные для создания упражнения.
-        :return: Объект CreateExerciseResponseSchema.
+        :param request: Data for creating the exercise.
+        :return: A CreateExerciseResponseSchema object.
         """
         response = self.create_exercise_api(request)
         return CreateExerciseResponseSchema.model_validate_json(response.text)
@@ -133,11 +134,11 @@ class ExercisesClient(APIClient):
         request: UpdateExerciseRequestSchema,
     ) -> UpdateExerciseResponseSchema:
         """
-        Обновляет упражнение и возвращает обновлённые данные.
+        Updates an exercise and returns the updated data.
 
-        :param exercise_id: UUID упражнения.
-        :param request: Данные для обновления.
-        :return: Объект UpdateExerciseResponseSchema.
+        :param exercise_id: Exercise UUID.
+        :param request: Data for updating.
+        :return: An UpdateExerciseResponseSchema object.
         """
         response = self.update_exercise_api(exercise_id, request)
         return UpdateExerciseResponseSchema.model_validate_json(response.text)
@@ -145,9 +146,9 @@ class ExercisesClient(APIClient):
 
 def get_exercises_client(user: AuthenticationUserSchema) -> ExercisesClient:
     """
-    Создаёт экземпляр ExercisesClient с авторизованным HTTP-клиентом.
+    Creates an instance of ExercisesClient with an authorized HTTP client.
 
-    :param user: Данные пользователя для аутентификации.
-    :return: Готовый к использованию ExercisesClient.
+    :param user: User data for authentication.
+    :return: A ready-to-use ExercisesClient.
     """
     return ExercisesClient(client=get_private_http_client(user))
