@@ -4,21 +4,23 @@ from httpx import Response
 
 from clients.public_http_builder import get_public_http_client
 from clients.authentication.authentication_schema import LoginRequestSchema, RefreshRequestSchema,LoginResponseSchema
+from tools.routes import APIRoutes
+
 
 class AuthenticationClient(APIClient):
     """
-    Клиент для работы с /api/v1/authentication
+    Client for working with /api/v1/authentication.
     """
-
     @allure.step("Authenticate user")
     def login_api(self, request: LoginRequestSchema) -> Response:
         """
-        Метод выполняет аутентификацию пользователя.
-        :param request: Словарь с email и password.
-        :return: Ответ от сервера в виде объекта httpx.Response
+        Method for authenticating a user.
+
+        :param request: Dictionary containing email and password.
+        :return: Server response as an httpx.Response object.
         """
         return self.post(
-            "/api/v1/authentication/login",
+            f"{APIRoutes.AUTHENTICATION}/login",
             json=request.model_dump(by_alias=True))
 
     def login(self, request: LoginRequestSchema) -> LoginResponseSchema:
@@ -28,18 +30,19 @@ class AuthenticationClient(APIClient):
     @allure.step("Refresh authentication token")
     def refresh_api(self, request: RefreshRequestSchema) -> Response:
         """
-        Метод обновляет токен авторизации.
-        :param request: Словарь с refreshToken.
-        :return: Ответ от сервера в виде объекта httpx.Response
+        Method for refreshing the authorization token.
+
+        :param request: Dictionary containing refreshToken.
+        :return: Server response as an httpx.Response object.
         """
-        return self.post("/api/v1/authentication/refresh",
+        return self.post(f"{APIRoutes.AUTHENTICATION}/refresh",
                          json=request.model_dump(by_alias=True))
 
 
 def get_authentication_client() -> AuthenticationClient:
     """
-    Функция создаёт экземпляр AuthenticationClient с уже настроенным HTTP-клиентом.
+    The function creates an instance of AuthenticationClient with a preconfigured HTTP client.
 
-    :return: Готовый к использованию AuthenticationClient.
+    :return: A ready-to-use AuthenticationClient.
     """
     return AuthenticationClient(client=get_public_http_client())

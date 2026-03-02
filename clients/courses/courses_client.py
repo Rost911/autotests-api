@@ -5,70 +5,71 @@ from clients.api_client import APIClient
 from clients.courses.courses_schema import (CreateCourseRequestSchema, GetCoursesQuerySchema,
                                             UpdateCourseRequestSchema, CreateCourseResponseSchema)
 from clients.private_http_builder import AuthenticationUserSchema, get_private_http_client
-
+from tools.routes import APIRoutes
 
 
 class CoursesClient(APIClient):
     """
-    Клиент для работы с /api/v1/courses
+    Client for working with /api/v1/courses.
     """
 
     @allure.step("Get courses")
     def get_courses_api(self, query: GetCoursesQuerySchema) -> Response:
         """
-        Метод получения списка курсов.
+        Method for retrieving the list of courses.
 
-        :param query: Словарь с userId.
-        :return: Ответ от сервера в виде объекта httpx.Response
+        :param query: Dictionary containing userId.
+        :return: Server response as an httpx.Response object.
         """
-        return self.get("/api/v1/courses",
+        return self.get(APIRoutes.COURSES,
                         params=query.model_dump(by_alias=True,exclude_none=True))
 
     @allure.step("Get course by id {course_id}")
     def get_course_api(self, course_id: str) -> Response:
         """
-        Метод получения курса.
+        Method for retrieving a course.
 
-        :param course_id: Идентификатор курса.
-        :return: Ответ от сервера в виде объекта httpx.Response
+        :param course_id: Course identifier.
+        :return: Server response as an httpx.Response object.
         """
-        return self.get(f"/api/v1/courses/{course_id}")
+        return self.get(f"{APIRoutes.COURSES}/{course_id}")
 
     @allure.step("Create course")
     def create_course_api(self, request: CreateCourseRequestSchema) -> Response:
         """
-        Метод создания курса.
+        Method for creating a course.
 
-        :param request: Словарь с title, maxScore, minScore, description, estimatedTime,
-        previewFileId, createdByUserId.
-        :return: Ответ от сервера в виде объекта httpx.Response
+        :param request: Dictionary containing title, maxScore, minScore, description,
+                        estimatedTime, previewFileId, createdByUserId.
+        :return: Server response as an httpx.Response object.
         """
-        return self.post("/api/v1/courses",
+        return self.post(APIRoutes.COURSES,
                          json=request.model_dump(by_alias=True, exclude_none=True))
 
     @allure.step("Update course by id {course_id}")
     def update_course_api(self, course_id: str, request: UpdateCourseRequestSchema) -> Response:
         """
-        Метод обновления курса.
+        Method for updating a course.
 
-        :param course_id: Идентификатор курса.
-        :param request: Словарь с title, maxScore, minScore, description, estimatedTime.
-        :return: Ответ от сервера в виде объекта httpx.Response
+        :param course_id: Course identifier.
+        :param request: Dictionary containing title, maxScore, minScore, description,
+                        estimatedTime.
+        :return: Server response as an httpx.Response object.
         """
-        return self.patch(f"/api/v1/courses/{course_id}",
+        return self.patch(f"{APIRoutes.COURSES}/{course_id}",
                           json=request.model_dump(by_alias=True,exclude_none=True))
 
     @allure.step("Delete course by id {course_id}")
     def delete_course_api(self, course_id: str) -> Response:
         """
-        Метод удаления курса.
+        Method for deleting a course.
 
-        :param course_id: Идентификатор курса.
-        :return: Ответ от сервера в виде объекта httpx.Response
+        :param course_id: Course identifier.
+        :return: Server response as an httpx.Response object.
         """
-        return self.delete(f"/api/v1/courses/{course_id}")
+        return self.delete(f"{APIRoutes.COURSES}/{course_id}")
 
-    # Добавили новый метод
+
     def create_course(self, request: CreateCourseRequestSchema) -> CreateCourseResponseSchema:
         response = self.create_course_api(request)
         return CreateCourseResponseSchema.model_validate_json(response.text)
@@ -76,8 +77,8 @@ class CoursesClient(APIClient):
 
 def get_courses_client(user: AuthenticationUserSchema) -> CoursesClient:
     """
-    Функция создаёт экземпляр CoursesClient с уже настроенным HTTP-клиентом.
+    The function creates an instance of CoursesClient with a preconfigured HTTP client.
 
-    :return: Готовый к использованию CoursesClient.
+    :return: A ready-to-use CoursesClient.
     """
     return CoursesClient(client=get_private_http_client(user))

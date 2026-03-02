@@ -1,26 +1,25 @@
 import allure
 from clients.api_client import APIClient
 from httpx import Response
-
+from tools.routes import APIRoutes
 from clients.public_http_builder import get_public_http_client
 from clients.users.users_schema import CreateUserRequestSchema, CreateUserResponseSchema
 
 class PublicUsersClient(APIClient):
     """
-    Клиент для работы с публичными методами /api/v1/users,
-    которые не требуют авторизации (создание пользователя).
+    Client for working with public /api/v1/users methods
+    that do not require authorization (user creation).
     """
-
     @allure.step("Create user")
     def create_user_api(self, request: CreateUserRequestSchema) -> Response:
         """
-        Выполняет POST-запрос для создания нового пользователя.
+        Performs a POST request to create a new user.
 
-        :param request: Данные пользователя для создания
-                        (email, password, ФИО).
-        :return: Объект httpx.Response с ответом сервера.
+        :param request: User data for creation
+                        (email, password, full name).
+        :return: An httpx.Response object with the server response.
         """
-        return self.post("/api/v1/users", json=request.model_dump(by_alias=True))
+        return self.post(APIRoutes.USERS, json=request.model_dump(by_alias=True))
 
     def create_user(self, request: CreateUserRequestSchema) -> CreateUserResponseSchema:
         response = self.create_user_api(request=request)
@@ -28,8 +27,8 @@ class PublicUsersClient(APIClient):
 
 def get_public_users_client() -> PublicUsersClient:
     """
-    Функция создаёт экземпляр PublicUsersClient с уже настроенным HTTP-клиентом.
+    The function creates an instance of PublicUsersClient with a preconfigured HTTP client.
 
-    :return: Готовый к использованию PublicUsersClient.
+    :return: A ready-to-use PublicUsersClient.
     """
     return PublicUsersClient(client=get_public_http_client())
