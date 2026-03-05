@@ -1,0 +1,10 @@
+INFO     BASE_ASSERTIONS:base.py:17 Check that response status code equals to 200
+INFO     COURSES_ASSERTIONS:courses.py:91 Check create course response
+INFO     BASE_ASSERTIONS:base.py:35 Check that "title" equals to Pm return gas pick.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "max_score" equals to 59
+INFO     BASE_ASSERTIONS:base.py:35 Check that "min_score" equals to 4
+INFO     BASE_ASSERTIONS:base.py:35 Check that "description" equals to Either a tonight however board agree news. Success over black company.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "estimated_time" equals to 5 weeks
+INFO     BASE_ASSERTIONS:base.py:35 Check that "preview_file_id" equals to dd24017f-6357-4769-9917-399bb2c3b48e
+INFO     BASE_ASSERTIONS:base.py:35 Check that "created_by_user_id" equals to 839074fe-ff5d-4ca2-82c2-3cf86b948b17
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validating JSON schema

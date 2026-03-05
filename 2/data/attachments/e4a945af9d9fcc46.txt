@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTA1VDIxOjM0OjI2LjEzNjY1NiIsInVzZXJfaWQiOiI2MzNiZjg2ZS1jZjlkLTQzMzctYmJiZi02MjExNjY5MWNhNTUifQ.0Wg_ipkRcRVju6KlJDUKRKgYKz3c1mu-BLkAT5I76YQ' \
+  -H 'content-length: 430' \
+  -H 'content-type: application/json' \
+  -d '{"title":"News possible store house nature memory art third.","maxScore":87,"minScore":25,"description":"Wall television worry task southern study behavior.\nChair unit about difference. National car democratic step agreement.\nMessage skill too hotel. Available ball support grow capital.","estimatedTime":"10 weeks","previewFileId":"e9ce3af8-1a7f-4545-a757-7f5764328d5d","createdByUserId":"633bf86e-cf9d-4337-bbbf-62116691ca55"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTA1VDIxOjM0OjIzLjQ0OTM4MiIsInVzZXJfaWQiOiI3MjBjZTE1Zi00ODg5LTQ5N2UtOWMzMi0yYzA1YTg4ZDNlNDgifQ.ugQEdj99UEj1r2MaXixVetlCiHqkdLEDN6KX7JA91fI' \
+  -H 'content-length: 299' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Admit quickly fact thank foreign increase personal.","courseId":"17079ff7-6151-49d5-b5e1-1379d8c6ead3","maxScore":53,"minScore":3,"orderIndex":98,"description":"Maybe meeting partner drop network. Member who oil raise. Act product personal town need structure.","estimatedTime":"10 weeks"}'

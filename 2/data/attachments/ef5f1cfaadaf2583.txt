@@ -1,0 +1,13 @@
+INFO     BASE_ASSERTIONS:base.py:17 Check that response status code equals to 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:105 Check get exercises response list
+INFO     BASE_ASSERTIONS:base.py:69 Check that length of "exercises" equals to 1
+INFO     EXERCISES_ASSERTIONS:exercises.py:44 Check exercise schema
+INFO     BASE_ASSERTIONS:base.py:35 Check that "id" equals to 9b8c9a0f-72bb-49c1-93aa-eca8ce0fe1c3
+INFO     BASE_ASSERTIONS:base.py:35 Check that "title" equals to Actually central send whether.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "course_id" equals to a6f09cd2-a8b1-4213-aa02-8fbe2c39f877
+INFO     BASE_ASSERTIONS:base.py:35 Check that "max_score" equals to 89
+INFO     BASE_ASSERTIONS:base.py:35 Check that "min_score" equals to 23
+INFO     BASE_ASSERTIONS:base.py:35 Check that "order_index" equals to 62
+INFO     BASE_ASSERTIONS:base.py:35 Check that "description" equals to Activity buy condition baby. Individual international a training professional pretty great purpose.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "estimated_time" equals to 1 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validating JSON schema

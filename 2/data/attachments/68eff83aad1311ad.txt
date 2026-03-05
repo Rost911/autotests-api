@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTA1VDIxOjM0OjI1LjQ1OTYxOSIsInVzZXJfaWQiOiI3ZGUyODJhNS05ZGZlLTRjMWMtOTZlMy1iZWEyNDIyM2YyZWMifQ.auYX5_KJ3wvTOPt0-AIs_1EUON7660CLi8gLV34UnRg' \
+  -H 'content-length: 382' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Full campaign interview another particular natural protect.","maxScore":83,"minScore":16,"description":"Executive nothing produce. Education sound ball too.\nSome entire forget worker. Moment hold only president believe measure out.","estimatedTime":"1 weeks","previewFileId":"0eb9399e-6e84-4999-9925-6783e0b98584","createdByUserId":"7de282a5-9dfe-4c1c-96e3-bea24223f2ec"}'

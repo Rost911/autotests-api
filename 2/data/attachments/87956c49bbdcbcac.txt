@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTA1VDIxOjM0OjIzLjQ0OTM4MiIsInVzZXJfaWQiOiI3MjBjZTE1Zi00ODg5LTQ5N2UtOWMzMi0yYzA1YTg4ZDNlNDgifQ.ugQEdj99UEj1r2MaXixVetlCiHqkdLEDN6KX7JA91fI' \
+  -H 'content-length: 391' \
+  -H 'content-type: application/json' \
+  -d '{"title":"South trade appear almost.","maxScore":92,"minScore":27,"description":"Home control avoid image. Itself blue free face even analysis.\nSet kind agree piece professor to in. Peace nature upon.\nSpeech center foot size. Boy baby agree discuss.","estimatedTime":"5 weeks","previewFileId":"1a778d18-1d0e-4864-b336-32fabf7d3aa8","createdByUserId":"720ce15f-4889-497e-9c32-2c05a88d3e48"}'

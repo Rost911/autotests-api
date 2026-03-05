@@ -1,0 +1,88 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","20","Delete file","tests.files","Thu Mar 05 21:04:29 UTC 2026","passed","Thu Mar 05 21:04:29 UTC 2026","TestFiles","test_files","",""
+"
+        Проверяет создание упражнения через POST /api/v1/exercises.
+
+        Шаги:
+        - отправляет запрос на создание упражнения
+        - проверяет статус-код 200
+        - проверяет тело ответа на соответствие запросу
+        - валидирует JSON schema ответа
+        ","23","Create exercise","tests.exercises","Thu Mar 05 21:04:23 UTC 2026","passed","Thu Mar 05 21:04:23 UTC 2026","TestExercises","test_exercises","",""
+"","319","Login with correct email and password","tests.authentication","Thu Mar 05 21:04:20 UTC 2026","passed","Thu Mar 05 21:04:21 UTC 2026","TestAuthentication","test_authentication","",""
+"
+        Проверяет удаление упражнения через DELETE /api/v1/exercises/{exercise_id}.
+
+        Шаги:
+        1. Удаляет ранее созданное упражнение.
+        2. Проверяет, что статус-код ответа равен 200 OK.
+        3. Выполняет GET-запрос для получения удалённого упражнения.
+        4. Проверяет, что статус-код равен 404 Not Found.
+        5. Проверяет, что тело ответа содержит ошибку ""Exercise not found"".
+        6. Валидирует JSON schema ответа с ошибкой.
+        ","323","Delete exercise","tests.exercises","Thu Mar 05 21:04:25 UTC 2026","passed","Thu Mar 05 21:04:26 UTC 2026","TestExercises","test_exercises","",""
+"","335","Update course","tests.courses","Thu Mar 05 21:04:21 UTC 2026","passed","Thu Mar 05 21:04:22 UTC 2026","TestCourses","test_courses","",""
+"
+        Проверяет создание курса через API.
+
+        Тест выполняет следующие шаги:
+        1. Формирует запрос на создание курса с указанием:
+           - preview_file_id (ID файла превью)
+           - created_by_user_id (ID пользователя-создателя)
+        2. Отправляет POST-запрос на эндпоинт /api/v1/courses.
+        3. Проверяет, что API возвращает статус-код 200 (OK).
+        4. Проверяет, что данные курса в ответе соответствуют данным запроса.
+        5. Валидирует JSON-схему ответа CreateCourseResponseSchema.
+
+        :param courses_client: API-клиент для работы с курсами.
+        :param function_user: Фикстура с созданным пользователем.
+        :param function_file: Фикстура с созданным файлом для превью курса.
+        ","30","Create course","tests.courses","Thu Mar 05 21:04:23 UTC 2026","passed","Thu Mar 05 21:04:23 UTC 2026","TestCourses","test_courses","",""
+"","300","Create file","tests.files","Thu Mar 05 21:04:26 UTC 2026","passed","Thu Mar 05 21:04:27 UTC 2026","TestFiles","test_files","",""
+"","302","Create file with empty filename","tests.files","Thu Mar 05 21:04:28 UTC 2026","passed","Thu Mar 05 21:04:28 UTC 2026","TestFiles","test_files","",""
+"","14","Get file","tests.files","Thu Mar 05 21:04:27 UTC 2026","passed","Thu Mar 05 21:04:27 UTC 2026","TestFiles","test_files","",""
+"","8","Get User Me","tests.users","Thu Mar 05 21:04:31 UTC 2026","passed","Thu Mar 05 21:04:31 UTC 2026","TestUsers","test_users","",""
+"","629","Create User","tests.users","Thu Mar 05 21:04:30 UTC 2026","passed","Thu Mar 05 21:04:31 UTC 2026","TestUsers","test_users","",""
+"","300","Create file with empty directory","tests.files","Thu Mar 05 21:04:28 UTC 2026","passed","Thu Mar 05 21:04:29 UTC 2026","TestFiles","test_files","",""
+"
+               Проверяет получение списка заданий по курсу через GET /api/v1/exercises.
+
+               Предусловие:
+               - Есть хотя бы одно созданное задание (function_exercise).
+
+               Шаги:
+               1) Отправляем запрос с query-параметром course_id.
+               2) Проверяем статус-код 200.
+               3) Проверяем, что созданное задание присутствует в списке и совпадает по полям.
+               4) Валидируем JSON schema ответа.
+         ","15","Get exercises","tests.exercises","Thu Mar 05 21:04:26 UTC 2026","passed","Thu Mar 05 21:04:26 UTC 2026","TestExercises","test_exercises","",""
+"
+        Проверяет выполнения GET-запроса на эндпоинт /api/v1/exercises/{exercise_id}.
+        Шаги:
+        - отправляет запрос на создание упражнения
+        - проверяет статус-код 200
+        - проверяет тело ответа на соответствие запросу
+        - валидирует JSON schema ответа
+        ","14","Get exercise","tests.exercises","Thu Mar 05 21:04:25 UTC 2026","passed","Thu Mar 05 21:04:25 UTC 2026","TestExercises","test_exercises","",""
+"","602","Create User","tests.users","Thu Mar 05 21:04:29 UTC 2026","passed","Thu Mar 05 21:04:30 UTC 2026","TestUsers","test_users","",""
+"","24","Get courses","tests.courses","Thu Mar 05 21:04:22 UTC 2026","passed","Thu Mar 05 21:04:22 UTC 2026","TestCourses","test_courses","",""
+"
+        Негативный тест получения файла с некорректным file_id.
+
+        Проверяет, что при передаче невалидного идентификатора файла
+        API возвращает:
+        - HTTP статус 422 (Unprocessable Entity)
+        - корректное тело ответа с валидационной ошибкой
+        - JSON, соответствующий схеме ValidationErrorResponseSchema
+        ","295","Get file with incorrect file id","tests.files","Thu Mar 05 21:04:30 UTC 2026","passed","Thu Mar 05 21:04:30 UTC 2026","TestFiles","test_files","",""
+"
+        Проверяет обновление упражнения через PATCH /api/v1/exercises/{exercise_id}.
+
+        Шаги:
+        - формирует запрос на обновление упражнения
+        - отправляет PATCH-запрос с использованием ExercisesClient
+        - проверяет, что статус-код ответа равен 200 OK
+        - проверяет, что данные в ответе соответствуют переданным в запросе
+        - валидирует JSON schema ответа
+        ","323","Update exercise","tests.exercises","Thu Mar 05 21:04:24 UTC 2026","passed","Thu Mar 05 21:04:24 UTC 2026","TestExercises","test_exercises","",""
+"","325","Create User","tests.users","Thu Mar 05 21:04:30 UTC 2026","passed","Thu Mar 05 21:04:30 UTC 2026","TestUsers","test_users","",""

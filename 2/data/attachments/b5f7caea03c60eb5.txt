@@ -1,0 +1,10 @@
+INFO     BASE_ASSERTIONS:base.py:17 Check that response status code equals to 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:29 Check create exercise response
+INFO     BASE_ASSERTIONS:base.py:35 Check that "title" equals to Admit quickly fact thank foreign increase personal.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "course_id" equals to 17079ff7-6151-49d5-b5e1-1379d8c6ead3
+INFO     BASE_ASSERTIONS:base.py:35 Check that "max_score" equals to 53
+INFO     BASE_ASSERTIONS:base.py:35 Check that "min_score" equals to 3
+INFO     BASE_ASSERTIONS:base.py:35 Check that "order_index" equals to 98
+INFO     BASE_ASSERTIONS:base.py:35 Check that "description" equals to Maybe meeting partner drop network. Member who oil raise. Act product personal town need structure.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "estimated_time" equals to 10 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validating JSON schema
