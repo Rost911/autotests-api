@@ -1,0 +1,8 @@
+INFO     BASE_ASSERTIONS:base.py:17 Check that response status code equals to 200
+INFO     COURSES_ASSERTIONS:courses.py:23 Check update course response
+INFO     BASE_ASSERTIONS:base.py:35 Check that "title" equals to Second art away box than gun per world.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "max_score" equals to 73
+INFO     BASE_ASSERTIONS:base.py:35 Check that "min_score" equals to 11
+INFO     BASE_ASSERTIONS:base.py:35 Check that "description" equals to Bring world car can leader. Itself final commercial. Technology their read middle true tough issue.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "estimated_time" equals to 1 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validating JSON schema

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTA5VDIxOjQyOjE5LjQ3NzQ5OSIsInVzZXJfaWQiOiJiZmM2NTU1Mi05ZGU4LTRkZTgtYWMyNS0yOTY5MTA1NWExYzcifQ.UeIgRY2EdNSoubLxiJrRRhg6nD2AqaYWF3DRvZzoby0' \
+  -H 'content-length: 421' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Physical ago set not key more.","maxScore":92,"minScore":15,"description":"Quality indeed talk. Talk game act likely. Buy move because instead act who certain white.\nEnvironment American reason role. Your friend hear measure despite strategy. All customer area mind top.","estimatedTime":"2 weeks","previewFileId":"e48bbe77-e803-49c7-8a88-ee6aff007848","createdByUserId":"bfc65552-9de8-4de8-ac25-29691055a1c7"}'

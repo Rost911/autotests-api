@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTA5VDIxOjQyOjE2LjQ3NDU4NCIsInVzZXJfaWQiOiI4YzhmMmRmYi02NmRmLTRkMWItOTdkMi1mMzE1ZTg0MzFhOTUifQ._IT6RnD_4Z2DWjQlxGadZmEu_8xc1VERRE0D8SVQHeM' \
+  -H 'content-length: 348' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Say according speech cup appear month court writer.","maxScore":94,"minScore":19,"description":"Sometimes sense above fight think smile base. Have lose ever south. Two draw moment use customer mean.","estimatedTime":"9 weeks","previewFileId":"732e05b2-fcb6-4f6e-866f-a24307ce9af5","createdByUserId":"8c8f2dfb-66df-4d1b-97d2-f315e8431a95"}'

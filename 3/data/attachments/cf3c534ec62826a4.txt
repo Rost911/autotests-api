@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTA5VDIxOjQyOjE1Ljg5MjEyMCIsInVzZXJfaWQiOiI1YzUxZjVmMy0yN2ZmLTQyNDEtYTU3Zi1hZTQwYjRhMmZiZWQifQ.ATTSyTA_Pz-sOJpXcd1uwbi5VLlBql6W4lbao8V_mcI' \
+  -H 'content-length: 325' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Ok lot miss.","maxScore":80,"minScore":14,"description":"Machine teach late popular. For model tree left cell those political. Take PM own every score card. Cover senior card.","estimatedTime":"3 weeks","previewFileId":"3d8494e4-3fb5-4cea-8245-aa604bbdaf4a","createdByUserId":"5c51f5f3-27ff-4241-a57f-ae40b4a2fbed"}'

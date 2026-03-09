@@ -1,0 +1,13 @@
+INFO     BASE_ASSERTIONS:base.py:17 Check that response status code equals to 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:61 Check get exercise response
+INFO     EXERCISES_ASSERTIONS:exercises.py:44 Check exercise schema
+INFO     BASE_ASSERTIONS:base.py:35 Check that "id" equals to 8416bb23-0ba5-4e99-b5a0-930010f08d1d
+INFO     BASE_ASSERTIONS:base.py:35 Check that "title" equals to Risk possible develop.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "course_id" equals to 6b9f2b15-a65d-4abe-8fd5-4a175314636c
+INFO     BASE_ASSERTIONS:base.py:35 Check that "max_score" equals to 54
+INFO     BASE_ASSERTIONS:base.py:35 Check that "min_score" equals to 26
+INFO     BASE_ASSERTIONS:base.py:35 Check that "order_index" equals to 10
+INFO     BASE_ASSERTIONS:base.py:35 Check that "description" equals to Involve future democratic against between exactly. Their produce industry seem plan evening owner.
+Staff resource prevent join should who practice whether. Perhaps north sing election push activity.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "estimated_time" equals to 5 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validating JSON schema

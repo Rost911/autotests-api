@@ -1,0 +1,10 @@
+INFO     BASE_ASSERTIONS:base.py:17 Check that response status code equals to 200
+INFO     COURSES_ASSERTIONS:courses.py:91 Check create course response
+INFO     BASE_ASSERTIONS:base.py:35 Check that "title" equals to Say according speech cup appear month court writer.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "max_score" equals to 94
+INFO     BASE_ASSERTIONS:base.py:35 Check that "min_score" equals to 19
+INFO     BASE_ASSERTIONS:base.py:35 Check that "description" equals to Sometimes sense above fight think smile base. Have lose ever south. Two draw moment use customer mean.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "estimated_time" equals to 9 weeks
+INFO     BASE_ASSERTIONS:base.py:35 Check that "preview_file_id" equals to 732e05b2-fcb6-4f6e-866f-a24307ce9af5
+INFO     BASE_ASSERTIONS:base.py:35 Check that "created_by_user_id" equals to 8c8f2dfb-66df-4d1b-97d2-f315e8431a95
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validating JSON schema

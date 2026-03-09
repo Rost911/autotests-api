@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTA5VDIxOjQyOjE3LjA1NTkzOCIsInVzZXJfaWQiOiI5MjMyZDM0ZS04YTBlLTQyZTYtOTBmMS1lNmYyY2M4OWMyZTAifQ.Sw_raYdoK7_dQ2oZK8-wRDF-KLZqU6AfCoXBgXR4EQs' \
+  -H 'content-length: 342' \
+  -H 'content-type: application/json' \
+  -d '{"title":"At section modern chance.","maxScore":94,"minScore":14,"description":"Rest school fly room bad our. Explain show strategy skill instead. Other education join night skill sell public challenge.","estimatedTime":"5 weeks","previewFileId":"29e64c8e-b429-4bf3-9748-d5803db96e91","createdByUserId":"9232d34e-8a0e-42e6-90f1-e6f2cc89c2e0"}'

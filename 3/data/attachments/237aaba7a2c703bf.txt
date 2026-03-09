@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/a1d90693-8778-4a01-b586-ed21bf3e3ab7' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTA5VDIxOjQyOjE0Ljk4Nzg0MyIsInVzZXJfaWQiOiJiY2Q3ZWJkMC1jM2I3LTQxNTYtYTY4YS00MDljN2ZlYzczMjcifQ.2BQW5JEJXUsYNh8JucceQfBirGksbeKULeWJIAsOLSU' \
+  -H 'content-length: 221' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Second art away box than gun per world.","maxScore":73,"minScore":11,"description":"Bring world car can leader. Itself final commercial. Technology their read middle true tough issue.","estimatedTime":"1 weeks"}'

@@ -1,0 +1,15 @@
+INFO     BASE_ASSERTIONS:base.py:17 Check that response status code equals to 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:105 Check get exercises response list
+INFO     BASE_ASSERTIONS:base.py:69 Check that length of "exercises" equals to 1
+INFO     EXERCISES_ASSERTIONS:exercises.py:44 Check exercise schema
+INFO     BASE_ASSERTIONS:base.py:35 Check that "id" equals to 90a5a5ef-e90d-4fca-9f81-b86ce86a18fb
+INFO     BASE_ASSERTIONS:base.py:35 Check that "title" equals to Kitchen both ask know figure determine.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "course_id" equals to 8e36d762-9ccf-4229-a64e-fa48a01ecd46
+INFO     BASE_ASSERTIONS:base.py:35 Check that "max_score" equals to 67
+INFO     BASE_ASSERTIONS:base.py:35 Check that "min_score" equals to 29
+INFO     BASE_ASSERTIONS:base.py:35 Check that "order_index" equals to 2
+INFO     BASE_ASSERTIONS:base.py:35 Check that "description" equals to Appear tax contain on.
+Girl purpose no street maintain. Central possible any seat thousand stage two.
+Son anything six board offer prove. Act budget effort.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "estimated_time" equals to 4 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validating JSON schema

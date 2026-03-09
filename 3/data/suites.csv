@@ -1,0 +1,104 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","34","Update course","tests.courses","Mon Mar 09 21:12:15 UTC 2026","passed","Mon Mar 09 21:12:15 UTC 2026","TestCourses","test_courses","",""
+"
+        Negative test for retrieving a file with an invalid file_id.
+
+        Verifies that when an invalid file identifier is provided,
+        the API returns:
+        - HTTP status 422 (Unprocessable Entity)
+        - a correct response body with a validation error
+        - JSON that matches the ValidationErrorResponseSchema
+        ","265","Get file with incorrect file id","tests.files","Mon Mar 09 21:12:23 UTC 2026","passed","Mon Mar 09 21:12:23 UTC 2026","TestFiles","test_files","",""
+"","259","Create file with empty filename","tests.files","Mon Mar 09 21:12:21 UTC 2026","passed","Mon Mar 09 21:12:21 UTC 2026","TestFiles","test_files","",""
+"","537","Create User","tests.users","Mon Mar 09 21:12:22 UTC 2026","passed","Mon Mar 09 21:12:23 UTC 2026","TestUsers","test_users","",""
+"","551","Login with correct email and password","tests.authentication","Mon Mar 09 21:12:14 UTC 2026","passed","Mon Mar 09 21:12:15 UTC 2026","TestAuthentication","test_authentication","",""
+"
+        Steps:
+        1. Delete the file.
+        2. Verify that the file was successfully deleted (status 200 OK).
+        3. Attempt to retrieve the deleted file.
+        4. Verify that the server returned 404 Not Found.
+        5. Verify that the response contains the error ""File not found"".
+        6. Verify that the response matches the schema.
+        ","23","Delete file","tests.files","Mon Mar 09 21:12:22 UTC 2026","passed","Mon Mar 09 21:12:22 UTC 2026","TestFiles","test_files","",""
+"
+        Verifies course creation via the API.
+
+        The test performs the following steps:
+        1. Builds a request to create a course specifying:
+           - preview_file_id (ID of the preview file)
+           - created_by_user_id (ID of the creator user)
+        2. Sends a POST request to the /api/v1/courses endpoint.
+        3. Verifies that the API returns status code 200 (OK).
+        4. Verifies that the course data in the response matches the request data.
+        5. Validates the response JSON schema using CreateCourseResponseSchema.
+
+        :param courses_client: API client for working with courses.
+        :param function_user: Fixture with a created user.
+        :param function_file: Fixture with a created file for the course preview.
+        ","31","Create course","tests.courses","Mon Mar 09 21:12:16 UTC 2026","passed","Mon Mar 09 21:12:16 UTC 2026","TestCourses","test_courses","",""
+"","268","Create file","tests.files","Mon Mar 09 21:12:20 UTC 2026","passed","Mon Mar 09 21:12:20 UTC 2026","TestFiles","test_files","",""
+"
+        Verifies updating an exercise via PATCH /api/v1/exercises/{exercise_id}.
+
+        Steps:
+        - builds a request to update the exercise
+        - sends a PATCH request using ExercisesClient
+        - verifies that the response status code is 200 OK
+        - verifies that the data in the response matches the data sent in the request
+        - validates the response JSON schema
+        ","289","Update exercise","tests.exercises","Mon Mar 09 21:12:17 UTC 2026","passed","Mon Mar 09 21:12:18 UTC 2026","TestExercises","test_exercises","",""
+"
+        Verifies execution of a GET request to the /api/v1/exercises/{exercise_id} endpoint.
+
+        Steps:
+        - sends a request to create an exercise
+        - verifies the status code is 200
+        - verifies the response body matches the request
+        - validates the response JSON schema
+        ","15","Get exercise","tests.exercises","Mon Mar 09 21:12:18 UTC 2026","passed","Mon Mar 09 21:12:18 UTC 2026","TestExercises","test_exercises","",""
+"
+        Builds the query parameters by passing user_id.
+        Sends a GET request to retrieve the list of courses.
+        Deserializes the JSON response into a Pydantic model.
+        Verifies that the response status code is 200 OK.
+        Verifies that the list of courses matches the previously created courses.
+        Validates that the JSON response matches the schema.
+        ","30","Get courses","tests.courses","Mon Mar 09 21:12:16 UTC 2026","passed","Mon Mar 09 21:12:16 UTC 2026","TestCourses","test_courses","",""
+"","561","Create User","tests.users","Mon Mar 09 21:12:23 UTC 2026","passed","Mon Mar 09 21:12:23 UTC 2026","TestUsers","test_users","",""
+"
+        Verifies deletion of an exercise via DELETE /api/v1/exercises/{exercise_id}.
+
+        Steps:
+        1. Deletes a previously created exercise.
+        2. Verifies that the response status code is 200 OK.
+        3. Sends a GET request to retrieve the deleted exercise.
+        4. Verifies that the status code is 404 Not Found.
+        5. Verifies that the response body contains the error ""Exercise not found"".
+        6. Validates the error response JSON schema.
+        ","293","Delete exercise","tests.exercises","Mon Mar 09 21:12:19 UTC 2026","passed","Mon Mar 09 21:12:19 UTC 2026","TestExercises","test_exercises","",""
+"","8","Get User Me","tests.users","Mon Mar 09 21:12:24 UTC 2026","passed","Mon Mar 09 21:12:24 UTC 2026","TestUsers","test_users","",""
+"","261","Create file with empty directory","tests.files","Mon Mar 09 21:12:21 UTC 2026","passed","Mon Mar 09 21:12:22 UTC 2026","TestFiles","test_files","",""
+"","288","Create User","tests.users","Mon Mar 09 21:12:23 UTC 2026","passed","Mon Mar 09 21:12:23 UTC 2026","TestUsers","test_users","",""
+"
+        Verifies retrieving the list of exercises for a course via GET /api/v1/exercises.
+
+        Precondition:
+        - At least one exercise exists (function_exercise).
+
+        Steps:
+        1) Send a request with the query parameter course_id.
+        2) Verify the status code is 200.
+        3) Verify that the created exercise is present in the list and matches the fields.
+        4) Validate the response JSON schema.
+        ","18","Get exercises","tests.exercises","Mon Mar 09 21:12:19 UTC 2026","passed","Mon Mar 09 21:12:19 UTC 2026","TestExercises","test_exercises","",""
+"","15","Get file","tests.files","Mon Mar 09 21:12:20 UTC 2026","passed","Mon Mar 09 21:12:21 UTC 2026","TestFiles","test_files","",""
+"
+        Verifies exercise creation via POST /api/v1/exercises.
+
+        Steps:
+        - sends a request to create an exercise
+        - verifies the status code is 200
+        - verifies the response body matches the request
+        - validates the response JSON schema
+        ","22","Create exercise","tests.exercises","Mon Mar 09 21:12:17 UTC 2026","passed","Mon Mar 09 21:12:17 UTC 2026","TestExercises","test_exercises","",""
