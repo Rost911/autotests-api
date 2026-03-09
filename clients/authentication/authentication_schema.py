@@ -3,7 +3,7 @@ from tools.fakers import fake
 
 class TokenSchema(BaseModel):
     """
-    Описание структуры аутентификационных токенов.
+    Description of the structure of authentication tokens.
     """
     token_type: str = Field(alias="tokenType")
     access_token: str  = Field(alias="accessToken")
@@ -11,20 +11,20 @@ class TokenSchema(BaseModel):
 
 class LoginRequestSchema(BaseModel):
     """
-    Описание структуры запроса на аутентификацию.
+    Description of the structure of the authentication request.
     """
     email: str = Field(default_factory=fake.email)
     password: str = Field(default_factory=fake.password)
 
 class LoginResponseSchema(BaseModel):
     """
-    Описание структуры ответа аутентификации.
+    Description of the structure of the authentication response.
     """
     token: TokenSchema
 
 class RefreshRequestSchema(BaseModel):
     """
-    Описание структуры запроса для обновления токена.
+    Description of the structure of the request for refreshing a token.
     """
     refresh_token: str = Field(alias="refreshToken", default_factory=fake.sentence)
 

@@ -60,12 +60,12 @@ class TestFiles:
         response = files_client.create_file_api(request)
         response_data = ValidationErrorResponseSchema.model_validate_json(response.text)
 
-        # Проверка, что код ответа соответствует ожиданиям (422 - Unprocessable Entity)
+
         assert_status_code(response.status_code, HTTPStatus.UNPROCESSABLE_ENTITY)
-        # Проверка, что ответ API соответствует ожидаемой валидационной ошибке
+
         assert_create_file_with_empty_filename_response(response_data)
 
-        # Дополнительная проверка структуры JSON, чтобы убедиться, что схема валидационного ответа не изменилась
+
         validate_json_schema(response.json(), response_data.model_json_schema())
 
     @allure.tag(AllureTag.VALIDATE_ENTITY)
@@ -77,12 +77,11 @@ class TestFiles:
         response = files_client.create_file_api(request)
         response_data = ValidationErrorResponseSchema.model_validate_json(response.text)
 
-        # Проверка, что код ответа соответствует ожиданиям (422 - Unprocessable Entity)
+
         assert_status_code(response.status_code, HTTPStatus.UNPROCESSABLE_ENTITY)
-        # Проверка, что ответ API соответствует ожидаемой валидационной ошибке
+
         assert_create_file_with_empty_directory_response(response_data)
 
-        # Дополнительная проверка структуры JSON
         validate_json_schema(response.json(), response_data.model_json_schema())
 
     @allure.tag(AllureTag.DELETE_ENTITY)
@@ -90,21 +89,25 @@ class TestFiles:
     @allure.title("Delete file")
     @allure.severity(Severity.NORMAL)
     def test_delete_file(self, files_client: FilesClient, function_file: FileFixture):
-        # 1. Удаляем файл
+        """
+        Steps:
+        1. Delete the file.
+        2. Verify that the file was successfully deleted (status 200 OK).
+        3. Attempt to retrieve the deleted file.
+        4. Verify that the server returned 404 Not Found.
+        5. Verify that the response contains the error "File not found".
+        6. Verify that the response matches the schema.
+        """
         delete_response = files_client.delete_file_api(function_file.response.file.id)
-        # 2. Проверяем, что файл успешно удален (статус 200 OK)
         assert_status_code(delete_response.status_code, HTTPStatus.OK)
 
-        # 3. Пытаемся получить удаленный файл
         get_response = files_client.get_file_api(function_file.response.file.id)
         get_response_data = InternalErrorResponseSchema.model_validate_json(get_response.text)
 
-        # 4. Проверяем, что сервер вернул 404 Not Found
         assert_status_code(get_response.status_code, HTTPStatus.NOT_FOUND)
-        # 5. Проверяем, что в ответе содержится ошибка "File not found"
         assert_file_not_found_response(get_response_data)
 
-        # 6. Проверяем, что ответ соответствует схеме
+
         validate_json_schema(get_response.json(), get_response_data.model_json_schema())
 
     @allure.tag(AllureTag.VALIDATE_ENTITY)
@@ -113,13 +116,13 @@ class TestFiles:
     @allure.title("Get file with incorrect file id")
     def test_get_file_with_incorrect_file_id(self, files_client: FilesClient):
         """
-        Негативный тест получения файла с некорректным file_id.
+        Negative test for retrieving a file with an invalid file_id.
 
-        Проверяет, что при передаче невалидного идентификатора файла
-        API возвращает:
-        - HTTP статус 422 (Unprocessable Entity)
-        - корректное тело ответа с валидационной ошибкой
-        - JSON, соответствующий схеме ValidationErrorResponseSchema
+        Verifies that when an invalid file identifier is provided,
+        the API returns:
+        - HTTP status 422 (Unprocessable Entity)
+        - a correct response body with a validation error
+        - JSON that matches the ValidationErrorResponseSchema
         """
         get_request = files_client.get_file_api(file_id="incorrect-file-id")
         get_response_data = ValidationErrorResponseSchema.model_validate_json(get_request.text)

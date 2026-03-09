@@ -29,23 +29,20 @@ class TestUsers:
     @allure.story(AllureStory.CREATE_ENTITY)
     @allure.severity(Severity.BLOCKER)
     def test_create_user(self, email: str, public_users_client: PublicUsersClient):
-        # Используем фикстуру API клиента
-        # Удалили инициализацию API клиента из теста
-        # Формируем тело запроса на создание пользователя
+
         email_domain = fake.email(domain=email)
         request = CreateUserRequestSchema(email=email_domain)
-        # Отправляем запрос на создание пользователя
+
         response = public_users_client.create_user_api(request)
-        # Инициализируем модель ответа на основе полученного JSON в ответе
-        # Также благодаря встроенной валидации в Pydantic дополнительно убеждаемся, что ответ корректный
+
         response_data = CreateUserResponseSchema.model_validate_json(response.text)
 
-        # Используем функцию для проверки статус-кода
+
         assert_status_code(response.status_code, HTTPStatus.OK)
 
-        # Используем функцию для проверки ответа создания юзера
+
         assert_create_user_response(request, response_data)
-        # Проверяем, что тело ответа соответствует ожидаемой JSON-схеме
+
         validate_json_schema(response.json(), response_data.model_json_schema())
 
     @pytest.mark.users

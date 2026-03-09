@@ -7,26 +7,25 @@ import allure
 
 class APIClient:
     """
-    Базовый API клиент, который принимает экземпляр httpx.Client и
-    предоставляет методы для выполнения HTTP-запросов.
+    Base API client that accepts an httpx.Client instance and
+    provides methods for executing HTTP requests.
     """
-
     def __init__(self, client: Client):
         """
-        Инициализация базового клиента.
+        Initialization of the base client.
 
-        :param client: объект httpx.Client, который будет выполнять HTTP-запросы.
+        :param client: httpx.Client object that will perform HTTP requests.
         """
         self.client = client
 
     @allure.step("Make GET request to {url}")
     def get(self, url: URL | str, params: QueryParams | None = None) -> Response:
         """
-        Выполняет GET-запрос.
+        Performs a GET request.
 
-        :param url: URL-адрес эндпоинта.
-        :param params: GET-параметры запроса (например, ?key=value).
-        :return: Объект Response с данными ответа.
+        :param url: Endpoint URL.
+        :param params: GET query parameters (for example, ?key=value).
+        :return: A Response object containing the response data.
         """
         return self.client.get(url, params=params)
 
@@ -39,33 +38,33 @@ class APIClient:
         files: RequestFiles | None = None,
     ) -> Response:
         """
-        Выполняет POST-запрос.
+        Performs a POST request.
 
-        :param url: URL-адрес эндпоинта.
-        :param json: Данные в формате JSON.
-        :param data: Данные формы (application/x-www-form-urlencoded).
-        :param files: Файлы для загрузки (multipart/form-data).
-        :return: Объект Response с данными ответа.
+        :param url: Endpoint URL.
+        :param json: Data in JSON format.
+        :param data: Form data (application/x-www-form-urlencoded).
+        :param files: Files to upload (multipart/form-data).
+        :return: A Response object containing the response data.
         """
         return self.client.post(url, json=json, data=data, files=files)
 
     @allure.step("Make PATCH request to {url}")
     def patch(self, url: URL | str, json: Any | None = None) -> Response:
         """
-        Выполняет PATCH-запрос (частичное обновление данных).
+        Performs a PATCH request (partial data update).
 
-        :param url: URL-адрес эндпоинта.
-        :param json: Данные для обновления в формате JSON.
-        :return: Объект Response с данными ответа.
+        :param url: Endpoint URL.
+        :param json: Data for updating in JSON format.
+        :return: A Response object containing the response data.
         """
         return self.client.patch(url, json=json)
 
     @allure.step("Make DELETE request to {url}")
     def delete(self, url: URL | str) -> Response:
         """
-        Выполняет DELETE-запрос (удаление данных).
+        Performs a DELETE request (data deletion).
 
-        :param url: URL-адрес эндпоинта.
-        :return: Объект Response с данными ответа.
+        :param url: Endpoint URL.
+        :return: A Response object containing the response data.
         """
         return self.client.delete(url)

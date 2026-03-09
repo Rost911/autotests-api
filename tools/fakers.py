@@ -3,115 +3,114 @@ from faker import Faker
 
 class Fake:
     """
-    Класс для генерации случайных тестовых данных с использованием библиотеки Faker.
+    Class for generating random test data using the Faker library.
     """
-
     def __init__(self, faker: Faker):
         """
-        :param faker: Экземпляр класса Faker, который будет использоваться для генерации данных.
+        :param faker: An instance of the Faker class used to generate data.
         """
         self.faker = faker
 
     def text(self) -> str:
         """
-        Генерирует случайный текст.
+        Generates random text.
 
-        :return: Случайный текст.
+        :return: Random text.
         """
         return self.faker.text()
 
     def uuid4(self) -> str:
         """
-        Генерирует случайный UUID4.
+        Generates a random UUID4.
 
-        :return: Случайный UUID4.
+        :return: A random UUID4.
         """
         return self.faker.uuid4()
 
     def email(self, domain: str | None = None) -> str:
         """
-        Генерирует случайный email.
+        Generates a random email.
 
-        :param domain: Домен электронной почты (например, "example.com").
-        Если не указан, будет использован случайный домен.
-        :return: Случайный email.
+        :param domain: Email domain (for example, "example.com").
+        If not specified, a random domain will be used.
+        :return: A random email.
         """
         return self.faker.email(domain=domain)
 
     def sentence(self) -> str:
         """
-        Генерирует случайное предложение.
+        Generates a random sentence.
 
-        :return: Случайное предложение.
+        :return: A random sentence.
         """
         return self.faker.sentence()
 
     def password(self) -> str:
         """
-        Генерирует случайный пароль.
+        Generates a random password.
 
-        :return: Случайный пароль.
+        :return: A random password.
         """
         return self.faker.password()
 
     def last_name(self) -> str:
         """
-        Генерирует случайную фамилию.
+        Generates a random last name.
 
-        :return: Случайная фамилия.
+        :return: A random last name.
         """
         return self.faker.last_name()
 
     def first_name(self) -> str:
         """
-        Генерирует случайное имя.
+        Generates a random first name.
 
-        :return: Случайное имя.
+        :return: A random first name.
         """
         return self.faker.first_name()
 
     def middle_name(self) -> str:
         """
-        Генерирует случайное отчество/среднее имя.
+        Generates a random middle name (patronymic).
 
-        :return: Случайное отчество.
+        :return: A random middle name.
         """
         return self.faker.first_name()
 
     def estimated_time(self) -> str:
         """
-        Генерирует строку с предполагаемым временем (например, "2 weeks").
+        Generates a string with an estimated time (e.g., "2 weeks").
 
-        :return: Строка с предполагаемым временем.
+        :return: A string with the estimated time.
         """
         return f"{self.integer(1, 10)} weeks"
 
     def integer(self, start: int = 1, end: int = 100) -> int:
         """
-        Генерирует случайное целое число в заданном диапазоне.
+        Generates a random integer within the specified range.
 
-        :param start: Начало диапазона (включительно).
-        :param end: Конец диапазона (включительно).
-        :return: Случайное целое число.
+        :param start: Start of the range (inclusive).
+        :param end: End of the range (inclusive).
+        :return: A random integer.
         """
         return self.faker.random_int(start, end)
 
     def max_score(self) -> int:
         """
-        Генерирует случайный максимальный балл в диапазоне от 50 до 100.
+        Generates a random maximum score in the range from 50 to 100.
 
-        :return: Случайный балл.
+        :return: A random score.
         """
         return self.integer(50, 100)
 
     def min_score(self) -> int:
         """
-        Генерирует случайный минимальный балл в диапазоне от 1 до 30.
+        Generates a random minimum score in the range from 1 to 30.
 
-        :return: Случайный балл.
+        :return: A random score.
         """
         return self.integer(1, 30)
 
 
-# Создаем экземпляр класса Fake с использованием Faker
+
 fake = Fake(faker=Faker())

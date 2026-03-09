@@ -35,16 +35,23 @@ class TestCourses:
             function_user: UserFixture,
             function_course: CourseFixture
     ):
-        # Формируем параметры запроса, передавая user_id
+        """
+        Builds the query parameters by passing user_id.
+        Sends a GET request to retrieve the list of courses.
+        Deserializes the JSON response into a Pydantic model.
+        Verifies that the response status code is 200 OK.
+        Verifies that the list of courses matches the previously created courses.
+        Validates that the JSON response matches the schema.
+        """
         query = GetCoursesQuerySchema(user_id=function_user.response.user.id)
-        # Отправляем GET-запрос на получение списка курсов
+
         response = courses_client.get_courses_api(query)
-        # Десериализуем JSON-ответ в Pydantic-модель
+
         response_data = GetCoursesResponseSchema.model_validate_json(response.text)
 
-        # Проверяем, что код ответа 200 OK
+
         assert_status_code(response.status_code, HTTPStatus.OK)
-        # Проверяем, что список курсов соответствует ранее созданным курсам
+
         assert_get_courses_response(response_data, [function_course.response])
 
         # Проверяем соответствие JSON-ответа схеме
@@ -56,19 +63,19 @@ class TestCourses:
     @allure.title("Update course")
     @allure.severity(Severity.CRITICAL)
     def test_update_course(self, courses_client: CoursesClient, function_course: CourseFixture):
-        # Формируем данные для обновления
+
         request = UpdateCourseRequestSchema()
-        # Отправляем запрос на обновление курса
+
         response = courses_client.update_course_api(function_course.response.course.id, request)
-        # Преобразуем JSON-ответ в объект схемы
+
         response_data = UpdateCourseResponseSchema.model_validate_json(response.text)
 
-        # Проверяем статус-код ответа
+
         assert_status_code(response.status_code, HTTPStatus.OK)
-        # Проверяем, что данные в ответе соответствуют запросу
+
         assert_update_course_response(request, response_data)
 
-        # Валидируем JSON-схему ответа
+
         validate_json_schema(response.json(), response_data.model_json_schema())
 
 
@@ -81,20 +88,20 @@ class TestCourses:
                            function_user: UserFixture,
                            function_file: FileFixture  ):
         """
-        Проверяет создание курса через API.
+        Verifies course creation via the API.
 
-        Тест выполняет следующие шаги:
-        1. Формирует запрос на создание курса с указанием:
-           - preview_file_id (ID файла превью)
-           - created_by_user_id (ID пользователя-создателя)
-        2. Отправляет POST-запрос на эндпоинт /api/v1/courses.
-        3. Проверяет, что API возвращает статус-код 200 (OK).
-        4. Проверяет, что данные курса в ответе соответствуют данным запроса.
-        5. Валидирует JSON-схему ответа CreateCourseResponseSchema.
+        The test performs the following steps:
+        1. Builds a request to create a course specifying:
+           - preview_file_id (ID of the preview file)
+           - created_by_user_id (ID of the creator user)
+        2. Sends a POST request to the /api/v1/courses endpoint.
+        3. Verifies that the API returns status code 200 (OK).
+        4. Verifies that the course data in the response matches the request data.
+        5. Validates the response JSON schema using CreateCourseResponseSchema.
 
-        :param courses_client: API-клиент для работы с курсами.
-        :param function_user: Фикстура с созданным пользователем.
-        :param function_file: Фикстура с созданным файлом для превью курса.
+        :param courses_client: API client for working with courses.
+        :param function_user: Fixture with a created user.
+        :param function_file: Fixture with a created file for the course preview.
         """
         request = CreateCourseRequestSchema(
         preview_file_id=function_file.response.file.id,

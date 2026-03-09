@@ -5,7 +5,7 @@ import pytest
 PLATFORM = "Windows"
 
 
-@pytest.mark.flaky(reruns=3, reruns_delay=2)  # Перезапуски реализуеются на уровне маркировки flaky
+@pytest.mark.flaky(reruns=3, reruns_delay=2)
 def test_reruns():
     assert random.choice([True, False])
 
@@ -19,6 +19,6 @@ class TestReruns:
         assert random.choice([True, False])
 
 
-@pytest.mark.flaky(reruns=3, reruns_delay=2, condition=PLATFORM == "MacOS")  # Перезапуск при выполнении условия
+@pytest.mark.flaky(reruns=3, reruns_delay=2, condition=PLATFORM == "MacOS")
 def test_rerun_with_condition():
     assert random.choice([True, False])

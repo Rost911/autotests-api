@@ -25,14 +25,14 @@ class TestAuthentication:
     @allure.story(AllureStory.LOGIN)
     @allure.severity(Severity.BLOCKER)
     def test_login(self,
-            function_user: UserFixture,  # Используем фикстуру для создания пользователя
+            function_user: UserFixture,
             authentication_client: AuthenticationClient
     ):
-        # Запрос на логин (login_request -> request)
+
         request = LoginRequestSchema(email=function_user.email, password=function_user.password)
-        # Выполняем логин (login_response -> response)
+
         response = authentication_client.login_api(request)
-        # Валидация ответа (login_response_data -> response_data)
+
         response_data = LoginResponseSchema.model_validate_json(response.text)
 
         assert_status_code(response.status_code, HTTPStatus.OK)

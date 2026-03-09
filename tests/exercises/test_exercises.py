@@ -37,13 +37,13 @@ class TestExercises:
     @allure.severity(Severity.BLOCKER)
     def test_create_exercise(self, function_course: CourseFixture, exercises_client: ExercisesClient):
         """
-        Проверяет создание упражнения через POST /api/v1/exercises.
+        Verifies exercise creation via POST /api/v1/exercises.
 
-        Шаги:
-        - отправляет запрос на создание упражнения
-        - проверяет статус-код 200
-        - проверяет тело ответа на соответствие запросу
-        - валидирует JSON schema ответа
+        Steps:
+        - sends a request to create an exercise
+        - verifies the status code is 200
+        - verifies the response body matches the request
+        - validates the response JSON schema
         """
         request = CreateExerciseRequestSchema(course_id=function_course.response.course.id)
         response = exercises_client.create_exercise_api(request)
@@ -59,12 +59,13 @@ class TestExercises:
     def test_get_exercise(self, function_exercise: ExerciseFixture,
                           exercises_client: ExercisesClient):
         """
-        Проверяет выполнения GET-запроса на эндпоинт /api/v1/exercises/{exercise_id}.
-        Шаги:
-        - отправляет запрос на создание упражнения
-        - проверяет статус-код 200
-        - проверяет тело ответа на соответствие запросу
-        - валидирует JSON schema ответа
+        Verifies execution of a GET request to the /api/v1/exercises/{exercise_id} endpoint.
+
+        Steps:
+        - sends a request to create an exercise
+        - verifies the status code is 200
+        - verifies the response body matches the request
+        - validates the response JSON schema
         """
 
         response = exercises_client.get_exercise_api(exercise_id=function_exercise.response.exercise.id)
@@ -80,14 +81,14 @@ class TestExercises:
     @allure.severity(Severity.CRITICAL)
     def test_update_exercise(self, function_exercise: ExerciseFixture, exercises_client: ExercisesClient):
         """
-        Проверяет обновление упражнения через PATCH /api/v1/exercises/{exercise_id}.
+        Verifies updating an exercise via PATCH /api/v1/exercises/{exercise_id}.
 
-        Шаги:
-        - формирует запрос на обновление упражнения
-        - отправляет PATCH-запрос с использованием ExercisesClient
-        - проверяет, что статус-код ответа равен 200 OK
-        - проверяет, что данные в ответе соответствуют переданным в запросе
-        - валидирует JSON schema ответа
+        Steps:
+        - builds a request to update the exercise
+        - sends a PATCH request using ExercisesClient
+        - verifies that the response status code is 200 OK
+        - verifies that the data in the response matches the data sent in the request
+        - validates the response JSON schema
         """
         request = UpdateExerciseRequestSchema()
 
@@ -106,15 +107,15 @@ class TestExercises:
     def test_delete_exercise(self, function_exercise: ExerciseFixture,
                              exercises_client: ExercisesClient):
         """
-        Проверяет удаление упражнения через DELETE /api/v1/exercises/{exercise_id}.
+        Verifies deletion of an exercise via DELETE /api/v1/exercises/{exercise_id}.
 
-        Шаги:
-        1. Удаляет ранее созданное упражнение.
-        2. Проверяет, что статус-код ответа равен 200 OK.
-        3. Выполняет GET-запрос для получения удалённого упражнения.
-        4. Проверяет, что статус-код равен 404 Not Found.
-        5. Проверяет, что тело ответа содержит ошибку "Exercise not found".
-        6. Валидирует JSON schema ответа с ошибкой.
+        Steps:
+        1. Deletes a previously created exercise.
+        2. Verifies that the response status code is 200 OK.
+        3. Sends a GET request to retrieve the deleted exercise.
+        4. Verifies that the status code is 404 Not Found.
+        5. Verifies that the response body contains the error "Exercise not found".
+        6. Validates the error response JSON schema.
         """
         delete_response = exercises_client.delete_exercise_api(function_exercise.response.exercise.id)
         assert_status_code(delete_response.status_code, HTTPStatus.OK)
@@ -136,17 +137,17 @@ class TestExercises:
                            function_course: CourseFixture,
                            exercises_client: ExercisesClient):
         """
-               Проверяет получение списка заданий по курсу через GET /api/v1/exercises.
+        Verifies retrieving the list of exercises for a course via GET /api/v1/exercises.
 
-               Предусловие:
-               - Есть хотя бы одно созданное задание (function_exercise).
+        Precondition:
+        - At least one exercise exists (function_exercise).
 
-               Шаги:
-               1) Отправляем запрос с query-параметром course_id.
-               2) Проверяем статус-код 200.
-               3) Проверяем, что созданное задание присутствует в списке и совпадает по полям.
-               4) Валидируем JSON schema ответа.
-         """
+        Steps:
+        1) Send a request with the query parameter course_id.
+        2) Verify the status code is 200.
+        3) Verify that the created exercise is present in the list and matches the fields.
+        4) Validate the response JSON schema.
+        """
 
         query = GetExercisesQuerySchema(course_id=function_course.response.course.id)
         response = exercises_client.get_exercises_api(query)

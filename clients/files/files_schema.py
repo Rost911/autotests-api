@@ -3,7 +3,7 @@ from tools.fakers import fake
 
 class FileSchema(BaseModel):
     """
-    Описание структуры файла.
+    Description of the file structure.
     """
     id: str
     url: HttpUrl
@@ -13,23 +13,23 @@ class FileSchema(BaseModel):
 
 class CreateFileRequestSchema(BaseModel):
     """
-    Описание структуры запроса на создание файла.
+    Description of the structure of the request for creating a file.
     """
-    # Добавили генерацию случайного названия файла с расширением PNG
+
     filename: str = Field(default_factory=lambda: f"{fake.uuid4()}.png")
-    # Директорию оставляем статичной, чтобы все тестовые файлы на сервере попадали в одну папку
+
     directory: str = Field(default="tests")
     upload_file: FilePath
 
 class CreateFileResponseSchema(BaseModel):
     """
-    Описание структуры ответа создания файла.
+    Description of the structure of the file creation response.
     """
     file: FileSchema
 
 class GetFileResponseSchema(BaseModel):
     """
-    Описание структуры запроса получения файла.
+    Description of the structure of the request for retrieving a file.
     """
     file: FileSchema
 

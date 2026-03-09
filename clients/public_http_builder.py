@@ -4,9 +4,9 @@ from config import settings
 
 def get_public_http_client() -> Client:
     """
-    Функция создаёт экземпляр httpx.Client с базовыми настройками.
+    The function creates an instance of httpx.Client with basic settings.
 
-    :return: Готовый к использованию объект httpx.Client.
+    :return: A ready-to-use httpx.Client object.
     """
     return Client(timeout=settings.http_client.timeout,
                   base_url=settings.http_client.client_url,

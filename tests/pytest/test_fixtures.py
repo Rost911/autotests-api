@@ -1,25 +1,25 @@
 import pytest
 
 
-# Фикстура, которая будет автоматически вызываться для каждого теста
+#Fixture that will be automatically invoked for each test.
 @pytest.fixture(autouse=True)
 def send_analytics_data():
     print("[AUTOUSE] Отправляем данные в сервис аналитики")
 
 
-# Фикстура для инициализации настроек автотестов на уровне сессии
+# Fixture for initializing autotest settings at the session level.
 @pytest.fixture(scope='session')
 def settings():
     print("[SESSION] Инициализируем настройки автотестов")
 
 
-# Фикстура для создания данных пользователя, которая будет выполняться один раз на класс тестов
+#Fixture for creating user data that will be executed once per test class.
 @pytest.fixture(scope='class')
 def user():
     print("[CLASS] Создаем данные пользователя один раз на тестовый класс")
 
 
-# Фикстура для инициализации API клиента, выполняющаяся для каждого теста
+# Fixture for initializing the API client, executed for each test.
 @pytest.fixture(scope='function')
 def users_client():
     print("[FUNCTION] Создаем API клиент на каждый автотест")

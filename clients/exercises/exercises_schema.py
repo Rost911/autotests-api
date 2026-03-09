@@ -3,10 +3,10 @@ from tools.fakers import fake
 
 class ExerciseSchema(BaseModel):
     """
-    Схема упражнения, возвращаемого API.
+    Exercise schema returned by the API.
 
-    Описывает объект упражнения, который приходит от сервера
-    в ответах эндпоинтов /api/v1/exercises.
+    Describes the exercise object returned by the server
+    in responses from the /api/v1/exercises endpoints.
     """
     model_config = ConfigDict(populate_by_name=True)
 
@@ -21,9 +21,9 @@ class ExerciseSchema(BaseModel):
 
 class GetExercisesQuerySchema(BaseModel):
     """
-    Схема query-параметров запроса для получения списка упражнений.
+    Schema for query parameters used to retrieve the list of exercises.
 
-    Используется в GET /api/v1/exercises.
+    Used in GET /api/v1/exercises.
     """
     model_config = ConfigDict(populate_by_name=True)
 
@@ -33,7 +33,7 @@ class GetExercisesQuerySchema(BaseModel):
 
 class GetExercisesResponseSchema(BaseModel):
     """
-    Схема ответа для получения списка упражнений.
+    Response schema for retrieving the list of exercises.
     """
     model_config = ConfigDict(populate_by_name=True)
 
@@ -42,7 +42,7 @@ class GetExercisesResponseSchema(BaseModel):
 
 class GetExerciseResponseSchema(BaseModel):
     """
-    Схема ответа при получении упражнения.
+    Response schema for retrieving an exercise.
     """
     model_config = ConfigDict(populate_by_name=True)
 
@@ -52,16 +52,16 @@ class GetExerciseResponseSchema(BaseModel):
 
 class CreateExerciseRequestSchema(BaseModel):
     """
-    Структура запроса для создания нового упражнения.
-    Используется в POST /api/v1/exercises.
+    Structure of the request for creating a new exercise.
+    Used in POST /api/v1/exercises.
 
-    :param title: Название упражнения.
-    :param courseId: Идентификатор курса, которому принадлежит упражнение.
-    :param maxScore: Максимальная оценка.
-    :param minScore: Минимальная оценка.
-    :param orderIndex: Порядковый номер упражнения в курсе.
-    :param description: Описание упражнения.
-    :param estimatedTime: Примерное время выполнения упражнения.
+    :param title: Exercise title.
+    :param courseId: Identifier of the course to which the exercise belongs.
+    :param maxScore: Maximum score.
+    :param minScore: Minimum score.
+    :param orderIndex: Order index of the exercise in the course.
+    :param description: Exercise description.
+    :param estimatedTime: Estimated time to complete the exercise.
     """
     model_config= ConfigDict(populate_by_name=True)
 
@@ -75,7 +75,7 @@ class CreateExerciseRequestSchema(BaseModel):
 
 class CreateExerciseResponseSchema(BaseModel):
     """
-    Схема ответа при создании упражнения.
+    Response schema for creating an exercise.
     """
     model_config = ConfigDict(populate_by_name=True)
 
@@ -84,16 +84,16 @@ class CreateExerciseResponseSchema(BaseModel):
 
 class UpdateExerciseRequestSchema(BaseModel):
     """
-    Структура запроса для частичного обновления упражнения (PATCH).
+    Structure of the request for partially updating an exercise (PATCH).
 
-    Все поля являются необязательными.
+    All fields are optional.
 
-    :param title: Название упражнения.
-    :param maxScore: Максимальная оценка.
-    :param minScore: Минимальная оценка.
-    :param orderIndex: Порядковый номер упражнения в курсе.
-    :param description: Описание упражнения.
-    :param estimatedTime: Примерное время выполнения упражнения.
+    :param title: Exercise title.
+    :param maxScore: Maximum score.
+    :param minScore: Minimum score.
+    :param orderIndex: Order index of the exercise in the course.
+    :param description: Exercise description.
+    :param estimatedTime: Estimated time to complete the exercise.
     """
     model_config = ConfigDict(populate_by_name=True)
 
@@ -106,7 +106,7 @@ class UpdateExerciseRequestSchema(BaseModel):
 
 class UpdateExerciseResponseSchema(BaseModel):
     """
-    Схема ответа при обновлении упражнения.
+    Response schema for updating an exercise.
     """
     model_config = ConfigDict(populate_by_name=True)
     exercise: ExerciseSchema
