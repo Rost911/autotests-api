@@ -1,7 +1,7 @@
 import allure
 from clients.api_client import APIClient
 from httpx import Response
-
+from clients.api_coverage import tracker
 from clients.public_http_builder import get_public_http_client
 from clients.authentication.authentication_schema import LoginRequestSchema, RefreshRequestSchema,LoginResponseSchema
 from tools.routes import APIRoutes
@@ -11,6 +11,8 @@ class AuthenticationClient(APIClient):
     """
     Client for working with /api/v1/authentication.
     """
+
+    @tracker.track_coverage_httpx(f"{APIRoutes.AUTHENTICATION}/login")
     @allure.step("Authenticate user")
     def login_api(self, request: LoginRequestSchema) -> Response:
         """
@@ -27,6 +29,7 @@ class AuthenticationClient(APIClient):
         response = self.login_api(request)
         return LoginResponseSchema.model_validate_json(response.text)
 
+    @tracker.track_coverage_httpx(f"{APIRoutes.AUTHENTICATION}/refresh")
     @allure.step("Refresh authentication token")
     def refresh_api(self, request: RefreshRequestSchema) -> Response:
         """
