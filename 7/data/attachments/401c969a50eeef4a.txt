@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE3VDIyOjI4OjMwLjMzNjM4NiIsInVzZXJfaWQiOiJkNzFkYmZjMy1kZGQ3LTRkNDYtYWRiZi1lMGMzZDYwYjU3MDIifQ.Nyc7-_By7NH0USnIzzZpl4sgmNgSzGiPmaO9iX56big' \
+  -H 'content-length: 396' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Nearly brother sell live order.","maxScore":87,"minScore":20,"description":"Together find often door body with. Dog movie argue speech.\nField civil president line voice star film power. Memory way bring maybe floor. Perhaps girl knowledge white.","estimatedTime":"6 weeks","previewFileId":"f5414e78-e85d-4033-8b6b-01becd2e679e","createdByUserId":"d71dbfc3-ddd7-4d46-adbf-e0c3d60b5702"}'

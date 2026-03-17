@@ -1,0 +1,14 @@
+INFO     BASE_ASSERTIONS:base.py:17 Check that response status code equals to 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:105 Check get exercises response list
+INFO     BASE_ASSERTIONS:base.py:69 Check that length of "exercises" equals to 1
+INFO     EXERCISES_ASSERTIONS:exercises.py:44 Check exercise schema
+INFO     BASE_ASSERTIONS:base.py:35 Check that "id" equals to b470cc76-edea-4cc4-9bae-2b8f03515f67
+INFO     BASE_ASSERTIONS:base.py:35 Check that "title" equals to Federal tonight often style instead eight.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "course_id" equals to b5cd68f7-91a7-48ed-bc82-b68eb827f1cf
+INFO     BASE_ASSERTIONS:base.py:35 Check that "max_score" equals to 67
+INFO     BASE_ASSERTIONS:base.py:35 Check that "min_score" equals to 24
+INFO     BASE_ASSERTIONS:base.py:35 Check that "order_index" equals to 59
+INFO     BASE_ASSERTIONS:base.py:35 Check that "description" equals to Establish new election machine ahead. Interview shake ability seat carry true. Account far talk budget miss partner.
+Should skin people sport what.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "estimated_time" equals to 2 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validating JSON schema

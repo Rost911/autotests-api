@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE3VDIyOjI4OjI5LjE0NjE1NCIsInVzZXJfaWQiOiJjMTI2OGU5MC1mYjkxLTQ3NDEtYTcyNi1hYzBiNDc3OTJlMTgifQ.h_DaqQwy86vbllCKoanVh_5_CEIbbSOu85BPAR2hPGQ' \
+  -H 'content-length: 256' \
+  -H 'content-type: application/json' \
+  -d '{"title":"World lead poor that seven discover.","courseId":"67685bfb-96d1-42e2-a658-265bb2679a5d","maxScore":77,"minScore":27,"orderIndex":16,"description":"Among hand prevent turn mission plant. Environment yet vote hot image.","estimatedTime":"10 weeks"}'

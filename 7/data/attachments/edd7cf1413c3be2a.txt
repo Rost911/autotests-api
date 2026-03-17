@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE3VDIyOjI4OjI5LjE0NjE1NCIsInVzZXJfaWQiOiJjMTI2OGU5MC1mYjkxLTQ3NDEtYTcyNi1hYzBiNDc3OTJlMTgifQ.h_DaqQwy86vbllCKoanVh_5_CEIbbSOu85BPAR2hPGQ' \
+  -H 'content-length: 365' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Author specific responsibility.","maxScore":87,"minScore":30,"description":"Effect movie walk north science anyone national executive. Form push operation executive by. Above end pressure something role lawyer care.","estimatedTime":"4 weeks","previewFileId":"efc81577-2177-46aa-b4ee-cc9aef269c76","createdByUserId":"c1268e90-fb91-4741-a726-ac0b47792e18"}'

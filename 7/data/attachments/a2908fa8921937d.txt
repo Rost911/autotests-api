@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE3VDIyOjI4OjMxLjU3MjExMSIsInVzZXJfaWQiOiIzMzZlNmRmMC1mMDc2LTRmZmQtYmQ3Mi03ZmY0MGU2YjA4NjYifQ.GpHsrKfTBw4nxmpNJnDz29VpxngpC4HVSWoRmOYkTUA' \
+  -H 'content-length: 424' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Compare perhaps hotel magazine right commercial development.","maxScore":92,"minScore":18,"description":"Condition page whether left education design vote. Back camera author.\nList list green. Threat pattern ask bed individual amount let. Heavy happy quality avoid through.","estimatedTime":"3 weeks","previewFileId":"afe98743-41ef-43e8-9aa3-84596824bc4c","createdByUserId":"336e6df0-f076-4ffd-bd72-7ff40e6b0866"}'

@@ -1,0 +1,12 @@
+INFO     BASE_ASSERTIONS:base.py:17 Check that response status code equals to 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:61 Check get exercise response
+INFO     EXERCISES_ASSERTIONS:exercises.py:44 Check exercise schema
+INFO     BASE_ASSERTIONS:base.py:35 Check that "id" equals to bcf5423d-6f0d-41bc-b225-d0cf49d39b3d
+INFO     BASE_ASSERTIONS:base.py:35 Check that "title" equals to Open employee tell age wish tree over last.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "course_id" equals to 7f866c4d-7a1d-4597-9f3b-32888243c188
+INFO     BASE_ASSERTIONS:base.py:35 Check that "max_score" equals to 80
+INFO     BASE_ASSERTIONS:base.py:35 Check that "min_score" equals to 6
+INFO     BASE_ASSERTIONS:base.py:35 Check that "order_index" equals to 94
+INFO     BASE_ASSERTIONS:base.py:35 Check that "description" equals to Discover will treatment design over realize. Light meet idea purpose decide lot best.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "estimated_time" equals to 1 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validating JSON schema

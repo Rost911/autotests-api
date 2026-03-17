@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE3VDIyOjI4OjMwLjYwOTQ2MiIsInVzZXJfaWQiOiIyZTg3YmExOC1lOGRiLTQ1OGUtYjQ4YS00M2Y3ZjBhNjhkOTgifQ.dYDchryrfdFuigXAsnH4S51J8u2mGMwntb4oD8HkQZM' \
+  -H 'content-length: 356' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Image different structure part scientist.","courseId":"33f89cce-0867-4296-8df5-e27bf70450ab","maxScore":61,"minScore":12,"orderIndex":11,"description":"Cover own time fall magazine official. Marriage indicate race recognize because.\nYou Congress western century seven place place. Serious year environmental positive.","estimatedTime":"5 weeks"}'

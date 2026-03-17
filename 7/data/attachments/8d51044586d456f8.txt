@@ -1,0 +1,12 @@
+INFO     BASE_ASSERTIONS:base.py:17 Check that response status code equals to 200
+INFO     COURSES_ASSERTIONS:courses.py:91 Check create course response
+INFO     BASE_ASSERTIONS:base.py:35 Check that "title" equals to Prove purpose commercial wife consider green would one.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "max_score" equals to 81
+INFO     BASE_ASSERTIONS:base.py:35 Check that "min_score" equals to 7
+INFO     BASE_ASSERTIONS:base.py:35 Check that "description" equals to Bring rather ago thus how. Live born wish respond.
+Nor stuff change artist cold easy involve. Hotel agree million.
+Everyone class beautiful fight ground large kind. Each this goal.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "estimated_time" equals to 9 weeks
+INFO     BASE_ASSERTIONS:base.py:35 Check that "preview_file_id" equals to ac495df6-ead2-4c79-9d94-ea06790c421a
+INFO     BASE_ASSERTIONS:base.py:35 Check that "created_by_user_id" equals to 7d8f6533-5c56-433b-bc5a-319f981a712e
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validating JSON schema

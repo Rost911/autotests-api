@@ -1,0 +1,23 @@
+INFO     BASE_ASSERTIONS:base.py:17 Check that response status code equals to 200
+INFO     COURSES_ASSERTIONS:courses.py:66 Check get courses response
+INFO     BASE_ASSERTIONS:base.py:69 Check that length of "courses" equals to 1
+INFO     COURSES_ASSERTIONS:courses.py:40 Check course
+INFO     BASE_ASSERTIONS:base.py:35 Check that "id" equals to 56f885d1-f65a-491e-bf14-c1d46d66b2b4
+INFO     BASE_ASSERTIONS:base.py:35 Check that "title" equals to Tonight ahead religious former should possible.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "max_score" equals to 59
+INFO     BASE_ASSERTIONS:base.py:35 Check that "min_score" equals to 17
+INFO     BASE_ASSERTIONS:base.py:35 Check that "description" equals to Phone item since information want. Do ability Republican marriage yes condition. Treatment arm middle industry.
+One politics line event project. Catch accept respond myself stock line set.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "estimated_time" equals to 9 weeks
+INFO     FILES_ASSERTIONS:files.py:38 Check file
+INFO     BASE_ASSERTIONS:base.py:35 Check that "id" equals to bdffbffc-e29a-41f4-9baa-2a46e43306d4
+INFO     BASE_ASSERTIONS:base.py:35 Check that "url" equals to http://localhost:8000/static/tests/2fc24e83-e22b-40d1-8faf-9f31fef602a8.png
+INFO     BASE_ASSERTIONS:base.py:35 Check that "filename" equals to 2fc24e83-e22b-40d1-8faf-9f31fef602a8.png
+INFO     BASE_ASSERTIONS:base.py:35 Check that "directory" equals to tests
+INFO     USERS_ASSERTIONS:users.py:42 Check user
+INFO     BASE_ASSERTIONS:base.py:35 Check that "id" equals to 275d1d24-bce6-4ca6-8f2c-a94d88103460
+INFO     BASE_ASSERTIONS:base.py:35 Check that "email" equals to charding@example.org
+INFO     BASE_ASSERTIONS:base.py:35 Check that "last_name" equals to Kelley
+INFO     BASE_ASSERTIONS:base.py:35 Check that "first_name" equals to Jeremy
+INFO     BASE_ASSERTIONS:base.py:35 Check that "middle_name" equals to David
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validating JSON schema

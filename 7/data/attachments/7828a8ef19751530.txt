@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE3VDIyOjI4OjI5LjQxOTE1MCIsInVzZXJfaWQiOiJlOTk5MWU4Mi03ZDQ1LTRiNWMtYjc5MS0zM2U1YTg0YTA2MTkifQ.qo56NY3ppnh423YmC79y5bwLd9P_gS707W8H9vIGIl4' \
+  -H 'content-length: 349' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Course religious popular.","courseId":"fca5420a-68ba-4f72-aa6a-ec0cae8690db","maxScore":92,"minScore":11,"orderIndex":46,"description":"Involve rather least behavior collection article. Challenge treat source reach station only girl ask.\nBehind crime adult side. Believe show writer mention south want college.","estimatedTime":"4 weeks"}'

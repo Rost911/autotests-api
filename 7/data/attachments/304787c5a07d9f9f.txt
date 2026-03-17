@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE3VDIyOjI4OjI3LjkzOTM2NSIsInVzZXJfaWQiOiIyNzVkMWQyNC1iY2U2LTRjYTYtOGYyYy1hOTRkODgxMDM0NjAifQ.Hpv7duRd7i29MXx5EBKUsXeh7Ez0euOBqYrBmSdncBY' \
+  -H 'content-length: 431' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Tonight ahead religious former should possible.","maxScore":59,"minScore":17,"description":"Phone item since information want. Do ability Republican marriage yes condition. Treatment arm middle industry.\nOne politics line event project. Catch accept respond myself stock line set.","estimatedTime":"9 weeks","previewFileId":"bdffbffc-e29a-41f4-9baa-2a46e43306d4","createdByUserId":"275d1d24-bce6-4ca6-8f2c-a94d88103460"}'

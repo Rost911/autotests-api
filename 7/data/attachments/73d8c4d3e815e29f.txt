@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/exercises/923ae5d4-b578-4111-9013-46379deefeb2' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE3VDIyOjI4OjI5LjQxOTE1MCIsInVzZXJfaWQiOiJlOTk5MWU4Mi03ZDQ1LTRiNWMtYjc5MS0zM2U1YTg0YTA2MTkifQ.qo56NY3ppnh423YmC79y5bwLd9P_gS707W8H9vIGIl4' \
+  -H 'content-length: 243' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Blue central impact senior.","maxScore":69,"minScore":8,"orderIndex":74,"description":"Voice rise remain always ten interview. Mention morning enough thus side player region. Per wait third through dinner.","estimatedTime":"5 weeks"}'
