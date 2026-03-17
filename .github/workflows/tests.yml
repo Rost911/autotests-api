@@ -18,11 +18,11 @@ jobs:
     steps:
       # 1. Step that checks out (clones) your repository to the GitHub Actions runner
       - name: Check out repository
-        uses: actions/checkout@v4  # Use GitHub Action to clone the repository
+        uses: actions/checkout@v6  # Use GitHub Action to clone the repository
 
       # 2. Step to set up Python on the virtual machine
       - name: Set up Python
-        uses: actions/setup-python@v5  # Use GitHub Action to install Python
+        uses: actions/setup-python@v6 # Use GitHub Action to install Python
         with:
           python-version: '3.12'  # Install Python 3.12
 
@@ -102,7 +102,7 @@ jobs:
     steps:
       # 13. Step to check out gh-pages branch with report history
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           ref: gh-pages  # Branch with previously published reports
           path: gh-pages  # Destination path
@@ -116,7 +116,7 @@ jobs:
 
       # 15. Step to generate Allure report with history
       - name: Generate Allure Report with history
-        uses: simple-elf/allure-report-action@v1.12
+        uses: simple-elf/allure-report-action@v1.13
         if: always()
         with:
           allure_results: allure-results  # Folder with test results
