@@ -18,11 +18,11 @@ jobs:
     steps:
       # 1. Step that checks out (clones) your repository to the GitHub Actions runner
       - name: Check out repository
-        uses: actions/checkout@v6  # Use GitHub Action to clone the repository
+        uses: actions/checkout@v4  # Use GitHub Action to clone the repository
 
       # 2. Step to set up Python on the virtual machine
       - name: Set up Python
-        uses: actions/setup-python@v6 # Use GitHub Action to install Python
+        uses: actions/setup-python@v5  # Use GitHub Action to install Python
         with:
           python-version: '3.12'  # Install Python 3.12
 
@@ -38,17 +38,17 @@ jobs:
       - name: Start a test server
         env:
           APP_HOST: "http://localhost:8000"  # Server host address
-          DATABASE_URL: "sqlite+aiosqlite:///./local.db" # Local database URL
-          JWT_ALGORITHM: "HS256" # JWT algorithm
-          JWT_SECRET_KEY: "qa-automation-engineer-api-course-secret-key" # JWT secret key
-          JWT_ACCESS_TOKEN_EXPIRE: 1800 # Access token lifetime (seconds)
-          JWT_REFRESH_TOKEN_EXPIRE: 5184000 # Refresh token lifetime (seconds)
+          DATABASE_URL: "sqlite+aiosqlite:///./local.db"  # Local database URL
+          JWT_ALGORITHM: "HS256"  # JWT algorithm
+          JWT_SECRET_KEY: "qa-automation-engineer-api-course-secret-key"  # JWT secret key
+          JWT_ACCESS_TOKEN_EXPIRE: 1800  # Access token lifetime (seconds)
+          JWT_REFRESH_TOKEN_EXPIRE: 5184000  # Refresh token lifetime (seconds)
         run: uvicorn main:app --host 0.0.0.0 --port 8000 --app-dir ./qa-automation-engineer-api-course &  # Start the server
 
       # 6. Step to install all project dependencies
       - name: Install dependencies
         run: |
-          python -m pip install --upgrade pip  # Upgrade pip to the latest version
+          python -m pip install --upgrade pip
           pip install -r requirements.txt  # Install dependencies from requirements.txt
 
       # 7. Step to run tests using pytest and generate Allure results
@@ -58,35 +58,42 @@ jobs:
 
       # 8. Step to restore coverage history from cache
       - name: Restore Coverage history
-        uses: actions/cache/restore@v4
+        uses: actions/cache/restore@v5
         with:
           path: coverage-history.json
           key: coverage-history-${{ github.run_id }}
           restore-keys: |
             coverage-history-
 
-      # 9. Step to generate HTML coverage report and update history
+      # 9. Step to ensure coverage history file exists
+      - name: Ensure coverage history file exists
+        run: |
+          touch coverage-history.json
+
+      # 10. Step to generate HTML coverage report and update history
       - name: Generate Coverage report
         run: |
           swagger-coverage-tool save-report
 
-      # 10. Step to save coverage history back to cache
+      # 11. Step to save coverage history back to cache
       - name: Cache Coverage history
         if: always()
-        uses: actions/cache/save@v4
+        uses: actions/cache/save@v5
         with:
           path: coverage-history.json
           key: coverage-history-${{ github.run_id }}
 
-      # 11. Step to upload coverage report as artifact
+      # 12. Step to upload coverage report as artifact
       - name: Upload Coverage report
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: coverage-report
-          path: coverage.html
+          path: |
+            coverage.html
+            coverage-history.json
 
-      # 12. Step to upload Allure results as artifact
+      # 13. Step to upload Allure results as artifact
       - name: Upload Allure results
         if: always()
         uses: actions/upload-artifact@v4
@@ -96,25 +103,25 @@ jobs:
 
   publish-report:
     if: always()
-    needs: [ run-tests ]
+    needs: [run-tests]
     runs-on: ubuntu-latest  # Run tests on the latest Ubuntu version
 
     steps:
-      # 13. Step to check out gh-pages branch with report history
+      # 14. Step to check out gh-pages branch with report history
       - name: Check out repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@v4
         with:
           ref: gh-pages  # Branch with previously published reports
           path: gh-pages  # Destination path
 
-      # 14. Step to download Allure results artifact
+      # 15. Step to download Allure results artifact
       - name: Download Allure results
         uses: actions/download-artifact@v4
         with:
           name: allure-results
           path: allure-results
 
-      # 15. Step to generate Allure report with history
+      # 16. Step to generate Allure report with history
       - name: Generate Allure Report with history
         uses: simple-elf/allure-report-action@v1.13
         if: always()
@@ -122,7 +129,7 @@ jobs:
           allure_results: allure-results  # Folder with test results
           allure_history: allure-history  # Folder for report history
 
-      # 16. Step to deploy report to GitHub Pages
+      # 17. Step to deploy report to GitHub Pages
       - name: Deploy report to Github Pages
         if: always()
         uses: peaceiris/actions-gh-pages@v4
