@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE3VDIyOjA3OjA4LjUwNTY4NCIsInVzZXJfaWQiOiI3N2Y1NGZmYS1lZTg5LTQ5NGEtYjQ4YS1kNWE3ODM1ZTliOWQifQ._YXIxxutOfgtEpyFYdkEHngZ2y4yrgGekWSDchz-sD4' \
+  -H 'content-length: 345' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Seek think entire song.","courseId":"821d82d1-9bc1-419d-b7b1-a515bc99f250","maxScore":75,"minScore":14,"orderIndex":85,"description":"Ahead black price despite phone. Story some left fall traditional recognize suffer enough.\nBlue support television car. Around against significant must. Able stay me hotel.","estimatedTime":"1 weeks"}'

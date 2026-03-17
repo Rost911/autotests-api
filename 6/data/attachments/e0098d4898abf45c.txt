@@ -1,0 +1,12 @@
+INFO     BASE_ASSERTIONS:base.py:17 Check that response status code equals to 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:61 Check get exercise response
+INFO     EXERCISES_ASSERTIONS:exercises.py:44 Check exercise schema
+INFO     BASE_ASSERTIONS:base.py:35 Check that "id" equals to e6bdd200-44c7-4273-99d1-7a7003840951
+INFO     BASE_ASSERTIONS:base.py:35 Check that "title" equals to Present along consumer American value blood success.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "course_id" equals to 3752d6da-a155-4ecd-8969-972bc3a4ddb8
+INFO     BASE_ASSERTIONS:base.py:35 Check that "max_score" equals to 55
+INFO     BASE_ASSERTIONS:base.py:35 Check that "min_score" equals to 23
+INFO     BASE_ASSERTIONS:base.py:35 Check that "order_index" equals to 85
+INFO     BASE_ASSERTIONS:base.py:35 Check that "description" equals to Billion concern oil history authority. Second notice probably moment. Hard opportunity sometimes forget mention name.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "estimated_time" equals to 5 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validating JSON schema

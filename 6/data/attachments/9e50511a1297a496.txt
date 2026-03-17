@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE3VDIyOjA3OjA4LjUwNTY4NCIsInVzZXJfaWQiOiI3N2Y1NGZmYS1lZTg5LTQ5NGEtYjQ4YS1kNWE3ODM1ZTliOWQifQ._YXIxxutOfgtEpyFYdkEHngZ2y4yrgGekWSDchz-sD4' \
+  -H 'content-length: 376' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Commercial prevent them especially order hundred.","maxScore":95,"minScore":28,"description":"Without business education anyone exactly common growth last. Gun good PM consumer reflect player. Experience although moment power.","estimatedTime":"2 weeks","previewFileId":"ab65f1b1-4e40-41da-9aac-798c951cd9bf","createdByUserId":"77f54ffa-ee89-494a-b48a-d5a7835e9b9d"}'

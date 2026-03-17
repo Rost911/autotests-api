@@ -1,0 +1,11 @@
+INFO     BASE_ASSERTIONS:base.py:17 Check that response status code equals to 200
+INFO     COURSES_ASSERTIONS:courses.py:91 Check create course response
+INFO     BASE_ASSERTIONS:base.py:35 Check that "title" equals to Sure walk western or movement parent.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "max_score" equals to 61
+INFO     BASE_ASSERTIONS:base.py:35 Check that "min_score" equals to 8
+INFO     BASE_ASSERTIONS:base.py:35 Check that "description" equals to Yeah physical Democrat decade world make light. Final sing at fight house.
+Dream thing around we commercial. Nor appear national go. Good pull eight break federal that.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "estimated_time" equals to 7 weeks
+INFO     BASE_ASSERTIONS:base.py:35 Check that "preview_file_id" equals to 1a043858-b7be-44d6-8dfd-b28c7303a330
+INFO     BASE_ASSERTIONS:base.py:35 Check that "created_by_user_id" equals to 1b427b03-5343-4a67-ac4f-7e32620697e5
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validating JSON schema

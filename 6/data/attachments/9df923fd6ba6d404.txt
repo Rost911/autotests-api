@@ -1,0 +1,14 @@
+INFO     BASE_ASSERTIONS:base.py:17 Check that response status code equals to 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:105 Check get exercises response list
+INFO     BASE_ASSERTIONS:base.py:69 Check that length of "exercises" equals to 1
+INFO     EXERCISES_ASSERTIONS:exercises.py:44 Check exercise schema
+INFO     BASE_ASSERTIONS:base.py:35 Check that "id" equals to 0881e204-18fb-4752-8d37-a90102c53e37
+INFO     BASE_ASSERTIONS:base.py:35 Check that "title" equals to Seek think entire song.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "course_id" equals to 821d82d1-9bc1-419d-b7b1-a515bc99f250
+INFO     BASE_ASSERTIONS:base.py:35 Check that "max_score" equals to 75
+INFO     BASE_ASSERTIONS:base.py:35 Check that "min_score" equals to 14
+INFO     BASE_ASSERTIONS:base.py:35 Check that "order_index" equals to 85
+INFO     BASE_ASSERTIONS:base.py:35 Check that "description" equals to Ahead black price despite phone. Story some left fall traditional recognize suffer enough.
+Blue support television car. Around against significant must. Able stay me hotel.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "estimated_time" equals to 1 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validating JSON schema

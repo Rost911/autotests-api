@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE3VDIyOjA3OjA2LjM5MTU5MSIsInVzZXJfaWQiOiJlYjc2M2JiZC05NzYzLTQxNmEtYmM0NS0wOWUzZjc5M2Y5YzAifQ.q7grgzM0x_i752mmR6JDf4CQvtkX7k5-lJ8hSSEqMk8' \
+  -H 'content-length: 413' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Bad speech smile coach animal.","maxScore":85,"minScore":27,"description":"Maybe try there late. West knowledge charge red voice option say store. Myself color close trial much business just property.\nCoach price during important run. Building usually cold find.","estimatedTime":"6 weeks","previewFileId":"f428138c-de58-4a7c-a24d-1dd7b3290869","createdByUserId":"eb763bbd-9763-416a-bc45-09e3f793f9c0"}'

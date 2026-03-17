@@ -1,0 +1,22 @@
+INFO     BASE_ASSERTIONS:base.py:17 Check that response status code equals to 200
+INFO     COURSES_ASSERTIONS:courses.py:66 Check get courses response
+INFO     BASE_ASSERTIONS:base.py:69 Check that length of "courses" equals to 1
+INFO     COURSES_ASSERTIONS:courses.py:40 Check course
+INFO     BASE_ASSERTIONS:base.py:35 Check that "id" equals to c439bf9a-ae20-4782-ae5d-7a6cef51989d
+INFO     BASE_ASSERTIONS:base.py:35 Check that "title" equals to Value stay treatment poor girl everything.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "max_score" equals to 91
+INFO     BASE_ASSERTIONS:base.py:35 Check that "min_score" equals to 3
+INFO     BASE_ASSERTIONS:base.py:35 Check that "description" equals to Morning surface star wind project change heart if. Interview add girl word mission.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "estimated_time" equals to 1 weeks
+INFO     FILES_ASSERTIONS:files.py:38 Check file
+INFO     BASE_ASSERTIONS:base.py:35 Check that "id" equals to 30e8479b-3f97-4e34-b96b-1bb63457a5a3
+INFO     BASE_ASSERTIONS:base.py:35 Check that "url" equals to http://localhost:8000/static/tests/c47da4d3-19ef-4130-a398-bac8da720f09.png
+INFO     BASE_ASSERTIONS:base.py:35 Check that "filename" equals to c47da4d3-19ef-4130-a398-bac8da720f09.png
+INFO     BASE_ASSERTIONS:base.py:35 Check that "directory" equals to tests
+INFO     USERS_ASSERTIONS:users.py:42 Check user
+INFO     BASE_ASSERTIONS:base.py:35 Check that "id" equals to 80b7e313-47f1-4542-b5e4-8dde187f90db
+INFO     BASE_ASSERTIONS:base.py:35 Check that "email" equals to mbriggs@example.com
+INFO     BASE_ASSERTIONS:base.py:35 Check that "last_name" equals to Jimenez
+INFO     BASE_ASSERTIONS:base.py:35 Check that "first_name" equals to Francisco
+INFO     BASE_ASSERTIONS:base.py:35 Check that "middle_name" equals to Brittany
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validating JSON schema

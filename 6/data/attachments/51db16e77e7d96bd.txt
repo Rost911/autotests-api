@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE3VDIyOjA3OjA3LjMwNTQ1NCIsInVzZXJfaWQiOiJhMDQ3MWExMy1lMGMzLTQ2ODctYmVlNS0zZWZjMTRhMDgyOTcifQ.IpwmspM6MvvlqzW1VcSlqGQuDNFl5tG5ScoXa12IWS4' \
+  -H 'content-length: 392' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Week meeting want action focus although.","maxScore":71,"minScore":20,"description":"Or police attorney large need base treatment. Leave practice style enough level determine.\nSpecific difference today mission hair. Agency drop soldier side.","estimatedTime":"9 weeks","previewFileId":"b04ff491-26fc-49ac-842c-d92a09af3f5c","createdByUserId":"a0471a13-e0c3-4687-bee5-3efc14a08297"}'

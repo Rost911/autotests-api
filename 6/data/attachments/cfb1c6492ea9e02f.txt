@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE3VDIyOjA3OjA1LjU1NzA3NiIsInVzZXJfaWQiOiIxYjQyN2IwMy01MzQzLTRhNjctYWM0Zi03ZTMyNjIwNjk3ZTUifQ.gh9xR2Hv38njTwT7LIkuSLheGMZJ_f59oVYjDmRuSaE' \
+  -H 'content-length: 400' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Sure walk western or movement parent.","maxScore":61,"minScore":8,"description":"Yeah physical Democrat decade world make light. Final sing at fight house.\nDream thing around we commercial. Nor appear national go. Good pull eight break federal that.","estimatedTime":"7 weeks","previewFileId":"1a043858-b7be-44d6-8dfd-b28c7303a330","createdByUserId":"1b427b03-5343-4a67-ac4f-7e32620697e5"}'
