@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE3VDIyOjE1OjE2LjQzMzI5NyIsInVzZXJfaWQiOiIwY2I0NjM5Yi0yYmRhLTQ0NjAtYmNhMi0yOTAzNTRkMjFlZTkifQ.BwKoHWOhcZVzLlYKKjR3iVoXlOPmhCW1ss3Ldd3vTQY' \
+  -H 'content-length: 412' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Analysis officer little claim space employee describe.","maxScore":100,"minScore":14,"description":"Ball change by ability building environmental likely. Upon lead city relate.\nHappy we building. Few view rather tell. Probably another onto out half pay mission.","estimatedTime":"2 weeks","previewFileId":"b31ba9c9-d5a1-4c36-a3bb-9356f1aa1239","createdByUserId":"0cb4639b-2bda-4460-bca2-290354d21ee9"}'

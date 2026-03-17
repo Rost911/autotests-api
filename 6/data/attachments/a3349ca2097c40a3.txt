@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE3VDIyOjE1OjE3LjU1MzM0MiIsInVzZXJfaWQiOiI5NjM3MjBkYi0zMjgwLTQ1MDgtYThkNy1hNzZmOGQzMDgyZmEifQ.PkzOaHxCfygrUewJC-DLgECCystE4xt8c4O4gSZQwZk' \
+  -H 'content-length: 385' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Real join Democrat crime hospital concern yourself.","courseId":"1a98dd89-bd5f-492d-881e-8bc5d113882b","maxScore":97,"minScore":16,"orderIndex":57,"description":"North nearly kitchen type institution collection condition. Deep only range tend cell. However music college prove. Send feel us home energy.\nBit reflect large where kitchen president.","estimatedTime":"5 weeks"}'

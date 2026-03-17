@@ -1,0 +1,13 @@
+INFO     BASE_ASSERTIONS:base.py:17 Check that response status code equals to 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:61 Check get exercise response
+INFO     EXERCISES_ASSERTIONS:exercises.py:44 Check exercise schema
+INFO     BASE_ASSERTIONS:base.py:35 Check that "id" equals to e35b909e-4a2d-4f03-b708-3ce1e8f5dcb5
+INFO     BASE_ASSERTIONS:base.py:35 Check that "title" equals to Real join Democrat crime hospital concern yourself.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "course_id" equals to 1a98dd89-bd5f-492d-881e-8bc5d113882b
+INFO     BASE_ASSERTIONS:base.py:35 Check that "max_score" equals to 97
+INFO     BASE_ASSERTIONS:base.py:35 Check that "min_score" equals to 16
+INFO     BASE_ASSERTIONS:base.py:35 Check that "order_index" equals to 57
+INFO     BASE_ASSERTIONS:base.py:35 Check that "description" equals to North nearly kitchen type institution collection condition. Deep only range tend cell. However music college prove. Send feel us home energy.
+Bit reflect large where kitchen president.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "estimated_time" equals to 5 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validating JSON schema

@@ -1,0 +1,10 @@
+INFO     BASE_ASSERTIONS:base.py:17 Check that response status code equals to 200
+INFO     COURSES_ASSERTIONS:courses.py:91 Check create course response
+INFO     BASE_ASSERTIONS:base.py:35 Check that "title" equals to As dog catch reality firm.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "max_score" equals to 62
+INFO     BASE_ASSERTIONS:base.py:35 Check that "min_score" equals to 21
+INFO     BASE_ASSERTIONS:base.py:35 Check that "description" equals to Statement team trial into admit. Hear law already security point four avoid. Go voice worker those continue. Line tend simple item notice owner important.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "estimated_time" equals to 4 weeks
+INFO     BASE_ASSERTIONS:base.py:35 Check that "preview_file_id" equals to 07514c44-265b-4af6-9f4b-4664d90ec306
+INFO     BASE_ASSERTIONS:base.py:35 Check that "created_by_user_id" equals to c0a18f79-f4e5-41fd-9f5a-3daa3fbcccd1
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validating JSON schema

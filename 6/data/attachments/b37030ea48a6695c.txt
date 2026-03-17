@@ -1,0 +1,9 @@
+INFO     BASE_ASSERTIONS:base.py:17 Check that response status code equals to 200
+INFO     COURSES_ASSERTIONS:courses.py:23 Check update course response
+INFO     BASE_ASSERTIONS:base.py:35 Check that "title" equals to Former quality floor technology popular assume energy cover.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "max_score" equals to 69
+INFO     BASE_ASSERTIONS:base.py:35 Check that "min_score" equals to 12
+INFO     BASE_ASSERTIONS:base.py:35 Check that "description" equals to Analysis personal improve though action reflect decision. Wear too become. Response eat certainly position certainly world.
+Shoulder laugh medical shoulder. Close accept eat over owner.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "estimated_time" equals to 10 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validating JSON schema

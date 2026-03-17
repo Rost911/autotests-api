@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE3VDIyOjE1OjE4LjE2MTI3MSIsInVzZXJfaWQiOiJiOTA1NzVhNS0zMGEwLTQzNzctYmZlNy00NWNkMTEwZjc2MzAifQ.aRQxzHFGtwKG8t4zG4nrVSOU0uU9VXXUxjR9UYwDk4E' \
+  -H 'content-length: 414' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Carry president however prove action western.","maxScore":57,"minScore":6,"description":"Music lead theory wide. Agree can analysis expect. Teach no clearly whether where home marriage.\nHome outside information thus oil mention piece.\nIssue near since daughter.","estimatedTime":"10 weeks","previewFileId":"527a7c76-8135-4acc-a33c-b65e364ac987","createdByUserId":"b90575a5-30a0-4377-bfe7-45cd110f7630"}'

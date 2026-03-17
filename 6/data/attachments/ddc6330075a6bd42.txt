@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE3VDIyOjE1OjE0LjcxMzQyMiIsInVzZXJfaWQiOiIxNzkxZGQ1Ny04MjkxLTQzZDgtYjlkNi1kMWQxMzYxYzYxOTAifQ.Ga2qZ6ppch_zqAAXvw-H09itwU-Pp4rAvW7V0YtRtdc' \
+  -H 'content-length: 301' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Might including cost behavior television identify.","maxScore":87,"minScore":5,"description":"Industry yourself another specific. Girl structure media.","estimatedTime":"4 weeks","previewFileId":"5a2472ed-f42a-4032-9cb1-47c57dc587db","createdByUserId":"1791dd57-8291-43d8-b9d6-d1d1361c6190"}'

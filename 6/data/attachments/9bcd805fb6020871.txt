@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE3VDIyOjE1OjE2LjQzMzI5NyIsInVzZXJfaWQiOiIwY2I0NjM5Yi0yYmRhLTQ0NjAtYmNhMi0yOTAzNTRkMjFlZTkifQ.BwKoHWOhcZVzLlYKKjR3iVoXlOPmhCW1ss3Ldd3vTQY' \
+  -H 'content-length: 346' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Space letter class experience behind.","courseId":"b5e2c2b5-4157-4f93-85f5-b58a3ea86e7e","maxScore":67,"minScore":3,"orderIndex":29,"description":"Surface newspaper story her little. Beyond north cup together significant training gas. Board source history itself green figure consider. Trade interesting nor.","estimatedTime":"8 weeks"}'

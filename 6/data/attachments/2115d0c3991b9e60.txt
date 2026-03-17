@@ -1,0 +1,23 @@
+INFO     BASE_ASSERTIONS:base.py:17 Check that response status code equals to 200
+INFO     COURSES_ASSERTIONS:courses.py:66 Check get courses response
+INFO     BASE_ASSERTIONS:base.py:69 Check that length of "courses" equals to 1
+INFO     COURSES_ASSERTIONS:courses.py:40 Check course
+INFO     BASE_ASSERTIONS:base.py:35 Check that "id" equals to 714326a6-09d8-479b-97c8-a65c1654ef8b
+INFO     BASE_ASSERTIONS:base.py:35 Check that "title" equals to Truth money during wonder.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "max_score" equals to 50
+INFO     BASE_ASSERTIONS:base.py:35 Check that "min_score" equals to 2
+INFO     BASE_ASSERTIONS:base.py:35 Check that "description" equals to Want data information what season interest. Life true magazine market card.
+Push marriage in see write. Evidence alone improve management boy more beat. Either follow natural sort sometimes herself.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "estimated_time" equals to 10 weeks
+INFO     FILES_ASSERTIONS:files.py:38 Check file
+INFO     BASE_ASSERTIONS:base.py:35 Check that "id" equals to 3d62e3cd-b3e7-4252-a517-5d1ffdca298f
+INFO     BASE_ASSERTIONS:base.py:35 Check that "url" equals to http://localhost:8000/static/tests/e7ff6dd1-53a6-47ff-9e69-b2d73e0b2236.png
+INFO     BASE_ASSERTIONS:base.py:35 Check that "filename" equals to e7ff6dd1-53a6-47ff-9e69-b2d73e0b2236.png
+INFO     BASE_ASSERTIONS:base.py:35 Check that "directory" equals to tests
+INFO     USERS_ASSERTIONS:users.py:42 Check user
+INFO     BASE_ASSERTIONS:base.py:35 Check that "id" equals to 408b9f45-d8fa-407c-af76-6e0d113d4535
+INFO     BASE_ASSERTIONS:base.py:35 Check that "email" equals to munozdwayne@example.net
+INFO     BASE_ASSERTIONS:base.py:35 Check that "last_name" equals to Flores
+INFO     BASE_ASSERTIONS:base.py:35 Check that "first_name" equals to Randall
+INFO     BASE_ASSERTIONS:base.py:35 Check that "middle_name" equals to Dawn
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validating JSON schema

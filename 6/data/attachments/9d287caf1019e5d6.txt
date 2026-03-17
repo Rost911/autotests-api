@@ -1,0 +1,10 @@
+INFO     BASE_ASSERTIONS:base.py:17 Check that response status code equals to 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:29 Check create exercise response
+INFO     BASE_ASSERTIONS:base.py:35 Check that "title" equals to Space letter class experience behind.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "course_id" equals to b5e2c2b5-4157-4f93-85f5-b58a3ea86e7e
+INFO     BASE_ASSERTIONS:base.py:35 Check that "max_score" equals to 67
+INFO     BASE_ASSERTIONS:base.py:35 Check that "min_score" equals to 3
+INFO     BASE_ASSERTIONS:base.py:35 Check that "order_index" equals to 29
+INFO     BASE_ASSERTIONS:base.py:35 Check that "description" equals to Surface newspaper story her little. Beyond north cup together significant training gas. Board source history itself green figure consider. Trade interesting nor.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "estimated_time" equals to 8 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validating JSON schema

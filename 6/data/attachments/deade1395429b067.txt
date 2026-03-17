@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE3VDIyOjE1OjE3LjU1MzM0MiIsInVzZXJfaWQiOiI5NjM3MjBkYi0zMjgwLTQ1MDgtYThkNy1hNzZmOGQzMDgyZmEifQ.PkzOaHxCfygrUewJC-DLgECCystE4xt8c4O4gSZQwZk' \
+  -H 'content-length: 415' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Kid democratic as what good base majority.","maxScore":92,"minScore":29,"description":"Break century local meeting others. Would tax campaign phone.\nRun industry source discussion high color gas. First age stand Democrat capital from. Camera easy feel until small.","estimatedTime":"4 weeks","previewFileId":"e6bafecb-c431-421d-95aa-685bcb35486d","createdByUserId":"963720db-3280-4508-a8d7-a76f8d3082fa"}'
