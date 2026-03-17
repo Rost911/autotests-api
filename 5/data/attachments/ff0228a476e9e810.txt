@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/663b7273-4da8-4cfa-baa9-e118e899e2db' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE3VDIxOjQyOjM1LjQzMjE4OCIsInVzZXJfaWQiOiJmNmM4ZWMxOC1iMjhiLTRmNTctOWM5YS01NmE4ZGRmZDdmOTAifQ.rntBZRJf4vXnGH-Fa0JLqRExgXErthadGs8kPKUs8yo' \
+  -H 'content-length: 308' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Message any later level economic education quite would.","maxScore":63,"minScore":3,"description":"Less agency too include technology. Lot ago well appear.\nBook while church station accept. Professor practice million offer ok. Discussion skin detail city section above.","estimatedTime":"8 weeks"}'

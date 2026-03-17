@@ -1,0 +1,8 @@
+INFO     BASE_ASSERTIONS:base.py:17 Check that response status code equals to 200
+INFO     USERS_ASSERTIONS:users.py:62 Check get user response
+INFO     USERS_ASSERTIONS:users.py:42 Check user
+INFO     BASE_ASSERTIONS:base.py:35 Check that "id" equals to 0bc2c291-8b68-46bc-b028-c22c3be2ba7a
+INFO     BASE_ASSERTIONS:base.py:35 Check that "email" equals to gtrujillo@example.net
+INFO     BASE_ASSERTIONS:base.py:35 Check that "last_name" equals to Moon
+INFO     BASE_ASSERTIONS:base.py:35 Check that "first_name" equals to Alexis
+INFO     BASE_ASSERTIONS:base.py:35 Check that "middle_name" equals to James

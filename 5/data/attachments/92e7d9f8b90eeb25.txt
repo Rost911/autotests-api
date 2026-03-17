@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE3VDIxOjQyOjM3LjM4MTExMSIsInVzZXJfaWQiOiIyNGZhMDdhOS02YTU4LTRmZWEtOGE1Yi1mMWMzM2EyYzdhZmYifQ.oLU0dnzQHf6pSBdoeutIgwjMWo1AfW8hABjUGTKmUb4' \
+  -H 'content-length: 343' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Full develop firm city.","maxScore":100,"minScore":20,"description":"Science specific future sense laugh.\nRun program move commercial sound war. Free late thought mind tonight choose language.","estimatedTime":"8 weeks","previewFileId":"484d566e-a5a2-455b-a42a-1d0a6ec8f76d","createdByUserId":"24fa07a9-6a58-4fea-8a5b-f1c33a2c7aff"}'

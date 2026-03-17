@@ -1,0 +1,11 @@
+INFO     BASE_ASSERTIONS:base.py:17 Check that response status code equals to 200
+INFO     COURSES_ASSERTIONS:courses.py:91 Check create course response
+INFO     BASE_ASSERTIONS:base.py:35 Check that "title" equals to President soldier national decision chance.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "max_score" equals to 59
+INFO     BASE_ASSERTIONS:base.py:35 Check that "min_score" equals to 17
+INFO     BASE_ASSERTIONS:base.py:35 Check that "description" equals to Start fire country fact. Professor number certainly throughout indeed left contain.
+Third every capital describe small. Detail next almost part candidate. Effect house face good song.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "estimated_time" equals to 5 weeks
+INFO     BASE_ASSERTIONS:base.py:35 Check that "preview_file_id" equals to 893b61cd-cde5-4940-956b-7687c8b124d8
+INFO     BASE_ASSERTIONS:base.py:35 Check that "created_by_user_id" equals to 86fecac5-f112-41a2-8840-24c5e209e1c6
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validating JSON schema

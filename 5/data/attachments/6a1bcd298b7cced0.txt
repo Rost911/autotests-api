@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE3VDIxOjQyOjM4LjUwMjA2NSIsInVzZXJfaWQiOiIzZDQzOGFmYi1kMjMzLTRmYzAtOTA2ZS01OWJjMDRkNDBmNWYifQ.Bw6UKG_-3gzMLvbpdSiT89Dsy_7v9zhrehMGQHZesQw' \
+  -H 'content-length: 345' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Official let myself toward let by score.","maxScore":63,"minScore":6,"description":"Hand himself might. Yes lawyer conference significant direction fill understand support. Run anything else lay.","estimatedTime":"2 weeks","previewFileId":"beb2a8c2-1a85-4c65-8ebf-8f418be9de73","createdByUserId":"3d438afb-d233-4fc0-906e-59bc04d40f5f"}'

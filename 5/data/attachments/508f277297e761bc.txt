@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE3VDIxOjQyOjM2LjI3NjI0NyIsInVzZXJfaWQiOiJlZDkwMTExZi1kOTU1LTQ3ZTUtOGI3ZS1iMDdmZGI0NmM1NWIifQ.Ps2SehRgbv8_NV6xv1-_UO-hOBkDeYU3z-pYFAPE7HM' \
+  -H 'content-length: 332' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Trouble edge organization control.","maxScore":62,"minScore":6,"description":"Alone prepare main crime contain. Base push challenge stop.\nSkill why significant family hospital they.","estimatedTime":"9 weeks","previewFileId":"aef4d648-a41f-4aaf-a9ec-87427680330a","createdByUserId":"ed90111f-d955-47e5-8b7e-b07fdb46c55b"}'

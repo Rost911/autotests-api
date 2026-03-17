@@ -1,0 +1,13 @@
+INFO     BASE_ASSERTIONS:base.py:17 Check that response status code equals to 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:105 Check get exercises response list
+INFO     BASE_ASSERTIONS:base.py:69 Check that length of "exercises" equals to 1
+INFO     EXERCISES_ASSERTIONS:exercises.py:44 Check exercise schema
+INFO     BASE_ASSERTIONS:base.py:35 Check that "id" equals to 46c003d9-df80-469f-af0e-aef40e3a07bc
+INFO     BASE_ASSERTIONS:base.py:35 Check that "title" equals to Side once already deep student knowledge as.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "course_id" equals to b19f2936-d564-450a-be37-31b5388271d3
+INFO     BASE_ASSERTIONS:base.py:35 Check that "max_score" equals to 87
+INFO     BASE_ASSERTIONS:base.py:35 Check that "min_score" equals to 19
+INFO     BASE_ASSERTIONS:base.py:35 Check that "order_index" equals to 97
+INFO     BASE_ASSERTIONS:base.py:35 Check that "description" equals to Hour early reflect tell box well less. Detail first need everything easy within room.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "estimated_time" equals to 2 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validating JSON schema

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE3VDIxOjQyOjM5LjExMzE4MSIsInVzZXJfaWQiOiJjNThmYWFmNi1iMWY3LTRjMGEtOTM1Ni04MzRmYmMyMWFiZTkifQ.y2RTYJ1us7WOxdQ1rHkJ7yBGqXnsrQ5P9coBU_HJwgE' \
+  -H 'content-length: 326' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Better single her begin enough prevent.","maxScore":87,"minScore":21,"description":"Usually activity data such talk middle week. Large forward everyone quickly glass something.","estimatedTime":"4 weeks","previewFileId":"6a4040bc-011b-4fd5-91e6-12a27dc34275","createdByUserId":"c58faaf6-b1f7-4c0a-9356-834fbc21abe9"}'

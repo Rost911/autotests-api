@@ -1,0 +1,13 @@
+INFO     BASE_ASSERTIONS:base.py:17 Check that response status code equals to 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:61 Check get exercise response
+INFO     EXERCISES_ASSERTIONS:exercises.py:44 Check exercise schema
+INFO     BASE_ASSERTIONS:base.py:35 Check that "id" equals to 5e103f5e-8405-40f0-adb1-f9aed4c88ba0
+INFO     BASE_ASSERTIONS:base.py:35 Check that "title" equals to Look political him article significant long.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "course_id" equals to 0202189c-d265-40d0-b3ef-7c37c099d6b7
+INFO     BASE_ASSERTIONS:base.py:35 Check that "max_score" equals to 65
+INFO     BASE_ASSERTIONS:base.py:35 Check that "min_score" equals to 24
+INFO     BASE_ASSERTIONS:base.py:35 Check that "order_index" equals to 32
+INFO     BASE_ASSERTIONS:base.py:35 Check that "description" equals to Concern order but out. Very camera answer.
+Response brother author only report word property new. Surface son can subject almost suggest. Tough then policy field first attention.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "estimated_time" equals to 9 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validating JSON schema

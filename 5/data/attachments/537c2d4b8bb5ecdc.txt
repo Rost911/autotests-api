@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE3VDIxOjQyOjM1LjQzMjE4OCIsInVzZXJfaWQiOiJmNmM4ZWMxOC1iMjhiLTRmNTctOWM5YS01NmE4ZGRmZDdmOTAifQ.rntBZRJf4vXnGH-Fa0JLqRExgXErthadGs8kPKUs8yo' \
+  -H 'content-length: 331' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Control husband lay business out bring provide.","maxScore":62,"minScore":26,"description":"Bed run notice perhaps or training view provide. Determine develop argue study as choose.","estimatedTime":"5 weeks","previewFileId":"627ef410-c4e5-4488-be69-4d5140e75bdf","createdByUserId":"f6c8ec18-b28b-4f57-9c9a-56a8ddfd7f90"}'

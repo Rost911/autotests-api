@@ -1,0 +1,23 @@
+INFO     BASE_ASSERTIONS:base.py:17 Check that response status code equals to 200
+INFO     COURSES_ASSERTIONS:courses.py:66 Check get courses response
+INFO     BASE_ASSERTIONS:base.py:69 Check that length of "courses" equals to 1
+INFO     COURSES_ASSERTIONS:courses.py:40 Check course
+INFO     BASE_ASSERTIONS:base.py:35 Check that "id" equals to c1909b32-2290-4ce7-ac11-c816a9dc6180
+INFO     BASE_ASSERTIONS:base.py:35 Check that "title" equals to Trouble edge organization control.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "max_score" equals to 62
+INFO     BASE_ASSERTIONS:base.py:35 Check that "min_score" equals to 6
+INFO     BASE_ASSERTIONS:base.py:35 Check that "description" equals to Alone prepare main crime contain. Base push challenge stop.
+Skill why significant family hospital they.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "estimated_time" equals to 9 weeks
+INFO     FILES_ASSERTIONS:files.py:38 Check file
+INFO     BASE_ASSERTIONS:base.py:35 Check that "id" equals to aef4d648-a41f-4aaf-a9ec-87427680330a
+INFO     BASE_ASSERTIONS:base.py:35 Check that "url" equals to http://localhost:8000/static/tests/b673e49c-6c93-476a-bfb2-75c7e255e8ad.png
+INFO     BASE_ASSERTIONS:base.py:35 Check that "filename" equals to b673e49c-6c93-476a-bfb2-75c7e255e8ad.png
+INFO     BASE_ASSERTIONS:base.py:35 Check that "directory" equals to tests
+INFO     USERS_ASSERTIONS:users.py:42 Check user
+INFO     BASE_ASSERTIONS:base.py:35 Check that "id" equals to ed90111f-d955-47e5-8b7e-b07fdb46c55b
+INFO     BASE_ASSERTIONS:base.py:35 Check that "email" equals to bradley51@example.net
+INFO     BASE_ASSERTIONS:base.py:35 Check that "last_name" equals to Lopez
+INFO     BASE_ASSERTIONS:base.py:35 Check that "first_name" equals to Kimberly
+INFO     BASE_ASSERTIONS:base.py:35 Check that "middle_name" equals to Robert
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validating JSON schema

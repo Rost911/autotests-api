@@ -1,0 +1,10 @@
+INFO     BASE_ASSERTIONS:base.py:17 Check that response status code equals to 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:29 Check create exercise response
+INFO     BASE_ASSERTIONS:base.py:35 Check that "title" equals to Live cold operation range.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "course_id" equals to 9e46f974-bc31-4b74-85a4-3c2ab3532546
+INFO     BASE_ASSERTIONS:base.py:35 Check that "max_score" equals to 52
+INFO     BASE_ASSERTIONS:base.py:35 Check that "min_score" equals to 25
+INFO     BASE_ASSERTIONS:base.py:35 Check that "order_index" equals to 50
+INFO     BASE_ASSERTIONS:base.py:35 Check that "description" equals to Official herself note power government first about beyond. Great parent year wife win unit radio.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "estimated_time" equals to 5 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validating JSON schema

@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/exercises/ff8b4974-5ca2-4075-93c0-f0ed68901c23' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE3VDIxOjQyOjM3Ljk0MDU2MyIsInVzZXJfaWQiOiIwZDBiMTcxOS1kMTdjLTQzODAtOGVjYS0zZWRhMTE2ZTM3MjAifQ.rUsCiUU9L5-zhC3tuknx2rM0GRl3iHIYAHj5EEzkFRg' \
+  -H 'content-length: 275' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Present pretty such manage.","maxScore":64,"minScore":1,"orderIndex":61,"description":"House so effort future range. Yard article dog green country. Hour wish site professional however decide. Impact who apply style past low allow dream.","estimatedTime":"8 weeks"}'
