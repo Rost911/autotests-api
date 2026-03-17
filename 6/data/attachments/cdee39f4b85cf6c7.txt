@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE3VDIyOjE4OjU2LjE4NjQ4MSIsInVzZXJfaWQiOiJkMTE5YWRkNi1lNmMxLTQ5YmQtODE0NC1hYmQ4NjZkYmM1YzQifQ.tCkMWEpt_wE_KjqrXxU5JlRb7pFMJE8nXAg6u_AESsU' \
+  -H 'content-length: 416' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Kind method any on I west her second.","maxScore":65,"minScore":5,"description":"Tell source partner national shoulder join. Enjoy part center think.\nNear design history field positive number before purpose. Class this former near tough leave. Stage up stock skill.","estimatedTime":"4 weeks","previewFileId":"e17b5845-b8ec-4b4b-912d-56ad291cf0e1","createdByUserId":"d119add6-e6c1-49bd-8144-abd866dbc5c4"}'

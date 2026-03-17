@@ -1,0 +1,10 @@
+INFO     SWAGGER_COVERAGE_TRACKER_STORAGE:storage.py:34 Results directory does not exist, creating: coverage-results
+INFO     BASE_ASSERTIONS:base.py:17 Check that response status code equals to 200
+INFO     COURSES_ASSERTIONS:courses.py:23 Check update course response
+INFO     BASE_ASSERTIONS:base.py:35 Check that "title" equals to Them save myself.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "max_score" equals to 95
+INFO     BASE_ASSERTIONS:base.py:35 Check that "min_score" equals to 18
+INFO     BASE_ASSERTIONS:base.py:35 Check that "description" equals to Consider dark member for blue. Would arm find least news character.
+Already there almost fund. Much indicate there. Example agent ground war person its.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "estimated_time" equals to 1 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validating JSON schema

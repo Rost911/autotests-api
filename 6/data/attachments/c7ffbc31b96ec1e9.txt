@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE3VDIyOjE4OjU4LjI1NzIzOSIsInVzZXJfaWQiOiIxMTRiNDAyYi0xY2I2LTQyZmEtOTg1OC0xOWI3YjdmMjg3MzEifQ.RV2Fq-6q7e5np-pV6XyQP3iUKCKJyPNzaOSYCR_dGEo' \
+  -H 'content-length: 347' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Country score arrive today present me.","courseId":"7becd88b-5458-4d6b-a4ca-0d99d85cb968","maxScore":50,"minScore":9,"orderIndex":64,"description":"Tonight option senior matter likely would. Management commercial size anyone.\nGun floor fill scientist each security. Nor capital within kind imagine sound cut.","estimatedTime":"6 weeks"}'

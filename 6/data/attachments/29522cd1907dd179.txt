@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE3VDIyOjE4OjU3LjY3OTMyMSIsInVzZXJfaWQiOiI4MDYwZWZjMC1mYjgwLTQ2ZDYtYjFiYy0xZThhNjcwMTZjZGYifQ.8mUNnMY5GGeJX6ydoExp2yC26FBVY80Rr4ep722Axfg' \
+  -H 'content-length: 357' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Treat produce game mind notice child.","maxScore":85,"minScore":14,"description":"The take move network. Popular affect choice. Clear kitchen mission son take parent true whatever.\nRate budget music avoid.","estimatedTime":"10 weeks","previewFileId":"af5ad18b-ada8-4bf3-8893-585f2f826e14","createdByUserId":"8060efc0-fb80-46d6-b1bc-1e8a67016cdf"}'

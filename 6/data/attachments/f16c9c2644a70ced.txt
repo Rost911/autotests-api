@@ -1,0 +1,15 @@
+INFO     BASE_ASSERTIONS:base.py:17 Check that response status code equals to 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:105 Check get exercises response list
+INFO     BASE_ASSERTIONS:base.py:69 Check that length of "exercises" equals to 1
+INFO     EXERCISES_ASSERTIONS:exercises.py:44 Check exercise schema
+INFO     BASE_ASSERTIONS:base.py:35 Check that "id" equals to 3d77e0f2-2f86-4c09-b767-167d8a4be048
+INFO     BASE_ASSERTIONS:base.py:35 Check that "title" equals to Direction director media central.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "course_id" equals to 8f1de426-19ae-4688-9be6-b2e9525a54f8
+INFO     BASE_ASSERTIONS:base.py:35 Check that "max_score" equals to 93
+INFO     BASE_ASSERTIONS:base.py:35 Check that "min_score" equals to 26
+INFO     BASE_ASSERTIONS:base.py:35 Check that "order_index" equals to 98
+INFO     BASE_ASSERTIONS:base.py:35 Check that "description" equals to Along finally important evening. Majority blood week chair gun letter. Win eye us ground.
+Require ever what. Probably ok game around. Floor leg like buy.
+Expect research sing purpose.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "estimated_time" equals to 7 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validating JSON schema

@@ -1,0 +1,11 @@
+INFO     BASE_ASSERTIONS:base.py:17 Check that response status code equals to 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:29 Check create exercise response
+INFO     BASE_ASSERTIONS:base.py:35 Check that "title" equals to Country score arrive today present me.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "course_id" equals to 7becd88b-5458-4d6b-a4ca-0d99d85cb968
+INFO     BASE_ASSERTIONS:base.py:35 Check that "max_score" equals to 50
+INFO     BASE_ASSERTIONS:base.py:35 Check that "min_score" equals to 9
+INFO     BASE_ASSERTIONS:base.py:35 Check that "order_index" equals to 64
+INFO     BASE_ASSERTIONS:base.py:35 Check that "description" equals to Tonight option senior matter likely would. Management commercial size anyone.
+Gun floor fill scientist each security. Nor capital within kind imagine sound cut.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "estimated_time" equals to 6 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validating JSON schema

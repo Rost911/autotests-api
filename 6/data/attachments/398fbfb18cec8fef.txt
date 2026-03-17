@@ -1,0 +1,11 @@
+INFO     BASE_ASSERTIONS:base.py:17 Check that response status code equals to 200
+INFO     COURSES_ASSERTIONS:courses.py:91 Check create course response
+INFO     BASE_ASSERTIONS:base.py:35 Check that "title" equals to Treat produce game mind notice child.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "max_score" equals to 85
+INFO     BASE_ASSERTIONS:base.py:35 Check that "min_score" equals to 14
+INFO     BASE_ASSERTIONS:base.py:35 Check that "description" equals to The take move network. Popular affect choice. Clear kitchen mission son take parent true whatever.
+Rate budget music avoid.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "estimated_time" equals to 10 weeks
+INFO     BASE_ASSERTIONS:base.py:35 Check that "preview_file_id" equals to af5ad18b-ada8-4bf3-8893-585f2f826e14
+INFO     BASE_ASSERTIONS:base.py:35 Check that "created_by_user_id" equals to 8060efc0-fb80-46d6-b1bc-1e8a67016cdf
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validating JSON schema

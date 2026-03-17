@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE3VDIyOjE4OjU5LjQ0MzUzMSIsInVzZXJfaWQiOiI5M2Y2OWU5OC03YWM3LTQyZGItODBkZi0zNGJlNzJlOGE0OWIifQ.yCUmyl7NOGEGSKtfTeV_pC4EEJ6J_0cwt1FP-o_rX2U' \
+  -H 'content-length: 402' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Quality standard million interest yourself father.","maxScore":96,"minScore":15,"description":"Order car still future now. Yes technology collection could start.\nBegin employee age compare very everybody cultural. Clear leader daughter husband number.","estimatedTime":"1 weeks","previewFileId":"34ca5d2a-eddf-439e-a8a0-3f08e7a3d266","createdByUserId":"93f69e98-7ac7-42db-80df-34be72e8a49b"}'

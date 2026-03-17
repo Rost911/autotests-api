@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE3VDIyOjE5OjAwLjExMjkwMiIsInVzZXJfaWQiOiJiODQ5YzEyZS1lODgyLTRhOTUtODExYS04MmJhMjc5NzJjY2UifQ.edn6H-CNgdZye3sIr78OhbhOf94VxPOyq226bzd6PjE' \
+  -H 'content-length: 426' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Particularly always who eye front seem include.","maxScore":70,"minScore":23,"description":"Here cold skill ball. Nature civil present professor democratic.\nTown hit institution fly idea agent long. Minute thought information instead. Cup western thank nice author leave get.","estimatedTime":"4 weeks","previewFileId":"d5ad939d-3ede-4834-9858-b4a81ff8b46c","createdByUserId":"b849c12e-e882-4a95-811a-82ba27972cce"}'

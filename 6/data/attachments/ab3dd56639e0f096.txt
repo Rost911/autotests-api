@@ -1,0 +1,13 @@
+INFO     BASE_ASSERTIONS:base.py:17 Check that response status code equals to 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:61 Check get exercise response
+INFO     EXERCISES_ASSERTIONS:exercises.py:44 Check exercise schema
+INFO     BASE_ASSERTIONS:base.py:35 Check that "id" equals to 54cad6a1-90e9-454b-a98b-95c08d045c38
+INFO     BASE_ASSERTIONS:base.py:35 Check that "title" equals to Music force cultural be break.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "course_id" equals to 662a35da-d586-49e5-b8e7-467d13062d78
+INFO     BASE_ASSERTIONS:base.py:35 Check that "max_score" equals to 68
+INFO     BASE_ASSERTIONS:base.py:35 Check that "min_score" equals to 25
+INFO     BASE_ASSERTIONS:base.py:35 Check that "order_index" equals to 43
+INFO     BASE_ASSERTIONS:base.py:35 Check that "description" equals to Right arm part full order draw. Ever arm believe.
+Policy movie rate wrong. South generation court message.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "estimated_time" equals to 5 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validating JSON schema

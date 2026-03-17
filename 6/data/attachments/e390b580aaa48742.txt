@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE3VDIyOjE4OjU4LjI1NzIzOSIsInVzZXJfaWQiOiIxMTRiNDAyYi0xY2I2LTQyZmEtOTg1OC0xOWI3YjdmMjg3MzEifQ.RV2Fq-6q7e5np-pV6XyQP3iUKCKJyPNzaOSYCR_dGEo' \
+  -H 'content-length: 306' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Friend billion produce yeah spring.","maxScore":75,"minScore":20,"description":"If nor wear. Him process threat crime kitchen begin. Position buy knowledge.","estimatedTime":"8 weeks","previewFileId":"f069cdfd-801f-48a0-8d2c-8cf1ee174592","createdByUserId":"114b402b-1cb6-42fa-9858-19b7b7f28731"}'

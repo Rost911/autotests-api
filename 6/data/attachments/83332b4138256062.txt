@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE3VDIyOjE4OjU3LjA5NDMyNyIsInVzZXJfaWQiOiIwNjBjYTBhMS1kODllLTQxZmQtYjVhYi0wOWMxNjY0NDU3YzcifQ.eKe_XpvIK-dsV1Cm3pIxhuxl1QuKy3dbJqfyXfWbez4' \
+  -H 'content-length: 430' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Language mother defense campaign coach religious.","maxScore":63,"minScore":13,"description":"Apply wrong short mean hard I. Out enough away book possible structure.\nImage he enjoy. Fund begin parent.\nSimilar often those agree. Way design plant practice necessary billion heart.","estimatedTime":"9 weeks","previewFileId":"812377f4-5967-40ac-93a4-13dccdd45508","createdByUserId":"060ca0a1-d89e-41fd-b5ab-09c1664457c7"}'
