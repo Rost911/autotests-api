@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE3VDIyOjMxOjEyLjY3MDU2MSIsInVzZXJfaWQiOiJjZTZiYzI5Mi02MGMxLTQxNzMtYTQyZC03ZGVmNjlkNGM3MjUifQ.v4kdlvYsoHTPZIYvYimLcbzG0vVBCtVLKMcIaTbAOOI' \
+  -H 'content-length: 363' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Able which rest there magazine involve.","maxScore":53,"minScore":22,"description":"Tax store guess key act people.\nGun weight degree day. Job everything direction top public traditional meet. Order start white.","estimatedTime":"10 weeks","previewFileId":"ff813f4e-4951-4249-b4fb-7b64f8778a68","createdByUserId":"ce6bc292-60c1-4173-a42d-7def69d4c725"}'

@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/dcb5d170-87d9-4bf7-94d6-e813451ed8ce' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE3VDIyOjMxOjA5LjE0ODQ3MCIsInVzZXJfaWQiOiI3M2Q1NTFjZS1kOWMwLTRkMjEtYWYzNC00MmYyYzZkZGI4YzAifQ.AdqLB4nPNOCyPDgXzx3BNms_3FR7j0aMdWGiKig89PM' \
+  -H 'content-length: 282' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Group describe return camera exactly model oil.","maxScore":85,"minScore":22,"description":"Machine price on despite already.\nPlayer stay city may military. Blood analysis agent realize amount buy. History ready manager seek try somebody item.","estimatedTime":"7 weeks"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE3VDIyOjMxOjEzLjg5MzM0OCIsInVzZXJfaWQiOiJmODg1OTMyMi01N2IyLTQ2MWItYjRkZC1hYzY2ZTVlZmU4NDUifQ.Pum0uJTHFoW4suzR1yzVZ_kHxXQ0AkpjhKZqzW4pjko' \
+  -H 'content-length: 376' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Agency very bring authority plan according until investment.","courseId":"bf71ad36-9b80-4b09-bd3f-d44b8ef1c5cb","maxScore":74,"minScore":27,"orderIndex":26,"description":"Push piece law would live big production. Protect ready pay see drug.\nList which street lead sea property red. Sit defense wall whose plan. Peace here drug foot they.","estimatedTime":"3 weeks"}'

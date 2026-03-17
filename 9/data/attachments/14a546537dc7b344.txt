@@ -1,0 +1,11 @@
+INFO     BASE_ASSERTIONS:base.py:17 Check that response status code equals to 200
+INFO     COURSES_ASSERTIONS:courses.py:91 Check create course response
+INFO     BASE_ASSERTIONS:base.py:35 Check that "title" equals to According maintain end Mrs.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "max_score" equals to 72
+INFO     BASE_ASSERTIONS:base.py:35 Check that "min_score" equals to 8
+INFO     BASE_ASSERTIONS:base.py:35 Check that "description" equals to Beat finish player boy. Second ground today some particular yeah.
+High offer society. Trial bill wonder turn party weight tough. Republican against get firm those.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "estimated_time" equals to 6 weeks
+INFO     BASE_ASSERTIONS:base.py:35 Check that "preview_file_id" equals to 45d6715e-016a-4f22-b33b-752c681da766
+INFO     BASE_ASSERTIONS:base.py:35 Check that "created_by_user_id" equals to a32041d1-cf10-4d3a-8b21-3a497816c00c
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validating JSON schema

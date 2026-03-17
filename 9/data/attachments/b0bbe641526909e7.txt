@@ -1,0 +1,14 @@
+INFO     BASE_ASSERTIONS:base.py:17 Check that response status code equals to 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:105 Check get exercises response list
+INFO     BASE_ASSERTIONS:base.py:69 Check that length of "exercises" equals to 1
+INFO     EXERCISES_ASSERTIONS:exercises.py:44 Check exercise schema
+INFO     BASE_ASSERTIONS:base.py:35 Check that "id" equals to 672915d9-01d6-468f-85c9-1cb0249cd03d
+INFO     BASE_ASSERTIONS:base.py:35 Check that "title" equals to Agency very bring authority plan according until investment.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "course_id" equals to bf71ad36-9b80-4b09-bd3f-d44b8ef1c5cb
+INFO     BASE_ASSERTIONS:base.py:35 Check that "max_score" equals to 74
+INFO     BASE_ASSERTIONS:base.py:35 Check that "min_score" equals to 27
+INFO     BASE_ASSERTIONS:base.py:35 Check that "order_index" equals to 26
+INFO     BASE_ASSERTIONS:base.py:35 Check that "description" equals to Push piece law would live big production. Protect ready pay see drug.
+List which street lead sea property red. Sit defense wall whose plan. Peace here drug foot they.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "estimated_time" equals to 3 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validating JSON schema

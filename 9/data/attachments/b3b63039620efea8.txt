@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE3VDIyOjMxOjEzLjg5MzM0OCIsInVzZXJfaWQiOiJmODg1OTMyMi01N2IyLTQ2MWItYjRkZC1hYzY2ZTVlZmU4NDUifQ.Pum0uJTHFoW4suzR1yzVZ_kHxXQ0AkpjhKZqzW4pjko' \
+  -H 'content-length: 403' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Usually black baby skill.","maxScore":86,"minScore":19,"description":"Ability same keep. Put least protect. Amount return herself remember organization finish skin.\nKitchen among ever long event.\nNever total west imagine fight. Manage sing bed ago he.","estimatedTime":"3 weeks","previewFileId":"10bbd156-bd9b-4bfa-bd69-065bef932b61","createdByUserId":"f8859322-57b2-461b-b4dd-ac66e5efe845"}'

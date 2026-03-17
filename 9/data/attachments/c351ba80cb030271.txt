@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE3VDIyOjMxOjEwLjU3MTQyOCIsInVzZXJfaWQiOiJhMzIwNDFkMS1jZjEwLTRkM2EtOGIyMS0zYTQ5NzgxNmMwMGMifQ.pprgwyUsD7Pr89Gg3UlfJ4qLvoVDLmxKlNhogWp-D28' \
+  -H 'content-length: 385' \
+  -H 'content-type: application/json' \
+  -d '{"title":"According maintain end Mrs.","maxScore":72,"minScore":8,"description":"Beat finish player boy. Second ground today some particular yeah.\nHigh offer society. Trial bill wonder turn party weight tough. Republican against get firm those.","estimatedTime":"6 weeks","previewFileId":"45d6715e-016a-4f22-b33b-752c681da766","createdByUserId":"a32041d1-cf10-4d3a-8b21-3a497816c00c"}'

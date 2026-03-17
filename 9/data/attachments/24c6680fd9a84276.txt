@@ -1,0 +1,22 @@
+INFO     BASE_ASSERTIONS:base.py:17 Check that response status code equals to 200
+INFO     COURSES_ASSERTIONS:courses.py:66 Check get courses response
+INFO     BASE_ASSERTIONS:base.py:69 Check that length of "courses" equals to 1
+INFO     COURSES_ASSERTIONS:courses.py:40 Check course
+INFO     BASE_ASSERTIONS:base.py:35 Check that "id" equals to 1bbb4d9c-00bb-4c85-886c-1546533eac26
+INFO     BASE_ASSERTIONS:base.py:35 Check that "title" equals to Front prevent Mrs without through administration.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "max_score" equals to 99
+INFO     BASE_ASSERTIONS:base.py:35 Check that "min_score" equals to 26
+INFO     BASE_ASSERTIONS:base.py:35 Check that "description" equals to Smile dinner although position color. Represent go whom minute whatever each attention.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "estimated_time" equals to 5 weeks
+INFO     FILES_ASSERTIONS:files.py:38 Check file
+INFO     BASE_ASSERTIONS:base.py:35 Check that "id" equals to 049f14d1-7097-4b7d-a73f-33c63dfe9132
+INFO     BASE_ASSERTIONS:base.py:35 Check that "url" equals to http://localhost:8000/static/tests/276f8c37-d0ba-4bd8-ac79-a442e863b456.png
+INFO     BASE_ASSERTIONS:base.py:35 Check that "filename" equals to 276f8c37-d0ba-4bd8-ac79-a442e863b456.png
+INFO     BASE_ASSERTIONS:base.py:35 Check that "directory" equals to tests
+INFO     USERS_ASSERTIONS:users.py:42 Check user
+INFO     BASE_ASSERTIONS:base.py:35 Check that "id" equals to ff32852f-d42f-4fe4-ac7e-4fffe3e5e6cf
+INFO     BASE_ASSERTIONS:base.py:35 Check that "email" equals to christopher18@example.org
+INFO     BASE_ASSERTIONS:base.py:35 Check that "last_name" equals to Velasquez
+INFO     BASE_ASSERTIONS:base.py:35 Check that "first_name" equals to Timothy
+INFO     BASE_ASSERTIONS:base.py:35 Check that "middle_name" equals to Judy
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validating JSON schema

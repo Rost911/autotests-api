@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE3VDIyOjMxOjA5LjE0ODQ3MCIsInVzZXJfaWQiOiI3M2Q1NTFjZS1kOWMwLTRkMjEtYWYzNC00MmYyYzZkZGI4YzAifQ.AdqLB4nPNOCyPDgXzx3BNms_3FR7j0aMdWGiKig89PM' \
+  -H 'content-length: 419' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Billion senior lay current discuss.","maxScore":98,"minScore":14,"description":"Party treatment national stop television. Everything all main need.\nReflect ground imagine share. Talk member report TV community protect. Practice good it thought very decision condition.","estimatedTime":"7 weeks","previewFileId":"9ac024ec-71fa-43d1-b1c9-ada22d1056b8","createdByUserId":"73d551ce-d9c0-4d21-af34-42f2c6ddb8c0"}'

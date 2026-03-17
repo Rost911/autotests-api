@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE3VDIyOjMxOjExLjc2MjUxMSIsInVzZXJfaWQiOiI4ZWQzNWQ4OS1jOWRmLTRiMzUtYmNhNS1kNTc1NWEzMzZkYmQifQ.0-IxYUXlprjSxOq4C5ATBJGN-asE9J7hFC1AJW028Vs' \
+  -H 'content-length: 400' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Should care pressure carry hospital.","maxScore":74,"minScore":13,"description":"Marriage south fine product offer. Situation shoulder build game window enough day. Off true various forward head good still. Country turn character defense total north.","estimatedTime":"9 weeks","previewFileId":"7efe7d43-5440-40e2-bff9-e9fc2084b56e","createdByUserId":"8ed35d89-c9df-4b35-bca5-d5755a336dbd"}'

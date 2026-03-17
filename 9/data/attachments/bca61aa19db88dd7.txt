@@ -1,0 +1,11 @@
+INFO     BASE_ASSERTIONS:base.py:17 Check that response status code equals to 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:29 Check create exercise response
+INFO     BASE_ASSERTIONS:base.py:35 Check that "title" equals to Next couple loss town.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "course_id" equals to 81934c53-daaf-44b6-8186-4e1ac9d28130
+INFO     BASE_ASSERTIONS:base.py:35 Check that "max_score" equals to 94
+INFO     BASE_ASSERTIONS:base.py:35 Check that "min_score" equals to 29
+INFO     BASE_ASSERTIONS:base.py:35 Check that "order_index" equals to 37
+INFO     BASE_ASSERTIONS:base.py:35 Check that "description" equals to Mission contain score produce television attention. Art image miss interview direction happy usually talk. Around toward movement many memory.
+Season rich without indeed chair recently.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "estimated_time" equals to 5 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validating JSON schema

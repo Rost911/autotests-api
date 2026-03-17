@@ -1,0 +1,9 @@
+INFO     BASE_ASSERTIONS:base.py:17 Check that response status code equals to 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:74 Check update exercise response
+INFO     BASE_ASSERTIONS:base.py:35 Check that "title" equals to Occur magazine source foot wind who share test.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "max_score" equals to 100
+INFO     BASE_ASSERTIONS:base.py:35 Check that "min_score" equals to 18
+INFO     BASE_ASSERTIONS:base.py:35 Check that "order_index" equals to 65
+INFO     BASE_ASSERTIONS:base.py:35 Check that "description" equals to Factor management parent as. International official word Mr. Manage fly listen state edge important carry.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "estimated_time" equals to 7 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validating JSON schema

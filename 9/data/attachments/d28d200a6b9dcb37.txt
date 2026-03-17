@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE3VDIyOjMxOjEyLjk0MjYyNiIsInVzZXJfaWQiOiJkNDM0N2I5Zi1lOTdkLTRmNzEtYWM0Ny03N2YxYTM1Y2MyMzgifQ.cZ8-RDkDp6st_spqNIVQ8Yg4HsRFbdREUq2-lMtC_bA' \
+  -H 'content-length: 418' \
+  -H 'content-type: application/json' \
+  -d '{"title":"During study do to energy.","maxScore":94,"minScore":9,"description":"Natural world nature establish town. Point direction see idea interview need clearly.\nFly marriage law tree natural. Everything person long argue court compare. Other these center decision pattern.","estimatedTime":"4 weeks","previewFileId":"eabd66e0-1150-40af-abc9-0e81eb8ff5c0","createdByUserId":"d4347b9f-e97d-4f71-ac47-77f1a35cc238"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE3VDIyOjMxOjEyLjY3MDU2MSIsInVzZXJfaWQiOiJjZTZiYzI5Mi02MGMxLTQxNzMtYTQyZC03ZGVmNjlkNGM3MjUifQ.v4kdlvYsoHTPZIYvYimLcbzG0vVBCtVLKMcIaTbAOOI' \
+  -H 'content-length: 358' \
+  -H 'content-type: application/json' \
+  -d '{"title":"My positive risk talk where job.","courseId":"952ef72a-9c4a-458f-8641-08c44633c35b","maxScore":91,"minScore":25,"orderIndex":99,"description":"Market against note over. Reduce should collection growth song science. Successful sound another in along next.\nCentury five garden. Manager join character never adult certain.","estimatedTime":"8 weeks"}'

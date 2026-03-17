@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE3VDIyOjMxOjExLjQ4ODg1MSIsInVzZXJfaWQiOiJiMjRjYWI1NC05ODA5LTQxMzItOTk1OS05Yzg2YTI2MzZlYWIifQ.2h0n5LqHs9Nwv5cChvg9qUOn574dt1UuHzpivSBQhzM' \
+  -H 'content-length: 302' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Social there parent rock forward for economic.","maxScore":81,"minScore":13,"description":"Value along explain word song culture. Order play final need.","estimatedTime":"7 weeks","previewFileId":"5bdc6773-3c21-4c04-8f6f-49fff99c52e5","createdByUserId":"b24cab54-9809-4132-9959-9c86a2636eab"}'
