@@ -1,0 +1,14 @@
+INFO     BASE_ASSERTIONS:base.py:17 Check that response status code equals to 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:105 Check get exercises response list
+INFO     BASE_ASSERTIONS:base.py:69 Check that length of "exercises" equals to 1
+INFO     EXERCISES_ASSERTIONS:exercises.py:44 Check exercise schema
+INFO     BASE_ASSERTIONS:base.py:35 Check that "id" equals to 13ddd28f-ddfe-4e9f-9295-62dca1185a22
+INFO     BASE_ASSERTIONS:base.py:35 Check that "title" equals to Main last environment they act.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "course_id" equals to d8ab96e2-1717-4f36-af8f-2b685a31291b
+INFO     BASE_ASSERTIONS:base.py:35 Check that "max_score" equals to 95
+INFO     BASE_ASSERTIONS:base.py:35 Check that "min_score" equals to 1
+INFO     BASE_ASSERTIONS:base.py:35 Check that "order_index" equals to 26
+INFO     BASE_ASSERTIONS:base.py:35 Check that "description" equals to Enough light production find enjoy inside.
+Next degree tree south. Hair white easy animal. College better design share. Finish phone always series pressure record.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "estimated_time" equals to 6 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validating JSON schema

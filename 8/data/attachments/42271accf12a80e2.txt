@@ -1,0 +1,13 @@
+INFO     BASE_ASSERTIONS:base.py:17 Check that response status code equals to 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:61 Check get exercise response
+INFO     EXERCISES_ASSERTIONS:exercises.py:44 Check exercise schema
+INFO     BASE_ASSERTIONS:base.py:35 Check that "id" equals to 0c59e34b-28c4-4a9e-b782-0a2ae57b090d
+INFO     BASE_ASSERTIONS:base.py:35 Check that "title" equals to Near large put adult daughter.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "course_id" equals to 2ef68d79-12ac-4f9b-8b7f-a0fe06f003fb
+INFO     BASE_ASSERTIONS:base.py:35 Check that "max_score" equals to 54
+INFO     BASE_ASSERTIONS:base.py:35 Check that "min_score" equals to 5
+INFO     BASE_ASSERTIONS:base.py:35 Check that "order_index" equals to 50
+INFO     BASE_ASSERTIONS:base.py:35 Check that "description" equals to Or test indeed operation. Reach want pull stage interest might.
+Doctor unit whatever white. Cup sense including realize conference difference somebody. Future moment give.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "estimated_time" equals to 5 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validating JSON schema

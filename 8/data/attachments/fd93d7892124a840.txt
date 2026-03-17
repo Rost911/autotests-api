@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE3VDIyOjI4OjM4LjY0NzY1NiIsInVzZXJfaWQiOiJhM2M2NWY1OS1hYmVmLTQ3MGQtYmJmMi1jMTZiMDUxOTdlZGQifQ.HmrnSdG11xzlfnWnUMNCgCHpZZUmCJo9kGEyTNn-RRI' \
+  -H 'content-length: 384' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Blue lose bag style few home.","maxScore":94,"minScore":28,"description":"By everyone sense trip key see senior. Bill decade season year between do. Sometimes drop nice note response during.\nPiece claim matter work there development.","estimatedTime":"1 weeks","previewFileId":"e5334dd1-0018-4498-95fe-003f09d4f344","createdByUserId":"a3c65f59-abef-470d-bbf2-c16b05197edd"}'

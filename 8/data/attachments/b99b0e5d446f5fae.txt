@@ -1,0 +1,12 @@
+INFO     BASE_ASSERTIONS:base.py:17 Check that response status code equals to 200
+INFO     COURSES_ASSERTIONS:courses.py:91 Check create course response
+INFO     BASE_ASSERTIONS:base.py:35 Check that "title" equals to Yard stay step capital tax explain with figure.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "max_score" equals to 69
+INFO     BASE_ASSERTIONS:base.py:35 Check that "min_score" equals to 15
+INFO     BASE_ASSERTIONS:base.py:35 Check that "description" equals to Film without inside little man war. Better parent edge direction to girl.
+Blue conference military professor.
+Least concern ok smile serious this.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "estimated_time" equals to 5 weeks
+INFO     BASE_ASSERTIONS:base.py:35 Check that "preview_file_id" equals to e4f64e86-4ba8-48e4-8edf-3604b001f928
+INFO     BASE_ASSERTIONS:base.py:35 Check that "created_by_user_id" equals to 45d55d4d-2fe5-4d19-ba31-e6ef017f41dc
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validating JSON schema

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE3VDIyOjI4OjQxLjI2NjE4NCIsInVzZXJfaWQiOiJjNTRjOGEwZS01ZjgxLTQyOWQtOWNmZS1iZjZmZDRjNGMxMDYifQ.QX2TXUK5_K4A2CFp6uiJjHF1pZbaOm6acaenxr6_WF0' \
+  -H 'content-length: 392' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Agree defense here benefit hour.","maxScore":79,"minScore":22,"description":"Fight stage large say. Environmental hand system guess chance draw grow.\nComputer while use important hair else their perhaps. Open miss baby. Wear upon use animal.","estimatedTime":"1 weeks","previewFileId":"3460df1d-1d6e-4f57-8fbd-ecb3b543a800","createdByUserId":"c54c8a0e-5f81-429d-9cfe-bf6fd4c4c106"}'

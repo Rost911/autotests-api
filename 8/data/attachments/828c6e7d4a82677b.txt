@@ -1,0 +1,10 @@
+INFO     BASE_ASSERTIONS:base.py:17 Check that response status code equals to 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:74 Check update exercise response
+INFO     BASE_ASSERTIONS:base.py:35 Check that "title" equals to Will same choose near other.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "max_score" equals to 51
+INFO     BASE_ASSERTIONS:base.py:35 Check that "min_score" equals to 9
+INFO     BASE_ASSERTIONS:base.py:35 Check that "order_index" equals to 16
+INFO     BASE_ASSERTIONS:base.py:35 Check that "description" equals to Mention today between gas. Why of others so.
+Company my teach culture. Happy out street sea on surface author. Financial charge low information tough show war.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "estimated_time" equals to 10 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validating JSON schema

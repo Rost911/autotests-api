@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/exercises/cb20c945-9b1a-43b0-adc4-b809ca154bc0' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE3VDIyOjI4OjQxLjI2NjE4NCIsInVzZXJfaWQiOiJjNTRjOGEwZS01ZjgxLTQyOWQtOWNmZS1iZjZmZDRjNGMxMDYifQ.QX2TXUK5_K4A2CFp6uiJjHF1pZbaOm6acaenxr6_WF0' \
+  -H 'content-length: 287' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Will same choose near other.","maxScore":51,"minScore":9,"orderIndex":16,"description":"Mention today between gas. Why of others so.\nCompany my teach culture. Happy out street sea on surface author. Financial charge low information tough show war.","estimatedTime":"10 weeks"}'

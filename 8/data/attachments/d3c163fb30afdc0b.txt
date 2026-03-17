@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE3VDIyOjI4OjQwLjk5MzEzMyIsInVzZXJfaWQiOiI4YjcyNWY2ZC00Yzg0LTRiZjUtYTM2NC03ZTBiYjY3ZjAwNzQifQ.Ws-voaFVcXkvGD-GiqVWwnvLAirCBaVWVu6awm2XzVk' \
+  -H 'content-length: 355' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Mission wife his should.","maxScore":88,"minScore":7,"description":"Art someone record step. Where happy reality high follow.\nManage space more spring western last. Area speech two buy blood subject when.","estimatedTime":"4 weeks","previewFileId":"520e6a10-cd64-48d5-bda4-ff990968835b","createdByUserId":"8b725f6d-4c84-4bf5-a364-7e0bb67f0074"}'

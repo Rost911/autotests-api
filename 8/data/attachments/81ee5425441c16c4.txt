@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE3VDIyOjI4OjQyLjQ0Nzg2MiIsInVzZXJfaWQiOiI4ZmU5ZDlkZC1iMGU5LTQ2OGUtYmEyYi1jMTBkYzEwNDIzZDIifQ.2VzaF0LHi7kbmbbsnTEMYvKyRHwkLQfKY-IvU1Grsgk' \
+  -H 'content-length: 320' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Owner act might yeah attention today human.","maxScore":55,"minScore":15,"description":"Heart offer specific they discover off. Little move director fly public might let.","estimatedTime":"1 weeks","previewFileId":"45a18f72-6098-467a-bb8c-0b79b1c13bc3","createdByUserId":"8fe9d9dd-b0e9-468e-ba2b-c10dc10423d2"}'

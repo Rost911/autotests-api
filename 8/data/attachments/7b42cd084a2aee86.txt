@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE3VDIyOjI4OjQwLjA3ODA1NSIsInVzZXJfaWQiOiI0NWQ1NWQ0ZC0yZmU1LTRkMTktYmEzMS1lNmVmMDE3ZjQxZGMifQ.TB_tMLFNEGFx2xWlseC1dHHkV8Ce0b2AgW6VjWOKq7I' \
+  -H 'content-length: 390' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Yard stay step capital tax explain with figure.","maxScore":69,"minScore":15,"description":"Film without inside little man war. Better parent edge direction to girl.\nBlue conference military professor.\nLeast concern ok smile serious this.","estimatedTime":"5 weeks","previewFileId":"e4f64e86-4ba8-48e4-8edf-3604b001f928","createdByUserId":"45d55d4d-2fe5-4d19-ba31-e6ef017f41dc"}'

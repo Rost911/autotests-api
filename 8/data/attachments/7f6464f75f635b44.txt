@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/b793e95e-8025-47d5-bc00-5da20399dcb6' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE3VDIyOjI4OjM4LjY0NzY1NiIsInVzZXJfaWQiOiJhM2M2NWY1OS1hYmVmLTQ3MGQtYmJmMi1jMTZiMDUxOTdlZGQifQ.HmrnSdG11xzlfnWnUMNCgCHpZZUmCJo9kGEyTNn-RRI' \
+  -H 'content-length: 293' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Itself great picture popular cultural.","maxScore":78,"minScore":23,"description":"Short senior staff thank today test herself. Financial side behind do those commercial enter. Kid hold popular analysis experience wrong.\nSuch world kitchen assume night.","estimatedTime":"10 weeks"}'
