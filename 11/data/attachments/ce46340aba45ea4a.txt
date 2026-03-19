@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE5VDIxOjM3OjAzLjYwNDg1OSIsInVzZXJfaWQiOiIxMjBmN2U5OC1jMDBkLTQ5YmQtYjI3NS1kOTgwMDE3ZDY3YWEifQ.5xwFMhBWluGXiqzadnktfWaK8vpqQCAE1_VkFkwJHqs' \
+  -H 'content-length: 254' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Couple recognize bad method tend wind top.","courseId":"c3f4e591-db11-49a9-8a69-1e689b389c2c","maxScore":55,"minScore":26,"orderIndex":89,"description":"Hospital phone field east. Deep themselves lose detail involve.","estimatedTime":"8 weeks"}'

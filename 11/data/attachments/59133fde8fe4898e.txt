@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE5VDIxOjM3OjAyLjM4NDczNyIsInVzZXJfaWQiOiI0M2EzNDc4Ni1mNjEwLTRjNmMtOGU2Ni0yZjMyZDViYmMzMGUifQ.HqFh-k0bFyN3Z2cgWCOb9dFhiyt2qWjjrb2rhfPg7Iw' \
+  -H 'content-length: 416' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Notice shoulder short pass standard rich game lay.","maxScore":96,"minScore":22,"description":"Thus my show identify. Rise analysis camera project law sea service how.\nTrouble body shake I health if author. Fly herself politics stage.\nHigh realize police nothing.","estimatedTime":"10 weeks","previewFileId":"9925bb66-5722-47dd-bb71-60a989d95f77","createdByUserId":"43a34786-f610-4c6c-8e66-2f32d5bbc30e"}'

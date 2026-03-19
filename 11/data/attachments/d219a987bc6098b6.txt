@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE5VDIxOjM2OjU5Ljk5MjQ2NiIsInVzZXJfaWQiOiJkYTMyZTVmMS01OTFlLTQzZTgtOTY2OS04Zjk4YjRjZWZjODAifQ._zKC2f50DvKphFYkTBJfwmOecXlhKCjG4OsoiqrRybY' \
+  -H 'content-length: 397' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Over away church whether thank both administration edge.","maxScore":71,"minScore":21,"description":"Nearly bank clear leader space statement. Behind marriage simple require bill themselves measure business. No church miss yeah behavior fish life.","estimatedTime":"8 weeks","previewFileId":"abf5b745-93aa-47a6-8c3d-392c05a66c94","createdByUserId":"da32e5f1-591e-43e8-9669-8f98b4cefc80"}'

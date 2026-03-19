@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE5VDIxOjM3OjAzLjAxOTUwNyIsInVzZXJfaWQiOiIyODY2OWZmZS0xNWRkLTRkZWQtYjI1My0zNjZkYWE3Y2FmOTcifQ.wT4b9SkYDrdZbGehppT-aYMgIv2cAAny3itfK4QCuUY' \
+  -H 'content-length: 325' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Recognize effect say paper tough marriage.","maxScore":83,"minScore":1,"description":"Everyone opportunity citizen use eye letter west edge. After into response six everybody.","estimatedTime":"7 weeks","previewFileId":"d3511b58-969b-456a-ad91-a80e6eca731e","createdByUserId":"28669ffe-15dd-4ded-b253-366daa7caf97"}'

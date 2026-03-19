@@ -1,0 +1,11 @@
+INFO     BASE_ASSERTIONS:base.py:17 Check that response status code equals to 200
+INFO     COURSES_ASSERTIONS:courses.py:91 Check create course response
+INFO     BASE_ASSERTIONS:base.py:35 Check that "title" equals to Customer throw author close Republican letter attack.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "max_score" equals to 51
+INFO     BASE_ASSERTIONS:base.py:35 Check that "min_score" equals to 26
+INFO     BASE_ASSERTIONS:base.py:35 Check that "description" equals to Event program state else prevent. Improve job mother series reach alone garden.
+Why decade choice western quickly.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "estimated_time" equals to 5 weeks
+INFO     BASE_ASSERTIONS:base.py:35 Check that "preview_file_id" equals to ae325817-b1bf-4f87-8409-e60a25b09f17
+INFO     BASE_ASSERTIONS:base.py:35 Check that "created_by_user_id" equals to e929b7f5-58dc-4de5-9420-d214458c8538
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validating JSON schema

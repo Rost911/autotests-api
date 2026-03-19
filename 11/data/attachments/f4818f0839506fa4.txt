@@ -1,0 +1,13 @@
+INFO     BASE_ASSERTIONS:base.py:17 Check that response status code equals to 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:61 Check get exercise response
+INFO     EXERCISES_ASSERTIONS:exercises.py:44 Check exercise schema
+INFO     BASE_ASSERTIONS:base.py:35 Check that "id" equals to 0e30e40a-fe9b-4f8d-8180-f4a121cdfb22
+INFO     BASE_ASSERTIONS:base.py:35 Check that "title" equals to Another mouth chance tend stock.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "course_id" equals to f8fc9e56-556f-4aa9-9339-37edf968323e
+INFO     BASE_ASSERTIONS:base.py:35 Check that "max_score" equals to 99
+INFO     BASE_ASSERTIONS:base.py:35 Check that "min_score" equals to 21
+INFO     BASE_ASSERTIONS:base.py:35 Check that "order_index" equals to 64
+INFO     BASE_ASSERTIONS:base.py:35 Check that "description" equals to Class assume season arrive over maintain forward. But class image design data number. She strategy town personal drug white.
+Phone Republican itself young red indicate environment.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "estimated_time" equals to 3 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validating JSON schema

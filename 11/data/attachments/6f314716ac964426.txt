@@ -1,0 +1,24 @@
+INFO     BASE_ASSERTIONS:base.py:17 Check that response status code equals to 200
+INFO     COURSES_ASSERTIONS:courses.py:66 Check get courses response
+INFO     BASE_ASSERTIONS:base.py:69 Check that length of "courses" equals to 1
+INFO     COURSES_ASSERTIONS:courses.py:40 Check course
+INFO     BASE_ASSERTIONS:base.py:35 Check that "id" equals to 3de27cb1-8dc2-4daf-90a8-fd8fe80ec641
+INFO     BASE_ASSERTIONS:base.py:35 Check that "title" equals to By degree human cut society your.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "max_score" equals to 57
+INFO     BASE_ASSERTIONS:base.py:35 Check that "min_score" equals to 2
+INFO     BASE_ASSERTIONS:base.py:35 Check that "description" equals to Mission many president television adult also gun.
+Indeed describe audience. Song try a agree suggest process.
+Threat year town new. Safe tree account. Himself interesting every open plan.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "estimated_time" equals to 8 weeks
+INFO     FILES_ASSERTIONS:files.py:38 Check file
+INFO     BASE_ASSERTIONS:base.py:35 Check that "id" equals to f58762d7-3e0f-4280-b23b-e42b3695eac1
+INFO     BASE_ASSERTIONS:base.py:35 Check that "url" equals to http://localhost:8000/static/tests/50647b1c-1a2a-490e-b2c1-3d601d576042.png
+INFO     BASE_ASSERTIONS:base.py:35 Check that "filename" equals to 50647b1c-1a2a-490e-b2c1-3d601d576042.png
+INFO     BASE_ASSERTIONS:base.py:35 Check that "directory" equals to tests
+INFO     USERS_ASSERTIONS:users.py:42 Check user
+INFO     BASE_ASSERTIONS:base.py:35 Check that "id" equals to 38a7bd41-4963-4592-8a12-2a807ab11201
+INFO     BASE_ASSERTIONS:base.py:35 Check that "email" equals to kristinanderson@example.com
+INFO     BASE_ASSERTIONS:base.py:35 Check that "last_name" equals to Cook
+INFO     BASE_ASSERTIONS:base.py:35 Check that "first_name" equals to Keith
+INFO     BASE_ASSERTIONS:base.py:35 Check that "middle_name" equals to Melissa
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validating JSON schema

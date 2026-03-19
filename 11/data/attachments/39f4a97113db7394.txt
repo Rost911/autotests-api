@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE5VDIxOjM3OjAyLjM4NDczNyIsInVzZXJfaWQiOiI0M2EzNDc4Ni1mNjEwLTRjNmMtOGU2Ni0yZjMyZDViYmMzMGUifQ.HqFh-k0bFyN3Z2cgWCOb9dFhiyt2qWjjrb2rhfPg7Iw' \
+  -H 'content-length: 386' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Election and same avoid under here career.","courseId":"5826f81b-5dcd-442c-b94d-e18df5b063f6","maxScore":50,"minScore":12,"orderIndex":36,"description":"White century wide. Suggest bed total week voice site process.\nProperty take cause can ten lawyer decision. Too beat specific authority any sign record. Leave firm fire claim paper win when guy.","estimatedTime":"7 weeks"}'

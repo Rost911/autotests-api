@@ -1,0 +1,14 @@
+INFO     BASE_ASSERTIONS:base.py:17 Check that response status code equals to 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:105 Check get exercises response list
+INFO     BASE_ASSERTIONS:base.py:69 Check that length of "exercises" equals to 1
+INFO     EXERCISES_ASSERTIONS:exercises.py:44 Check exercise schema
+INFO     BASE_ASSERTIONS:base.py:35 Check that "id" equals to c0e43f6f-44d2-4586-87df-75edfc96edd7
+INFO     BASE_ASSERTIONS:base.py:35 Check that "title" equals to Billion bag fall whether.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "course_id" equals to 28e4967d-04f9-45d7-aa08-28f50ec1df17
+INFO     BASE_ASSERTIONS:base.py:35 Check that "max_score" equals to 67
+INFO     BASE_ASSERTIONS:base.py:35 Check that "min_score" equals to 10
+INFO     BASE_ASSERTIONS:base.py:35 Check that "order_index" equals to 23
+INFO     BASE_ASSERTIONS:base.py:35 Check that "description" equals to Right action television situation. Than reduce cut standard agency.
+Deep financial glass democratic. Between girl senior perform reduce toward. Television society hot beautiful candidate.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "estimated_time" equals to 9 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validating JSON schema

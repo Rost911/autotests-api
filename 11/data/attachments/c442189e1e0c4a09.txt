@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE5VDIxOjM3OjAwLjU3NTg3OSIsInVzZXJfaWQiOiIzOGE3YmQ0MS00OTYzLTQ1OTItOGExMi0yYTgwN2FiMTEyMDEifQ.KaimVkzPeSCmY2AGhYgmmkx8qS4ufUBeNYXTBqKXQdQ' \
+  -H 'content-length: 416' \
+  -H 'content-type: application/json' \
+  -d '{"title":"By degree human cut society your.","maxScore":57,"minScore":2,"description":"Mission many president television adult also gun.\nIndeed describe audience. Song try a agree suggest process.\nThreat year town new. Safe tree account. Himself interesting every open plan.","estimatedTime":"8 weeks","previewFileId":"f58762d7-3e0f-4280-b23b-e42b3695eac1","createdByUserId":"38a7bd41-4963-4592-8a12-2a807ab11201"}'

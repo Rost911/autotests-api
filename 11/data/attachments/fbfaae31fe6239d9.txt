@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE5VDIxOjM3OjAzLjYwNDg1OSIsInVzZXJfaWQiOiIxMjBmN2U5OC1jMDBkLTQ5YmQtYjI3NS1kOTgwMDE3ZDY3YWEifQ.5xwFMhBWluGXiqzadnktfWaK8vpqQCAE1_VkFkwJHqs' \
+  -H 'content-length: 342' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Onto son low challenge suggest.","maxScore":62,"minScore":2,"description":"If early themselves break which pattern usually. Cell begin especially as require. Low family idea officer board you.","estimatedTime":"6 weeks","previewFileId":"1f0ad94a-72cf-4314-9318-74f37bc13efc","createdByUserId":"120f7e98-c00d-49bd-b275-d980017d67aa"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE5VDIxOjM3OjAxLjgwMTUyNSIsInVzZXJfaWQiOiI4ZWJkMTZlYy1kOTcyLTRkZjMtOTIxNC1iMDNjMDU0YzhhMDIifQ.EgCg97xVWeO3NUGn1L3_rl2UReruIGbnViOBZjmHdVY' \
+  -H 'content-length: 370' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Especially officer painting and speech man though.","maxScore":80,"minScore":10,"description":"Pattern true agreement debate discuss. Method usually class even man cost heart some. House kind every early agency his sell.","estimatedTime":"5 weeks","previewFileId":"0cce58f2-08be-48df-80e3-68de34824cbd","createdByUserId":"8ebd16ec-d972-4df3-9214-b03c054c8a02"}'

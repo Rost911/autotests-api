@@ -1,0 +1,10 @@
+INFO     BASE_ASSERTIONS:base.py:17 Check that response status code equals to 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:74 Check update exercise response
+INFO     BASE_ASSERTIONS:base.py:35 Check that "title" equals to Official side bar go official.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "max_score" equals to 73
+INFO     BASE_ASSERTIONS:base.py:35 Check that "min_score" equals to 30
+INFO     BASE_ASSERTIONS:base.py:35 Check that "order_index" equals to 91
+INFO     BASE_ASSERTIONS:base.py:35 Check that "description" equals to Detail easy state city those society with until. Police hair contain build. Message represent most ago expert give morning.
+Color tend difficult. Wall where shake personal need minute go.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "estimated_time" equals to 5 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validating JSON schema

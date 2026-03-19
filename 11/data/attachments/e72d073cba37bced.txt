@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE5VDIxOjM3OjA0LjI0NTE5NSIsInVzZXJfaWQiOiI3NjRkMmY2OC1mN2U2LTRlZmItODJlZi0zNTVmNzRkMDkyYTgifQ.630ekdxyUuqii4g3KTE8iQukToQyj_1I-E-cZxxgwWw' \
+  -H 'content-length: 418' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Seem begin seat Democrat affect pay ten.","maxScore":100,"minScore":10,"description":"Sport live customer side available question. Bill then sense laugh now summer. Exactly close black south election.\nIts relate we artist. Woman sister politics bad management anyone.","estimatedTime":"4 weeks","previewFileId":"d7e84db1-b837-4069-ac2b-ac4b6eee730a","createdByUserId":"764d2f68-f7e6-4efb-82ef-355f74d092a8"}'

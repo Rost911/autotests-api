@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE5VDIxOjM3OjAxLjIyMDk3NiIsInVzZXJfaWQiOiJlOTI5YjdmNS01OGRjLTRkZTUtOTQyMC1kMjE0NDU4Yzg1MzgifQ.vvRtmI_kmmMO20fuF8KHZowcWLJFSZ5P2V17gJXoHZE' \
+  -H 'content-length: 363' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Customer throw author close Republican letter attack.","maxScore":51,"minScore":26,"description":"Event program state else prevent. Improve job mother series reach alone garden.\nWhy decade choice western quickly.","estimatedTime":"5 weeks","previewFileId":"ae325817-b1bf-4f87-8409-e60a25b09f17","createdByUserId":"e929b7f5-58dc-4de5-9420-d214458c8538"}'
