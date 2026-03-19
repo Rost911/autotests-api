@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/exercises/4a98111b-47f2-4361-90c2-a638791618e2' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE5VDIxOjQ0OjAyLjAzNzM1MSIsInVzZXJfaWQiOiI2NTNkYmJjMC1lMzFiLTQyNmUtYmM1Ni01MjEwYjIzMDE5MzIifQ.DYGmdi9MDzRlk-yj5AGMZiANNGuBDihxzokB2XDltak' \
+  -H 'content-length: 326' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Why small follow western it skin.","maxScore":90,"minScore":15,"orderIndex":82,"description":"Already allow get democratic name this. Management be bring after have. Guess company method health soldier.\nMrs green record true purpose ask family fight. Set law history gun responsibility.","estimatedTime":"10 weeks"}'

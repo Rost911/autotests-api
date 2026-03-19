@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE5VDIxOjQ0OjAxLjQ0ODk5MCIsInVzZXJfaWQiOiJhN2MxM2FiNC0yYmUyLTQxOTYtOTMzNC0xNTkxZGYyMDNhMzUifQ.C5JjbN7I5HCxGqYisgsCc_lVJMip6vnHfLq6-GV-LLk' \
+  -H 'content-length: 410' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Success sister product go.","maxScore":67,"minScore":22,"description":"Impact study loss Democrat may. Particular truth run possible eight single move church.\nEye entire remember left forget each. Scientist us vote career save specific. Center along politics.","estimatedTime":"9 weeks","previewFileId":"165d80bc-0c6a-4176-96b5-b7b4544ab3b7","createdByUserId":"a7c13ab4-2be2-4196-9334-1591df203a35"}'

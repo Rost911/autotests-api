@@ -1,0 +1,11 @@
+INFO     BASE_ASSERTIONS:base.py:17 Check that response status code equals to 200
+INFO     COURSES_ASSERTIONS:courses.py:91 Check create course response
+INFO     BASE_ASSERTIONS:base.py:35 Check that "title" equals to View kind someone.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "max_score" equals to 82
+INFO     BASE_ASSERTIONS:base.py:35 Check that "min_score" equals to 13
+INFO     BASE_ASSERTIONS:base.py:35 Check that "description" equals to Film especially security central suffer activity.
+Yet fight deal happy. By either I whom film certain.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "estimated_time" equals to 8 weeks
+INFO     BASE_ASSERTIONS:base.py:35 Check that "preview_file_id" equals to 344883d5-cde4-4a39-8ca2-c1ca28fd63b3
+INFO     BASE_ASSERTIONS:base.py:35 Check that "created_by_user_id" equals to cabe3eef-455e-41cd-85bf-3ea51b0d0dd4
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validating JSON schema

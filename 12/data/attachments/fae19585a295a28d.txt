@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE5VDIxOjQ0OjAyLjYyNjEyNSIsInVzZXJfaWQiOiI3ZjI0ZmVmYS04ZTE1LTRlMTQtOGNhMC00ZWE4MGE1MDZlYmYifQ.yAa-z2NHntIIWUtsIIqDd6o1dGdsVKxID239vvMEPNE' \
+  -H 'content-length: 346' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Cover write share safe kid produce.","maxScore":83,"minScore":1,"description":"Man probably color. Look grow market charge hotel them time.\nNow week sing great appear author.\nSeven onto process.","estimatedTime":"5 weeks","previewFileId":"e9d6cf9f-83b5-47a7-bbd3-6d1c3cb6a539","createdByUserId":"7f24fefa-8e15-4e14-8ca0-4ea80a506ebf"}'

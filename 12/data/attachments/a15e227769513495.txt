@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE5VDIxOjQ0OjAwLjI0MDY2NiIsInVzZXJfaWQiOiJmMjUxNTk0Zi00MjgzLTQ1NjUtOTI5YS1hMjdhNmM1MzhhODYifQ.vYsVi7oFRh4C4K4I89cy1gPIIt-0jpoWLwnDGjursyA' \
+  -H 'content-length: 433' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Together bill particular character book box.","maxScore":88,"minScore":21,"description":"Personal until Democrat anything. System perform expect simple teach name player.\nWar once fact again western human plan. International many physical stuff. Last probably image improve cut bad.","estimatedTime":"8 weeks","previewFileId":"1b5c3980-6bd0-4d65-8587-665787cead2b","createdByUserId":"f251594f-4283-4565-929a-a27a6c538a86"}'

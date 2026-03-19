@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE5VDIxOjQ0OjAzLjI3NDEyNiIsInVzZXJfaWQiOiJlNzdjODNlYi1iMWMxLTQ4MDMtYTQ4Mi1hMzE0NGVmMjVhMDYifQ.nCQ8vIrT9Rb9yYUNIKvTEuPI0QNc2LMoY92-ha-RAlc' \
+  -H 'content-length: 343' \
+  -H 'content-type: application/json' \
+  -d '{"title":"New chair brother nice interview article we so.","maxScore":75,"minScore":20,"description":"Half unit order rule method bed billion. Decade picture word exactly science. Candidate common add I.","estimatedTime":"9 weeks","previewFileId":"3e321805-37e5-40e7-820b-c003fe560f8a","createdByUserId":"e77c83eb-b1c1-4803-a482-a3144ef25a06"}'

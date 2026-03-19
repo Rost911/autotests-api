@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE5VDIxOjQzOjU5LjYyMTE0MiIsInVzZXJfaWQiOiJmN2U5NzFmNi0zZDcyLTRmYTYtODQ2YS03YmUxYWFjZWE4NDEifQ.wbVhCiDuQsOp_dzzZMxYQF1ryJ4RTJdUWu9WXwUTTRM' \
+  -H 'content-length: 408' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Traditional attention article particularly certain answer officer more.","maxScore":99,"minScore":30,"description":"Yeah ahead dinner quite. Often reveal million her.\nMorning affect responsibility discuss security. Natural loss other employee your discover.","estimatedTime":"7 weeks","previewFileId":"2a23aa21-e8fd-4f84-92ba-b8a75a2117d1","createdByUserId":"f7e971f6-3d72-4fa6-846a-7be1aacea841"}'

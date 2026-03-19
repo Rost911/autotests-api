@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE5VDIxOjQ0OjAyLjAzNzM1MSIsInVzZXJfaWQiOiI2NTNkYmJjMC1lMzFiLTQyNmUtYmM1Ni01MjEwYjIzMDE5MzIifQ.DYGmdi9MDzRlk-yj5AGMZiANNGuBDihxzokB2XDltak' \
+  -H 'content-length: 357' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Pretty upon present control pay.","maxScore":86,"minScore":3,"description":"Win begin thing consumer great. Pull middle open hot.\nPart make relationship inside poor. Fill Congress anyone fly enjoy yourself.","estimatedTime":"1 weeks","previewFileId":"b8142eff-c44b-4336-a679-fb242c559e55","createdByUserId":"653dbbc0-e31b-426e-bc56-5210b2301932"}'

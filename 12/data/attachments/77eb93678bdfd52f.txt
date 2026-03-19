@@ -1,0 +1,13 @@
+INFO     BASE_ASSERTIONS:base.py:17 Check that response status code equals to 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:105 Check get exercises response list
+INFO     BASE_ASSERTIONS:base.py:69 Check that length of "exercises" equals to 1
+INFO     EXERCISES_ASSERTIONS:exercises.py:44 Check exercise schema
+INFO     BASE_ASSERTIONS:base.py:35 Check that "id" equals to 16aac531-42c3-4488-afa0-26cb629dbc57
+INFO     BASE_ASSERTIONS:base.py:35 Check that "title" equals to Material course class live husband crime.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "course_id" equals to e084f761-392c-45de-9605-c31daabba88a
+INFO     BASE_ASSERTIONS:base.py:35 Check that "max_score" equals to 96
+INFO     BASE_ASSERTIONS:base.py:35 Check that "min_score" equals to 27
+INFO     BASE_ASSERTIONS:base.py:35 Check that "order_index" equals to 15
+INFO     BASE_ASSERTIONS:base.py:35 Check that "description" equals to Black section soldier Congress sense represent nearly. Whether responsibility inside usually turn professor tonight. Upon all Republican instead little pretty.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "estimated_time" equals to 10 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validating JSON schema

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE5VDIxOjQ0OjAzLjI3NDEyNiIsInVzZXJfaWQiOiJlNzdjODNlYi1iMWMxLTQ4MDMtYTQ4Mi1hMzE0NGVmMjVhMDYifQ.nCQ8vIrT9Rb9yYUNIKvTEuPI0QNc2LMoY92-ha-RAlc' \
+  -H 'content-length: 302' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Enough establish laugh somebody training.","courseId":"29be8736-5a52-4930-809d-c5ffb439f207","maxScore":77,"minScore":3,"orderIndex":41,"description":"Former apply rest night couple and. Administration attention vote have this. Far it kid simple letter about able.","estimatedTime":"6 weeks"}'

@@ -1,0 +1,10 @@
+INFO     BASE_ASSERTIONS:base.py:17 Check that response status code equals to 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:74 Check update exercise response
+INFO     BASE_ASSERTIONS:base.py:35 Check that "title" equals to Why small follow western it skin.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "max_score" equals to 90
+INFO     BASE_ASSERTIONS:base.py:35 Check that "min_score" equals to 15
+INFO     BASE_ASSERTIONS:base.py:35 Check that "order_index" equals to 82
+INFO     BASE_ASSERTIONS:base.py:35 Check that "description" equals to Already allow get democratic name this. Management be bring after have. Guess company method health soldier.
+Mrs green record true purpose ask family fight. Set law history gun responsibility.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "estimated_time" equals to 10 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validating JSON schema

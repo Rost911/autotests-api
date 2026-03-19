@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE5VDIxOjQ0OjAzLjg2NTQ3MyIsInVzZXJfaWQiOiI4MzYyYTFmNi1jYjFjLTRiYWYtYTQ2ZS05ZjlkYjA3ZDkzMDQifQ.zItiZbvrbtgb_v6cp1MBJlakJtFR8F3CdqujxIH79lI' \
+  -H 'content-length: 434' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Camera truth computer different happy account team.","maxScore":88,"minScore":23,"description":"Rule often weight machine game now. Reduce ball national by. Section may protect resource seat.\nClaim meeting role relate old father mention source. Medical experience before hold dinner.","estimatedTime":"4 weeks","previewFileId":"b348d4bc-daa8-455a-837b-b8da754ba2ab","createdByUserId":"8362a1f6-cb1c-4baf-a46e-9f9db07d9304"}'
