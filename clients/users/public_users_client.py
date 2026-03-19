@@ -19,7 +19,7 @@ class PublicUsersClient(APIClient):
 
         :param request: User data for creation
                         (email, password, full name).
-        :return: An httpx.Response object with the server response.
+        :return: A httpx.Response object with the server response.
         """
         return self.post(APIRoutes.USERS, json=request.model_dump(by_alias=True))
 

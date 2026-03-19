@@ -6,9 +6,9 @@ from allure_commons.types import Severity
 from clients.authentication.authentication_client import AuthenticationClient
 from clients.authentication.authentication_schema import LoginRequestSchema, LoginResponseSchema
 from fixtures.users import UserFixture
-from tools.allure.epics import AllureEpic  # Импортируем enum AllureEpic
-from tools.allure.features import AllureFeature  # Импортируем enum AllureFeature
-from tools.allure.stories import AllureStory  # Импортируем enum AllureStory
+from tools.allure.epics import AllureEpic
+from tools.allure.features import AllureFeature
+from tools.allure.stories import AllureStory
 from tools.allure.tags import AllureTag
 from tools.assertions.authentication import assert_login_response
 from tools.assertions.base import assert_status_code

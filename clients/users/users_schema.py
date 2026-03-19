@@ -3,7 +3,7 @@ from tools.fakers import fake
 
 class UserSchema(BaseModel):
     """
-    Описание структуры пользователя.
+    Description of the user structure.
     """
     model_config = ConfigDict(populate_by_name=True)
     id: str
@@ -14,8 +14,8 @@ class UserSchema(BaseModel):
 
 class CreateUserRequestSchema(BaseModel):
     """
-    Описание структуры POST запроса
-    на создание нового пользователя.
+    Description of the POST request structure
+    for creating a new user.
     """
     model_config = ConfigDict(populate_by_name=True)
     email: EmailStr = Field(default_factory=fake.email)
@@ -26,31 +26,32 @@ class CreateUserRequestSchema(BaseModel):
 
 class CreateUserResponseSchema(BaseModel):
     """
-    Описание структуры ответа создания пользователя.
+    Description of the user creation response structure.
     """
     user: UserSchema
 
 class UpdateUserRequestSchema(BaseModel):
     """
-    Описание структуры запроса на обновление пользователя.
+    Description of the user update request structure.
     """
     model_config = ConfigDict(populate_by_name=True)
-    # Добавили генерацию случайного email
+    # Added random email generation
     email: EmailStr | None = Field(default_factory=fake.email)
-    # Добавили генерацию случайной фамилии
+    # Added random last name generation
     last_name: str | None = Field(alias="lastName", default_factory=fake.last_name)
-    # Добавили генерацию случайного имени
+    # Added random first name generation
     first_name: str | None = Field(alias="firstName", default_factory=fake.first_name)
-    # Добавили генерацию случайного отчества
+    # Added random middle name generation
     middle_name: str | None = Field(alias="middleName", default_factory=fake.middle_name)
+
 class UpdateUserResponseSchema(BaseModel):
     """
-    Описание структуры ответа обновления пользователя.
+    Description of the user update response structure.
     """
     user: UserSchema
 
 class GetUserResponseSchema(BaseModel):
     """
-    Описание структуры ответа получения пользователя.
+    Description of the user retrieval response structure.
     """
     user: UserSchema

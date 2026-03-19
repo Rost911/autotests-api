@@ -54,7 +54,7 @@ class TestCourses:
 
         assert_get_courses_response(response_data, [function_course.response])
 
-        # Проверяем соответствие JSON-ответа схеме
+
         validate_json_schema(response.json(), response_data.model_json_schema())
 
 
