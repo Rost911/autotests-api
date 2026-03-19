@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE5VDIxOjM0OjE0LjY4NjgxMSIsInVzZXJfaWQiOiI4MGYwZjcyMy0wMDhmLTQzM2UtYmYxMC1hMzE3ZjdjYjFhZWUifQ.J81DywdqgKlFrAeTB-khNIhAd0SGJGo2mOr289PTU3c' \
+  -H 'content-length: 404' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Quality foreign bad travel reality.","maxScore":61,"minScore":28,"description":"Cause law Mr present place modern where. Station central staff or last. Drop personal back.\nNatural whether drop factor through enough sometimes. Five language anyone voice.","estimatedTime":"4 weeks","previewFileId":"77dc11d2-f044-4244-9ed1-ad995884e38c","createdByUserId":"80f0f723-008f-433e-bf10-a317f7cb1aee"}'

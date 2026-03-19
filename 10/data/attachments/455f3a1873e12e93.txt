@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE5VDIxOjM0OjEyLjkyNDM2MiIsInVzZXJfaWQiOiJkYjNmZTZiZC00MzUzLTRkMzEtODM4Yi05MDQxNjI2ZWJhYzEifQ.gIRAtsdcvkLHGFQMiY2gVpX7_6fM-pIP0s_R01_7SQE' \
+  -H 'content-length: 410' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Strategy professional future then knowledge can store.","maxScore":64,"minScore":18,"description":"Movie back community wind war. Scene trouble money several serious right talk section. Trial environment report think. Pm particular take pick sense if meeting.","estimatedTime":"10 weeks","previewFileId":"0bebb9a4-0f79-41c3-8d49-917a08a265a6","createdByUserId":"db3fe6bd-4353-4d31-838b-9041626ebac1"}'

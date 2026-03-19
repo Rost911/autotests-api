@@ -1,0 +1,11 @@
+INFO     BASE_ASSERTIONS:base.py:17 Check that response status code equals to 200
+INFO     COURSES_ASSERTIONS:courses.py:91 Check create course response
+INFO     BASE_ASSERTIONS:base.py:35 Check that "title" equals to Those anyone decade attack purpose radio.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "max_score" equals to 88
+INFO     BASE_ASSERTIONS:base.py:35 Check that "min_score" equals to 17
+INFO     BASE_ASSERTIONS:base.py:35 Check that "description" equals to Stuff give training little foot everything. Garden be interview they choose.
+Behind around room once. Girl act huge teach. Agree leave adult west bed.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "estimated_time" equals to 5 weeks
+INFO     BASE_ASSERTIONS:base.py:35 Check that "preview_file_id" equals to 8571b077-adbb-42ad-a126-2d0720463cf2
+INFO     BASE_ASSERTIONS:base.py:35 Check that "created_by_user_id" equals to 2d730b93-7ff8-4740-af72-893d6619607a
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validating JSON schema

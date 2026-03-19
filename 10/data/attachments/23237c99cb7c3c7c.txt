@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE5VDIxOjM0OjEyLjM2ODY3NCIsInVzZXJfaWQiOiJhM2QzZjFlMy1iNDBiLTRhMTUtYTliMy1mNWU5OGI4NTNiYWMifQ.vTEJi_ZLYa762IFj-gqVFyYXLN98YG-8d1IvY3lcRGU' \
+  -H 'content-length: 424' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Study story responsibility music.","maxScore":79,"minScore":15,"description":"She left movement note analysis individual. Lead event blue news.\nWhether sea record that case. Produce to meeting economic.\nSpend authority around bar yard church run. Too result learn program.","estimatedTime":"7 weeks","previewFileId":"8dbed383-00a0-4a99-93c6-9bec6989b774","createdByUserId":"a3d3f1e3-b40b-4a15-a9b3-f5e98b853bac"}'

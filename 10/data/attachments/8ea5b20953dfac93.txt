@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE5VDIxOjM0OjE0LjY4NjgxMSIsInVzZXJfaWQiOiI4MGYwZjcyMy0wMDhmLTQzM2UtYmYxMC1hMzE3ZjdjYjFhZWUifQ.J81DywdqgKlFrAeTB-khNIhAd0SGJGo2mOr289PTU3c' \
+  -H 'content-length: 336' \
+  -H 'content-type: application/json' \
+  -d '{"title":"American name full five result.","courseId":"0350cd50-1e71-4856-883d-de80bde26fcb","maxScore":89,"minScore":29,"orderIndex":65,"description":"Opportunity idea however usually. Institution here lay.\nEconomy lose everything for box. Agency move too. Set term phone debate record college vote accept.","estimatedTime":"3 weeks"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE5VDIxOjM0OjE1LjI1MTkyMCIsInVzZXJfaWQiOiI1ZWExNTBlNC1jNjMxLTQ3OTUtYmU4OC1iMTE1MjUyZGNmYzAifQ.HrJIXVoZkQonDmXZSsdz2Og2j14tYiqUZhyWNFBmdeU' \
+  -H 'content-length: 383' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Heavy federal push director.","maxScore":55,"minScore":20,"description":"Light get new agreement fly measure.\nCard bar style city quality forget. Have condition rate force brother throughout. Charge lose throughout issue hope exist.","estimatedTime":"9 weeks","previewFileId":"50b4ba6f-e9fb-4425-8d0c-8a2518bb0958","createdByUserId":"5ea150e4-c631-4795-be88-b115252dcfc0"}'

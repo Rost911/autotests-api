@@ -1,0 +1,9 @@
+INFO     BASE_ASSERTIONS:base.py:17 Check that response status code equals to 200
+INFO     COURSES_ASSERTIONS:courses.py:23 Check update course response
+INFO     BASE_ASSERTIONS:base.py:35 Check that "title" equals to Around cut successful total know couple whom energy.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "max_score" equals to 57
+INFO     BASE_ASSERTIONS:base.py:35 Check that "min_score" equals to 16
+INFO     BASE_ASSERTIONS:base.py:35 Check that "description" equals to Avoid provide once direction result. Case election own public across west again short.
+Federal especially standard once color care. Book consumer money music edge choose term. Suggest Congress whole.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "estimated_time" equals to 8 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validating JSON schema

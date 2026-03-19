@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE5VDIxOjM0OjE0LjEyMDcwNSIsInVzZXJfaWQiOiI1MTU1NjJiNi1iMjc4LTRlMzktYmQ5ZC02NWY5NzI0ZWIzN2IifQ.2H2PJ58sDN2nUjHCsFIK5kpFYniRiRUFgkhOp4Z0-KI' \
+  -H 'content-length: 349' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Bank least way.","maxScore":76,"minScore":18,"description":"Those other leader coach successful cause ahead seven. Develop food clearly provide north late. Interest finally others whose program goal.","estimatedTime":"7 weeks","previewFileId":"06b2f928-55f7-4ccb-86f7-bb3c835e5cce","createdByUserId":"515562b6-b278-4e39-bd9d-65f9724eb37b"}'

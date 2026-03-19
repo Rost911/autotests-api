@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE5VDIxOjM0OjEzLjU2MjYxMSIsInVzZXJfaWQiOiIyZDczMGI5My03ZmY4LTQ3NDAtYWY3Mi04OTNkNjYxOTYwN2EifQ.ervFTbkXw9mT62ylxo8EtQyrRHN5UAt3Qps53vkosLA' \
+  -H 'content-length: 387' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Those anyone decade attack purpose radio.","maxScore":88,"minScore":17,"description":"Stuff give training little foot everything. Garden be interview they choose.\nBehind around room once. Girl act huge teach. Agree leave adult west bed.","estimatedTime":"5 weeks","previewFileId":"8571b077-adbb-42ad-a126-2d0720463cf2","createdByUserId":"2d730b93-7ff8-4740-af72-893d6619607a"}'

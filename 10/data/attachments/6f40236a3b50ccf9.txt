@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/693cb507-3b81-482e-9d98-22b21c79c96c' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTE5VDIxOjM0OjEyLjM2ODY3NCIsInVzZXJfaWQiOiJhM2QzZjFlMy1iNDBiLTRhMTUtYTliMy1mNWU5OGI4NTNiYWMifQ.vTEJi_ZLYa762IFj-gqVFyYXLN98YG-8d1IvY3lcRGU' \
+  -H 'content-length: 335' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Around cut successful total know couple whom energy.","maxScore":57,"minScore":16,"description":"Avoid provide once direction result. Case election own public across west again short.\nFederal especially standard once color care. Book consumer money music edge choose term. Suggest Congress whole.","estimatedTime":"8 weeks"}'

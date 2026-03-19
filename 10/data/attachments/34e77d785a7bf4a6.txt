@@ -1,0 +1,22 @@
+INFO     BASE_ASSERTIONS:base.py:17 Check that response status code equals to 200
+INFO     COURSES_ASSERTIONS:courses.py:66 Check get courses response
+INFO     BASE_ASSERTIONS:base.py:69 Check that length of "courses" equals to 1
+INFO     COURSES_ASSERTIONS:courses.py:40 Check course
+INFO     BASE_ASSERTIONS:base.py:35 Check that "id" equals to e6f1a793-6f34-421f-8891-f11c2431588b
+INFO     BASE_ASSERTIONS:base.py:35 Check that "title" equals to Strategy professional future then knowledge can store.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "max_score" equals to 64
+INFO     BASE_ASSERTIONS:base.py:35 Check that "min_score" equals to 18
+INFO     BASE_ASSERTIONS:base.py:35 Check that "description" equals to Movie back community wind war. Scene trouble money several serious right talk section. Trial environment report think. Pm particular take pick sense if meeting.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "estimated_time" equals to 10 weeks
+INFO     FILES_ASSERTIONS:files.py:38 Check file
+INFO     BASE_ASSERTIONS:base.py:35 Check that "id" equals to 0bebb9a4-0f79-41c3-8d49-917a08a265a6
+INFO     BASE_ASSERTIONS:base.py:35 Check that "url" equals to http://localhost:8000/static/tests/08a17fc2-f3be-48eb-88e6-9bd936fcba72.png
+INFO     BASE_ASSERTIONS:base.py:35 Check that "filename" equals to 08a17fc2-f3be-48eb-88e6-9bd936fcba72.png
+INFO     BASE_ASSERTIONS:base.py:35 Check that "directory" equals to tests
+INFO     USERS_ASSERTIONS:users.py:42 Check user
+INFO     BASE_ASSERTIONS:base.py:35 Check that "id" equals to db3fe6bd-4353-4d31-838b-9041626ebac1
+INFO     BASE_ASSERTIONS:base.py:35 Check that "email" equals to walllinda@example.org
+INFO     BASE_ASSERTIONS:base.py:35 Check that "last_name" equals to Harris
+INFO     BASE_ASSERTIONS:base.py:35 Check that "first_name" equals to Christina
+INFO     BASE_ASSERTIONS:base.py:35 Check that "middle_name" equals to Melissa
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validating JSON schema
